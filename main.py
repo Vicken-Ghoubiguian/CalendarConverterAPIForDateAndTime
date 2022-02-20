@@ -13,7 +13,7 @@ api = Api(app)
 
 #
 parser_current_date_and_time_by_timezone = reqparse.RequestParser()
-parser_current_date_and_time_by_timezone.add_argument('timezone', type=str, required=True, help='')
+parser_current_date_and_time_by_timezone.add_argument('timezone', type=str, required=True, help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
 @api.route('/currentDateTime')
