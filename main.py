@@ -15,14 +15,6 @@ api = Api(app)
 date_and_time_template = "%Y-%m-%d %H:%M:%S"
 
 #
-@api.route('/hello')
-class HelloWorld(Resource):
-
-    #
-    def get(self):
-        return {"Message": "Hello, world!"}, 200
-
-#
 parser_current_date_and_time_by_timezone = reqparse.RequestParser()
 parser_current_date_and_time_by_timezone.add_argument('timezone', type=str, required=True, help='')
 
