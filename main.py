@@ -14,7 +14,7 @@ class HelloWorld(Resource):
 
     #
     def get(self):
-        return 'Hello, world!'
+        return {"Message": "Hello, world!"}, 200
 
 #
 if __name__ == '__main__':
