@@ -12,9 +12,6 @@ app = Flask(__name__)
 api = Api(app)
 
 #
-date_and_time_template = "%Y-%m-%d %H:%M:%S"
-
-#
 parser_current_date_and_time_by_timezone = reqparse.RequestParser()
 parser_current_date_and_time_by_timezone.add_argument('timezone', type=str, required=True, help='')
 
@@ -28,6 +25,9 @@ class CurrentDateTimeByTimezone(Resource):
 
         #
         try:
+
+             #
+             date_and_time_template = "%Y-%m-%d %H:%M:%S"
 
              #
              args = parser_current_date_and_time_by_timezone.parse_args()
