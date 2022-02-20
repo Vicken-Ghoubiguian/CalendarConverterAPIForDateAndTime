@@ -26,26 +26,26 @@ class CurrentDateTimeByTimezone(Resource):
         #
         try:
 
-             #
-             date_and_time_template = "%Y-%m-%d %H:%M:%S"
+            #
+            date_and_time_template = "%Y-%m-%d %H:%M:%S"
 
-             #
-             args = parser_current_date_and_time_by_timezone.parse_args()
+            #
+            args = parser_current_date_and_time_by_timezone.parse_args()
 
-             #
-             now_utc = datetime.now(timezone('UTC'))
+            #
+            now_utc = datetime.now(timezone('UTC'))
 
-             #
-             now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
+            #
+            now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
 
-             #
-             return {"time": now_from_timezone.strftime(date_and_time_template), "timezone": args["timezone"]}, 200
+            #
+            return {"time": now_from_timezone.strftime(date_and_time_template), "timezone": args["timezone"]}, 200
 
         #
         except Exception as exp:
 
-             #
-             return {"error": exp.string()}, 200
+            #
+            return {"error": exp.string()}, 200
 
 #
 if __name__ == '__main__':
