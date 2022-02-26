@@ -54,7 +54,11 @@ class CurrentDateTimeByTimezone(Resource):
             return {"error": exp.string()}, 200
 
 #
+parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_by_timezone.copy()
+
+#
 @api.route('/currentDate/particularCalendar')
+@api.expect(parser_current_date_and_time_by_timezone_in_particular_calendar)
 class CurrentDateTimeByTimezoneInParticularCalendar(Resource):
 
     #
