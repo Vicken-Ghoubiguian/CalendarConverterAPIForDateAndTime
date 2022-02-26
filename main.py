@@ -56,10 +56,26 @@ class CurrentDateTimeByTimezone(Resource):
 #
 parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_by_timezone.copy()
 
+
 #
 @api.route('/currentDate/particularCalendar')
 @api.expect(parser_current_date_and_time_by_timezone_in_particular_calendar)
 class CurrentDateTimeByTimezoneInParticularCalendar(Resource):
+
+    #
+    def get(self):
+
+        #
+        return {"TODO": "TODO"}, 200
+
+#
+parser_current_date_and_time_by_timezone_in_particular_timezone = parser_current_date_and_time_by_timezone.copy()
+
+
+#
+@api.route('/currentDate/particularTimeZone')
+@api.expect(parser_current_date_and_time_by_timezone_in_particular_timezone)
+class CurrentDateTimeByTimezoneInParticularTimezone(Resource):
 
     #
     def get(self):
