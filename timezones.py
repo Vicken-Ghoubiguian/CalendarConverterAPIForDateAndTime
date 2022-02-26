@@ -4,19 +4,19 @@ from datetime import datetime
 from pytz import timezone
 
 #
-currentDateNamespace = Namespace('currentDate', description='Namespace to manipulate and get some informations about current datetime...')
+currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
 
 #
 parser_current_date_and_time_by_timezone = reqparse.RequestParser()
 parser_current_date_and_time_by_timezone.add_argument('timezone', type=str, required=True, help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
-@currentDateNamespace.route('/')
-@currentDateNamespace.expect(parser_current_date_and_time_by_timezone)
+@currentDateTimeNamespace.route('')
+@currentDateTimeNamespace.expect(parser_current_date_and_time_by_timezone)
 class CurrentDateTimeByTimezone(Resource):
 
-    #
-    @currentDateNamespace.doc('list_cats')
+
+    @currentDateTimeNamespace.doc('list_cats')
 
     #
     def get(self):
@@ -55,12 +55,12 @@ parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current
 
 
 #
-@currentDateNamespace.route('/particularCalendar')
-@currentDateNamespace.expect(parser_current_date_and_time_by_timezone_in_particular_calendar)
+@currentDateTimeNamespace.route('/particularCalendar')
+@currentDateTimeNamespace.expect(parser_current_date_and_time_by_timezone_in_particular_calendar)
 class CurrentDateTimeByTimezoneInParticularCalendar(Resource):
 
-    #
-    @currentDateNamespace.doc('list_cats')
+
+    @currentDateTimeNamespace.doc('list_cats')
 
     #
     def get(self):
