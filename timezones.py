@@ -59,7 +59,7 @@ class CurrentDateTimeByTimezone(Resource):
 
         #
         return {
-                    "time": now_from_timezone.strftime(date_and_time_template), 
+                    "date_and_time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
                     "country_code": getCountryCodeOfTimezone(args["timezone"]),
                     "format": None
