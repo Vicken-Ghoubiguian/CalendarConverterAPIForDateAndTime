@@ -37,4 +37,14 @@ class TimezonesByCountries(Resource):
     def get(self):
 
         #
-        return {"TODO": "TODO"}, 200
+        args = parser_timezones_infos.parse_args()
+
+        #
+        return {
+                    "timezone": args["timezone"],
+                    "country": {
+                        "country_name": countries.get(alpha_2=getCountryCodeOfTimezone(args["timezone"])).name,
+                        "country_code": getCountryCodeOfTimezone(args["timezone"]),
+                    },
+                    "TODO": "TODO"
+                }, 200
