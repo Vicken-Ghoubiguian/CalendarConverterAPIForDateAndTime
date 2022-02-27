@@ -1,6 +1,7 @@
 #
 from datetime import datetime
 from pytz import common_timezones, country_timezones
+from pycountry import countries
 
 #
 def getAllTimezones():
@@ -18,10 +19,36 @@ def getAllTimezones():
     return all_timezones
 
 #
-def getCountry():
+def getCountry(timezone):
 
     #
-    return "TODO"
+    timezones_list = country_timezones
+
+    #
+    timezone_index = -1
+
+    #
+    keys_from_timezones_list = list(timezones_list.keys())
+    values_from_timezones_list = list(timezones_list.values())
+
+    #
+    for current_timezone_array in values_from_timezones_list:
+
+        #
+        if timezone in current_timezone_array:
+
+            #
+            timezone_index = values_from_timezones_list.index(current_timezone_array)
+
+    #
+    countryName = countries.get(alpha_2=getCountryCodeOfTimezone(timezone)).name,
+    countryCode = keys_from_timezones_list[timezone_index]
+
+    #
+    return {
+                "country_name": countryName,
+                "country_code": countryCode
+           }
 
 #
 def getCountryCodeOfTimezone(timezone):
