@@ -1,14 +1,14 @@
 #
 from flask_restx import Namespace, Resource, reqparse
 from datetime import datetime
-from pytz import timezone
+from pytz import timezone, common_timezones
 
 #
 currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
 
 #
 parser_current_date_and_time_name_space = reqparse.RequestParser()
-parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=['Europe/Paris'], help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
+parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=common_timezones, help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
