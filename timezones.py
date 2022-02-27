@@ -25,11 +25,23 @@ def getCountryCodeOfTimezone(timezone):
     timezones_list = country_timezones
 
     #
+    timezone_index = -1
+
+    #
     keys_from_timezones_list = list(timezones_list.keys())
     values_from_timezones_list = list(timezones_list.values())
 
     #
-    return None
+    for current_timezone_array in values_from_timezones_list:
+
+        #
+        if timezone in current_timezone_array:
+
+            #
+            timezone_index = values_from_timezones_list.index(current_timezone_array)
+
+    #
+    return keys_from_timezones_list[timezone_index]
 
 #
 currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
