@@ -1,7 +1,7 @@
 #
 from flask_restx import Namespace, Resource, reqparse
 from datetime import datetime
-from pytz import timezone, common_timezones
+from pytz import timezone, common_timezones, country_timezones
 
 #
 def getAllTimezones():
@@ -20,6 +20,13 @@ def getAllTimezones():
 
 #
 def getCountryCodeOfTimezone(timezone):
+
+    #
+    timezones_list = country_timezones
+
+    #
+    keys_from_timezones_list = list(timezones_list.keys())
+    values_from_timezones_list = list(timezones_list.values())
 
     #
     return None
