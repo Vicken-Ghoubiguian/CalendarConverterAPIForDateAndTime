@@ -80,6 +80,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "date_and_time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
+                    "country_name": None,
                     "country_code": getCountryCodeOfTimezone(args["timezone"]),
                     "format": None
                 }, 200
