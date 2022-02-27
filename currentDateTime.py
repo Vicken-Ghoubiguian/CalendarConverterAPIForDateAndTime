@@ -45,7 +45,7 @@ def getCountryCodeOfTimezone(timezone):
     return keys_from_timezones_list[timezone_index]
 
 #
-currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
+currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about dates and times...')
 
 #
 parser_current_date_and_time_name_space = reqparse.RequestParser()
