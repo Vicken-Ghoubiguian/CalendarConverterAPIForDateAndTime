@@ -2,7 +2,6 @@
 from flask_restx import Namespace, Resource, reqparse
 from datetime import datetime
 from pytz import timezone
-from pycountry import countries
 
 #
 from commonFunctions import *
