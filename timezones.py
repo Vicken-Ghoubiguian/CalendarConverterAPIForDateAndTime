@@ -4,11 +4,26 @@ from datetime import datetime
 from pytz import timezone, common_timezones
 
 #
+def getAllTimezones():
+
+    #
+    all_timezones = []
+
+    #
+    for current_timezone in common_timezones:
+
+        #
+        all_timezones.append(current_timezone)
+
+    #
+    return all_timezones
+
+#
 currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
 
 #
 parser_current_date_and_time_name_space = reqparse.RequestParser()
-parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=common_timezones, help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
+parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
