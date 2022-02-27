@@ -18,6 +18,12 @@ def getAllTimezones():
     return all_timezones
 
 #
+def getCountry():
+
+    #
+    return "TODO"
+
+#
 def getCountryCodeOfTimezone(timezone):
 
     #
