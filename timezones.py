@@ -19,6 +19,12 @@ def getAllTimezones():
     return all_timezones
 
 #
+def getCountryCodeOfTimezone(timezone):
+
+    #
+    return None
+
+#
 currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about current datetime...')
 
 #
@@ -55,7 +61,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
-                    "country_code": None
+                    "country_code": getCountryCodeOfTimezone(args["timezone"])
                 }, 200
 
 #
