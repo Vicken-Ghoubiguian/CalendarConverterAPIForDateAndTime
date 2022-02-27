@@ -2,7 +2,7 @@
 from flask import Flask
 from flask_restx import Api
 from currentDateTime import currentDateTimeNamespace as nsdt
-import timezones
+from timezones import currentTimezonesNamespace as nstz
 
 #
 app = Flask(__name__)
@@ -15,7 +15,7 @@ api = Api(
 
 #
 api.add_namespace(nsdt)
-api.add_namespace(timezones.currentTimezonesNamespace)
+api.add_namespace(nstz)
 
 #
 api.init_app(app)
