@@ -4,7 +4,7 @@ from pytz import timezone, common_timezones, country_timezones
 from pycountry import countries
 
 #
-currentTimezonesNamespace = Namespace('timezonesNameSpace', description='TODO...')
+currentTimezonesNamespace = Namespace('timezonesNameSpace', description='Namespace to manipulate and get some informations about timezones...')
 
 #
 @currentTimezonesNamespace.route('/byCountries')
