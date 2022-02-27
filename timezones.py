@@ -4,10 +4,19 @@ from pytz import timezone, common_timezones, country_timezones
 from pycountry import countries
 
 #
+from commonFunctions import *
+
+#
 timezonesNamespace = Namespace('timezones', description='Namespace to manipulate and get some informations about timezones...')
 
 #
+#
+parser_timezones_infos = reqparse.RequestParser()
+parser_timezones_infos.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
+
+#
 @timezonesNamespace.route('/infos')
+@timezonesNamespace.expect(parser_timezones_infos)
 class TimezonesInfos(Resource):
 
     #@currentDateTimeNamespace.doc('list_cats')
