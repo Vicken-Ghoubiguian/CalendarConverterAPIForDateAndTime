@@ -23,7 +23,7 @@ currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace t
 
 #
 parser_current_date_and_time_name_space = reqparse.RequestParser()
-parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Enter here the IANA (Internet Assigned Numbers Authority) timezone...')
+parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
@@ -55,8 +55,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
-                    "lat": None,
-                    "lon": None
+                    "country_code": None
                 }, 200
 
 #
