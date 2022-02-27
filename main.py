@@ -1,7 +1,7 @@
 #
 from flask import Flask
 from flask_restx import Api
-from timezones import currentDateTimeNamespace as nsdt
+from currentDateTime import currentDateTimeNamespace as nsdt
 
 #
 app = Flask(__name__)
