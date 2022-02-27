@@ -42,9 +42,6 @@ class TimezonesByCountries(Resource):
         #
         return {
                     "timezone": args["timezone"],
-                    "country": {
-                        "country_name": countries.get(alpha_2=getCountryCodeOfTimezone(args["timezone"])).name,
-                        "country_code": getCountryCodeOfTimezone(args["timezone"]),
-                    },
+                    "country": getCountry(args["timezone"]),
                     "TODO": "TODO"
                 }, 200

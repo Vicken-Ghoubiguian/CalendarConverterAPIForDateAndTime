@@ -44,10 +44,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "date_and_time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
-                    "country": {
-                        "country_name": countries.get(alpha_2=getCountryCodeOfTimezone(args["timezone"])).name,
-                        "country_code": getCountryCodeOfTimezone(args["timezone"])
-                    },
+                    "country": getCountry(args["timezone"]),
                     "format": None
                 }, 200
 
