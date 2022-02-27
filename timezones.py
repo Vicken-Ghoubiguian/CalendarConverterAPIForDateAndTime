@@ -2,6 +2,7 @@
 from flask_restx import Namespace, Resource, reqparse
 from datetime import datetime
 from pytz import timezone, common_timezones, country_timezones
+from pycountry import countries
 
 #
 def getAllTimezones():
@@ -80,7 +81,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "date_and_time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
-                    "country_name": None,
+                    "country_name": countries.get(alpha_2=getCountryCodeOfTimezone(args["timezone"])).name,
                     "country_code": getCountryCodeOfTimezone(args["timezone"]),
                     "format": None
                 }, 200
