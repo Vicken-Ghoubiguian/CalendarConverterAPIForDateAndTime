@@ -41,12 +41,12 @@ def getCountry(timezone):
             timezone_index = values_from_timezones_list.index(current_timezone_array)
 
     #
-    countryName = countries.get(alpha_2=getCountryCodeOfTimezone(timezone)).name,
     countryCode = keys_from_timezones_list[timezone_index]
+    countryName = countries.get(alpha_2=countryCode).name,
 
     #
     return {
-                "country_name": countryName,
+                "country_name": countryName[0],
                 "country_code": countryCode
            }
 
