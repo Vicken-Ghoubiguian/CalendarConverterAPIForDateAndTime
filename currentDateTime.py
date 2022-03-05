@@ -45,7 +45,7 @@ class CurrentDateTimeByTimezone(Resource):
         country = getCountry(args["timezone"])
 
         #
-        del country["country_flag"]
+        del country["country_flag"]["country_flag_cdn"]
 
         #
         return {

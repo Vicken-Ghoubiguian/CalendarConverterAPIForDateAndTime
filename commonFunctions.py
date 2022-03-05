@@ -54,8 +54,8 @@ def getCountry(timezone):
                 "country_name": countryName[0],
                 "country_offical_name": countryOfficialName,
                 "country_code": countryCode,
-                "country_flag_cdn": {
-                    "country_flag": countryFlag,
+                "country_flag": {
+                    "country_flag_unicode": countryFlag,
                     "country_flag_cdn": {
                             "16_x_12": "https://flagcdn.com/16x12/" + countryCode.lower() + ".png",
                             "20_x_15": "https://flagcdn.com/20x15/" + countryCode.lower() + ".png",
