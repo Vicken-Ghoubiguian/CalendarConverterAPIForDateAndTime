@@ -47,7 +47,18 @@ def getCountry(timezone):
     #
     countryName = countries.get(alpha_2=countryCode).name
     countryFlag = countries.get(alpha_2=countryCode).flag
+
+    #
+    #if "official_name" in countries.get(alpha_2=countryCode).keys():
+
+    #
     countryOfficialName = countries.get(alpha_2=countryCode).official_name
+
+    #
+    #else:
+
+        #
+        #countryOfficialName = countries.get(alpha_2=countryCode).name
 
     #
     return {
