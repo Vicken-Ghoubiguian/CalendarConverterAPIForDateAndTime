@@ -42,10 +42,16 @@ class CurrentDateTimeByTimezone(Resource):
         now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
 
         #
+        country = getCountry(args["timezone"])
+
+        #
+        del country["country_flag"]
+
+        #
         return {
                     "date_and_time": now_from_timezone.strftime(date_and_time_template), 
                     "timezone": args["timezone"],
-                    "country": getCountry(args["timezone"]),
+                    "country": country,
                     "format": None
                 }, 200
 
