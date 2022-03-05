@@ -15,7 +15,7 @@ parser_current_date_and_time_name_space.add_argument('timezone', type=str, requi
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
-
+parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help='')
 
 #
 @currentDateTimeNamespace.route('')
@@ -30,9 +30,6 @@ class CurrentDateTimeByTimezone(Resource):
         """
 
         #
-        date_and_time_template = "%Y-%m-%d %H:%M:%S"
-
-        #
         args = parser_current_date_and_time_by_timezone.parse_args()
 
         #
@@ -42,6 +39,9 @@ class CurrentDateTimeByTimezone(Resource):
         now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
 
         #
+        date_time_template = args["datetime_format"]
+
+        #
         country = getCountry(args["timezone"])
 
         #
@@ -49,7 +49,7 @@ class CurrentDateTimeByTimezone(Resource):
 
         #
         return {
-                    "date_and_time": now_from_timezone.strftime(date_and_time_template), 
+                    "date_and_time": now_from_timezone.strftime(date_time_template) if date_time_template is not None else now_from_timezone.timestamp(), 
                     "timezone": args["timezone"],
                     "country": country,
                     "format": None
