@@ -48,6 +48,7 @@ def getCountry(timezone):
     #
     return {
                 "country_name": countryName[0],
+                "country_offical_name": None,
                 "country_code": countryCode,
                 "country_flag": {
                     "16_x_12": "https://flagcdn.com/16x12/" + countryCode.lower() + ".png",
@@ -59,7 +60,14 @@ def getCountry(timezone):
                     "40_x_30": "https://flagcdn.com/40x30/" + countryCode.lower() + ".png",
                     "48_x_36": "https://flagcdn.com/48x36/" + countryCode.lower() + ".png",
                     "56_x_42": "https://flagcdn.com/56x42/" + countryCode.lower() + ".png",
-
+                    "60_x_45": "https://flagcdn.com/60x45/" + countryCode.lower() + ".png",
+                    "64_x_48": "https://flagcdn.com/64x48/" + countryCode.lower() + ".png",
+                    "72_x_54": "https://flagcdn.com/72x54/" + countryCode.lower() + ".png",
+                    "80_x_60": "https://flagcdn.com/80x60/" + countryCode.lower() + ".png",
+                    "84_x_63": "https://flagcdn.com/84x63/" + countryCode.lower() + ".png",
+                    "96_x_72": "https://flagcdn.com/96x72/" + countryCode.lower() + ".png",
+                    "108_x_81": "https://flagcdn.com/108x81/" + countryCode.lower() + ".png",
+                    "112_x_84": "https://flagcdn.com/112x84/" + countryCode.lower() + ".png",
                     "120_x_90": "https://flagcdn.com/120x90/" + countryCode.lower() + ".png",
                     "128_x_96": "https://flagcdn.com/128x96/" + countryCode.lower() + ".png",
                     "144_x_108": "https://flagcdn.com/144x108/" + countryCode.lower() + ".png",
