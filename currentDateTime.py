@@ -15,7 +15,13 @@ parser_current_date_and_time_name_space.add_argument('timezone', type=str, requi
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
-parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help='')
+parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help=': %a (abreviated weekday name), \
+                                                                                                           %A (full weekday name), \
+                                                                                                           %w (weekday as a decimal number), \
+                                                                                                           %d (day of the month as a zero-padded decimal), \
+                                                                                                           %-d (day of the month as a decimal number), \
+                                                                                                           %b (abbreviated month name), %B (full month name)\
+                                                                                                           ...')
 
 #
 @currentDateTimeNamespace.route('')

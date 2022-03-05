@@ -9,7 +9,6 @@ from commonFunctions import *
 timezonesNamespace = Namespace('timezones', description='Namespace to manipulate and get some informations about timezones...')
 
 #
-#
 parser_timezones_infos = reqparse.RequestParser()
 parser_timezones_infos.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
 
