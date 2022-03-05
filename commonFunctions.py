@@ -51,7 +51,7 @@ def getCountry(timezone):
 
     #
     return {
-                "country_name": countryName[0],
+                "country_name": countryName,
                 "country_offical_name": countryOfficialName,
                 "country_code": countryCode,
                 "country_flag": {
