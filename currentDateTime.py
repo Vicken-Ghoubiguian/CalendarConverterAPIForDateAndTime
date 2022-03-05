@@ -20,7 +20,10 @@ parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=st
                                                                                                            %w (weekday as a decimal number), \
                                                                                                            %d (day of the month as a zero-padded decimal), \
                                                                                                            %-d (day of the month as a decimal number), \
-                                                                                                           %b (abbreviated month name), %B (full month name)\
+                                                                                                           %b (abbreviated month name), %B (full month name), \
+                                                                                                           %x (locale’s appropriate date representation), \
+                                                                                                           %X (locale’s appropriate time representation), \
+                                                                                                           %% (a literal \'%\' character) \
                                                                                                            ...')
 
 #
