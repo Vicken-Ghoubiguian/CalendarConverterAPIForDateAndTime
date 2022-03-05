@@ -43,14 +43,18 @@ def getCountry(timezone):
 
     #
     countryCode = keys_from_timezones_list[timezone_index]
-    countryName = countries.get(alpha_2=countryCode).name,
+
+    #
+    countryName = countries.get(alpha_2=countryCode).name
+    countryFlag = countries.get(alpha_2=countryCode).flag
+    countryOfficialName = countries.get(alpha_2=countryCode).official_name
 
     #
     return {
                 "country_name": countryName[0],
-                "country_offical_name": None,
+                "country_offical_name": countryOfficialName,
                 "country_code": countryCode,
-                "country_flag": {
+                "country_flag_cdn": {
                     "16_x_12": "https://flagcdn.com/16x12/" + countryCode.lower() + ".png",
                     "20_x_15": "https://flagcdn.com/20x15/" + countryCode.lower() + ".png",
                     "24_x_18": "https://flagcdn.com/24x18/" + countryCode.lower() + ".png",
