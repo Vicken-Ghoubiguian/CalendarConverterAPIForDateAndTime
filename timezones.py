@@ -18,8 +18,6 @@ parser_timezones_infos.add_argument('timezone', type=str, required=True, choices
 @timezonesNamespace.expect(parser_timezones_infos)
 class TimezonesInfos(Resource):
 
-    #@currentDateTimeNamespace.doc('list_cats')
-
     #
     def get(self):
 
@@ -29,8 +27,6 @@ class TimezonesInfos(Resource):
 #
 @timezonesNamespace.route('/byCountries')
 class TimezonesByCountries(Resource):
-
-    #@currentDateTimeNamespace.doc('list_cats')
 
     #
     def get(self):

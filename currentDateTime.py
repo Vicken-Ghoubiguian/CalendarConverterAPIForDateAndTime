@@ -22,8 +22,6 @@ parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_spa
 @currentDateTimeNamespace.expect(parser_current_date_and_time_by_timezone)
 class CurrentDateTimeByTimezone(Resource):
 
-    #@currentDateTimeNamespace.doc('list_cats')
-
     #
     def get(self):
 
@@ -52,8 +50,6 @@ class CurrentDateTimeByTimezone(Resource):
 @currentDateTimeNamespace.route('/byCountries')
 class CurrentDateTimeByCountries(Resource):
 
-    #@currentDateTimeNamespace.doc('list_cats')
-
     #
     def get(self):
 
@@ -69,8 +65,6 @@ parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current
 @currentDateTimeNamespace.expect(parser_current_date_and_time_by_timezone_in_particular_calendar)
 class CurrentDateTimeByTimezoneInParticularCalendar(Resource):
 
-    #@currentDateTimeNamespace.doc('list_cats')
-
     #
     def get(self):
 
@@ -80,8 +74,6 @@ class CurrentDateTimeByTimezoneInParticularCalendar(Resource):
 #
 @currentDateTimeNamespace.route('/infos')
 class CurrentDateTimeByTimezoneInfos(Resource):
-
-    #@currentDateTimeNamespace.doc('list_cats')
 
     #
     def get(self):
