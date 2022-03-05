@@ -25,6 +25,10 @@ class CurrentDateTimeByTimezone(Resource):
     #
     def get(self):
 
+        """ 
+        Convert and return the current datetime in the wished timezone... 
+        """
+
         #
         date_and_time_template = "%Y-%m-%d %H:%M:%S"
 
