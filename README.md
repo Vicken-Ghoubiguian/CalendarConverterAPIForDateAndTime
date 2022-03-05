@@ -12,6 +12,8 @@ Converter API for date and time in many calendars in the world (Gregorian, Julia
 * [Scaling your project - Official documentation](https://flask-restx.readthedocs.io/en/latest/scaling.html),
 * [List All TimeZones in Python - PYnative](https://pynative.com/list-all-timezones-in-python/#h-get-list-of-all-timezones-name),
 * [Python List append() - Programiz](https://www.programiz.com/python-programming/methods/list/append),
-* [pycountry 22.1.10 - pypi](https://pypi.org/project/pycountry/)
+* [pycountry 22.1.10 - pypi](https://pypi.org/project/pycountry/),
+* [Flagpedia.net](https://flagpedia.net),
+* [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api)
 
 ## Conclusion
