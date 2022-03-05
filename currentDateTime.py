@@ -52,7 +52,7 @@ class CurrentDateTimeByTimezone(Resource):
                     "date_and_time": now_from_timezone.strftime(date_time_template) if date_time_template is not None else now_from_timezone.timestamp(), 
                     "timezone": args["timezone"],
                     "country": country,
-                    "format": None
+                    "format": date_time_template if date_time_template is not None else "UTC timestamp"
                 }, 200
 
 
