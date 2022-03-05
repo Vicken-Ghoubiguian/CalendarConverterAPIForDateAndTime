@@ -14,6 +14,7 @@ Converter API for date and time in many calendars in the world (Gregorian, Julia
 * [Python List append() - Programiz](https://www.programiz.com/python-programming/methods/list/append),
 * [pycountry 22.1.10 - pypi](https://pypi.org/project/pycountry/),
 * [Flagpedia.net](https://flagpedia.net),
-* [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api)
+* [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api),
+* [Python strftime() - Programiz](https://www.programiz.com/python-programming/datetime/strftime)
 
 ## Conclusion
