@@ -21,6 +21,14 @@ parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=st
                                                                                                            %d (day of the month as a zero-padded decimal), \
                                                                                                            %-d (day of the month as a decimal number), \
                                                                                                            %b (abbreviated month name), %B (full month name), \
+                                                                                                           %B (Full month name), \
+                                                                                                           %m (Month as a zero-padded decimal number), \
+                                                                                                           %-m (Month as a decimal number), \
+                                                                                                           %y (Year without century as a zero-padded decimal number), \
+                                                                                                           %-y (Year without century as a decimal number), \
+                                                                                                           %Y (Year with century as a decimal number), \
+                                                                                                           %z (UTC offset in the form +HHMM or -HHMM), \
+                                                                                                           %c (Locale’s appropriate date and time representation), \
                                                                                                            %x (locale’s appropriate date representation), \
                                                                                                            %X (locale’s appropriate time representation), \
                                                                                                            %% (a literal \'%\' character) \
