@@ -31,8 +31,8 @@ class TimezonesInfos(Resource):
 
         #
         return {
-                   "timezone": "TODO"
-
+                    "timezone": args["timezone"],
+                    "country": country
                 }, 200
 
 #
