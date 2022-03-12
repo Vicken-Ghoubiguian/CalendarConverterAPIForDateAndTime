@@ -15,7 +15,8 @@ parser_current_date_and_time_name_space.add_argument('timezone', type=str, requi
 
 #
 parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
-parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help='Available format code: %a (abreviated weekday name), \
+parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help='Available format code: \
+                                                                                                           %a (abreviated weekday name), \
                                                                                                            %A (full weekday name), \
                                                                                                            %w (weekday as a decimal number), \
                                                                                                            %d (day of the month as a zero-padded decimal), \
@@ -28,6 +29,7 @@ parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=st
                                                                                                            %-y (Year without century as a decimal number), \
                                                                                                            %Y (Year with century as a decimal number), \
                                                                                                            %z (UTC offset in the form +HHMM or -HHMM), \
+                                                                                                           %Z (Time zone name), \
                                                                                                            %c (Locale’s appropriate date and time representation), \
                                                                                                            %x (locale’s appropriate date representation), \
                                                                                                            %X (locale’s appropriate time representation), \
