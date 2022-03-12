@@ -21,7 +21,19 @@ class TimezonesInfos(Resource):
     def get(self):
 
         #
-        return {"TODO": "TODO"}, 200
+        args = parser_timezones_infos.parse_args()
+
+        #
+        country = getCountry(args["timezone"])
+
+        #
+        del country["country_flag"]["country_flag_cdn"]
+
+        #
+        return {
+                   "timezone": "TODO"
+
+                }, 200
 
 #
 @timezonesNamespace.route('/byCountries')
