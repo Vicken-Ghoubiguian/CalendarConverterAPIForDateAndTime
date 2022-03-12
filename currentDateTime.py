@@ -65,8 +65,17 @@ class CurrentDateTimeByTimezone(Resource):
                 }, 200
 
 #
-parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
+@currentDateTimeNamespace.route('/conversion')
+class CurrentDateTimeConversion(Resource):
 
+    #
+    def get(self):
+
+        #
+        return {"TODO": "TODO"}, 200
+
+#
+parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
 
 #
 @currentDateTimeNamespace.route('/particularCalendar')
