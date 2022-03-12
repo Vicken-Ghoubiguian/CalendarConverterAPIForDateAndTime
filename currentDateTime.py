@@ -35,7 +35,7 @@ class CurrentDateTimeByTimezone(Resource):
     def get(self):
 
         """ 
-        Convert and return the current datetime in the wished timezone... 
+        Convert and return the current datetime in the wished timezone...
         """
 
         #
@@ -70,6 +70,10 @@ class CurrentDateTimeConversion(Resource):
 
     #
     def get(self):
+
+        """
+        Convert and return the wished datetime specified in one particular format in the wished timezone...
+        """
 
         #
         return {"TODO": "TODO"}, 200
