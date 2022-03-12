@@ -64,8 +64,13 @@ class CurrentDateTimeByTimezone(Resource):
                     "format": date_time_template if date_time_template is not None else "UTC timestamp"
                 }, 200
 
+
+#
+parser_current_date_and_time_by_timezone_for_conversion = parser_current_date_and_time_name_space.copy()
+
 #
 @currentDateTimeNamespace.route('/conversion')
+@currentDateTimeNamespace.expect(parser_current_date_and_time_by_timezone_for_conversion)
 class CurrentDateTimeConversion(Resource):
 
     #
@@ -74,6 +79,9 @@ class CurrentDateTimeConversion(Resource):
         """
         Convert and return the wished datetime specified in one particular format in the wished timezone...
         """
+
+        #
+        args = parser_current_date_and_time_by_timezone_for_conversion.parse_args()
 
         #
         return {"TODO": "TODO"}, 200
