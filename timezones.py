@@ -20,6 +20,10 @@ class TimezonesInfos(Resource):
     #
     def get(self):
 
+        """
+        Get all informations about the wished timezone...
+        """
+
         #
         args = parser_timezones_infos.parse_args()
 
