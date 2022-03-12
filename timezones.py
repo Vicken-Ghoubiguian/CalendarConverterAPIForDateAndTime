@@ -34,12 +34,15 @@ class TimezonesInfos(Resource):
         now_utc = datetime.now(timezone('UTC'))
 
         #
+        country = getCountry(args["timezone"])
+
+        #
         del country["country_flag"]["country_flag_cdn"]
 
         #
         return {
                     "timezone": args["timezone"],
-                    "UTC offset": now_utc.astimezone(timezone(args["timezone"])).strftime("%z"),
+                    "UTC offset": country,
                     "country": getCountry(args["timezone"]),
                 }, 200
 
