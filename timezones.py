@@ -42,7 +42,7 @@ class TimezonesInfos(Resource):
         #
         return {
                     "timezone": args["timezone"],
-                    "UTC offset": country,
+                    "UTC offset": now_utc.astimezone(timezone(args["timezone"])).strftime("%z"),
                     "country": getCountry(args["timezone"]),
                 }, 200
 
