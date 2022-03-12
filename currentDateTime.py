@@ -64,17 +64,6 @@ class CurrentDateTimeByTimezone(Resource):
                     "format": date_time_template if date_time_template is not None else "UTC timestamp"
                 }, 200
 
-
-#
-@currentDateTimeNamespace.route('/byCountries')
-class CurrentDateTimeByCountries(Resource):
-
-    #
-    def get(self):
-
-        #
-        return {"TODO": "TODO"}, 200
-
 #
 parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
 
