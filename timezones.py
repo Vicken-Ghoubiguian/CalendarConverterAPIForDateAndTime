@@ -13,7 +13,7 @@ parser_timezones_infos = reqparse.RequestParser()
 parser_timezones_infos.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
 
 #
-@timezonesNamespace.route('/infos')
+@timezonesNamespace.route('')
 @timezonesNamespace.expect(parser_timezones_infos)
 class TimezonesInfos(Resource):
 
@@ -43,7 +43,7 @@ class TimezonesInfos(Resource):
         return {
                     "timezone": args["timezone"],
                     "UTC offset": now_utc.astimezone(timezone(args["timezone"])).strftime("%z"),
-                    "country": getCountry(args["timezone"]),
+                    "country": country,
                 }, 200
 
 #
