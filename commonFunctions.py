@@ -26,10 +26,19 @@ def getAllTimezones():
 def getAllCountries():
 
     #
+    allCountries = []
+
+    #
     allCountriesFromCountries = countries.countries
 
     #
-    return ""
+    for countryFromCountries in allCountriesFromCountries:
+
+        #
+        allCountries.append(countryFromCountries.name)
+
+    #
+    return allCountries
 
 #
 def getCountry(timezone, country_flag_cdn = False):
