@@ -23,6 +23,15 @@ def getAllTimezones():
     return all_timezones
 
 #
+def getAllCountries():
+
+    #
+    allCountriesFromCountries = countries.countries
+
+    #
+    return ""
+
+#
 def getCountry(timezone, country_flag_cdn = False):
 
     """
