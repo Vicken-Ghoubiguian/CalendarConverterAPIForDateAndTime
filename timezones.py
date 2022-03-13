@@ -44,18 +44,23 @@ class TimezonesInfos(Resource):
                 }, 200
 
 #
-@timezonesNamespace.route('/byCountries')
+parser_timezones_by_country = reqparse.RequestParser()
+
+#
+@timezonesNamespace.route('/byCountry')
+@timezonesNamespace.expect(parser_timezones_by_country)
 class TimezonesByCountries(Resource):
 
     #
     def get(self):
+
+        """
+        """
 
         #
         args = parser_timezones_infos.parse_args()
 
         #
         return {
-                    "timezone": args["timezone"],
-                    "country": getCountry(args["timezone"]),
                     "TODO": "TODO"
                 }, 200
