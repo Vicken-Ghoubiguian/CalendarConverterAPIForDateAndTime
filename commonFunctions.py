@@ -7,6 +7,9 @@ from pycountry import countries
 #
 def getAllTimezones():
 
+    """
+    """
+
     #
     all_timezones = []
 
@@ -21,6 +24,9 @@ def getAllTimezones():
 
 #
 def getCountry(timezone):
+
+    """
+    """
 
     #
     timezones_list = country_timezones
@@ -62,7 +68,10 @@ def getCountry(timezone):
     finally:
 
         #
-        return {
+        if 1 == 0:
+
+            #
+            return {
                     "country_name": countryName,
                     "country_offical_name": countryOfficialName,
                     "country_code": countryCode,
@@ -93,6 +102,19 @@ def getCountry(timezone):
                                 "192_x_144": "https://flagcdn.com/192x144/" + countryCode.lower() + ".png",
                                 "224_x_168": "https://flagcdn.com/224x168/" + countryCode.lower() + ".png",
                                 "256_x_192": "https://flagcdn.com/256x192/" + countryCode.lower() + ".png"
+                                }
                         }
+                    }
+        
+        #
+        else:
+
+            #
+            return {
+                    "country_name": countryName,
+                    "country_offical_name": countryOfficialName,
+                    "country_code": countryCode,
+                    "country_flag": {
+                        "country_flag_unicode": countryFlag
                     }
                 }
