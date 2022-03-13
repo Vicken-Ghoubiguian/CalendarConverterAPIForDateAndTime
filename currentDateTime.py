@@ -64,9 +64,6 @@ class CurrentDateTimeByTimezone(Resource):
         country = getCountry(args["timezone"])
 
         #
-        del country["country_flag"]["country_flag_cdn"]
-
-        #
         return {
                     "date_and_time": now_from_timezone.strftime(date_time_template) if date_time_template is not None else now_from_timezone.timestamp(), 
                     "timezone": args["timezone"],

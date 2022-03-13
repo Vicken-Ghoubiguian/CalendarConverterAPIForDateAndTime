@@ -23,7 +23,7 @@ def getAllTimezones():
     return all_timezones
 
 #
-def getCountry(timezone):
+def getCountry(timezone, country_flag_cdn = False):
 
     """
     """
@@ -68,7 +68,7 @@ def getCountry(timezone):
     finally:
 
         #
-        if 1 == 0:
+        if country_flag_cdn == True:
 
             #
             return {
