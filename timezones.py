@@ -47,6 +47,9 @@ class TimezonesInfos(Resource):
 parser_timezones_by_country = reqparse.RequestParser()
 
 #
+parser_timezones_by_country.add_argument('country', type=str, required=True, choices=getAllCountries(), help='Select here the country...')
+
+#
 @timezonesNamespace.route('/byCountry')
 @timezonesNamespace.expect(parser_timezones_by_country)
 class TimezonesByCountries(Resource):
@@ -58,10 +61,10 @@ class TimezonesByCountries(Resource):
         """
 
         #
-        args = parser_timezones_infos.parse_args()
+        args = parser_timezones_by_country.parse_args()
 
         #
-        
+
 
         #
         return {

@@ -3,6 +3,7 @@ from datetime import datetime
 from itertools import count
 from pytz import common_timezones, country_timezones
 from pycountry import countries
+import pycountry
 
 #
 def getAllTimezones():
@@ -29,7 +30,7 @@ def getAllCountries():
     allCountries = []
 
     #
-    allCountriesFromCountries = countries.countries
+    allCountriesFromCountries = pycountry.countries
 
     #
     for countryFromCountries in allCountriesFromCountries:
