@@ -35,6 +35,9 @@ def getAllTimezonesByCountry(wished_country):
 #
 def getAllCountries():
 
+    """
+    """
+
     #
     allCountries = []
 
