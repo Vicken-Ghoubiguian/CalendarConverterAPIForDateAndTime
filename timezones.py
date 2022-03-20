@@ -58,6 +58,7 @@ class TimezonesByCountries(Resource):
     def get(self):
 
         """
+        Get all timezones (with informations) for a selected country...
         """
 
         #
