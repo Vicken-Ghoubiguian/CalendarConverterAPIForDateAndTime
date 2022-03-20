@@ -62,7 +62,7 @@ class TimezonesByCountries(Resource):
         args = parser_timezones_by_country.parse_args()
 
         #
-        all_timezones_by_country = getAllTimezonesByCountry()
+        all_timezones_by_country = getAllTimezonesByCountry(args["country"])
 
         #
         country = getCountry(all_timezones_by_country[0], False)

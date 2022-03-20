@@ -24,7 +24,7 @@ def getAllTimezones():
     return all_timezones
 
 #
-def getAllTimezonesByCountry():
+def getAllTimezonesByCountry(wished_country):
 
     """
     """
