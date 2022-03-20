@@ -24,6 +24,15 @@ def getAllTimezones():
     return all_timezones
 
 #
+def getAllTimezonesByCountry():
+
+    """
+    """
+
+    #
+    return country_timezones('Ru')
+
+#
 def getAllCountries():
 
     #
