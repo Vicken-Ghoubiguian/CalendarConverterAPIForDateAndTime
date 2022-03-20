@@ -65,9 +65,13 @@ class TimezonesByCountries(Resource):
         args = parser_timezones_by_country.parse_args()
 
         #
+        all_timezones_by_country = getAllTimezonesByCountry()
 
+        #
+        country = getCountry(all_timezones_by_country[0])
 
         #
         return {
-                    "TODO": "TODO"
+                    "country": country,
+                    "timezones": all_timezones_by_country
                 }, 200
