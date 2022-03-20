@@ -1,5 +1,5 @@
 #
-from flask_restx import Namespace, Resource, reqparse
+from flask_restx import Namespace, Resource, reqparse, inputs
 from datetime import datetime
 from pytz import timezone
 
@@ -35,6 +35,7 @@ parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=st
                                                                                                            %X (locale’s appropriate time representation), \
                                                                                                            %% (a literal \'%\' character) \
                                                                                                            ...')
+parser_current_date_and_time_by_timezone.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
 @currentDateTimeNamespace.route('')
@@ -61,7 +62,7 @@ class CurrentDateTimeByTimezone(Resource):
         date_time_template = args["datetime_format"]
 
         #
-        country = getCountry(args["timezone"], False)
+        country = getCountry(args["timezone"], args["all_cdn"])
 
         #
         return {

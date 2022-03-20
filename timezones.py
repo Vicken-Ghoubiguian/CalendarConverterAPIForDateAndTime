@@ -1,5 +1,5 @@
 #
-from flask_restx import Namespace, Resource, reqparse
+from flask_restx import Namespace, Resource, reqparse, inputs
 from pytz import timezone, common_timezones, country_timezones
 
 #
@@ -11,7 +11,7 @@ timezonesNamespace = Namespace('timezones', description='Namespace to manipulate
 #
 parser_timezones_infos = reqparse.RequestParser()
 parser_timezones_infos.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
-parser_timezones_infos.add_argument('all_cdn', type=bool, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
+parser_timezones_infos.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
 @timezonesNamespace.route('')
@@ -46,6 +46,7 @@ parser_timezones_by_country = reqparse.RequestParser()
 
 #
 parser_timezones_by_country.add_argument('country', type=str, required=True, choices=getAllCountries(), help='Select here the country...')
+parser_timezones_by_country.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
 @timezonesNamespace.route('/byCountry')
@@ -66,7 +67,7 @@ class TimezonesByCountries(Resource):
         all_timezones_by_country = getAllTimezonesByCountry(args["country"])
 
         #
-        country = getCountry(all_timezones_by_country[0], False)
+        country = getCountry(all_timezones_by_country[0], args["all_cdn"])
 
         #
         return {
