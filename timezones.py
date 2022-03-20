@@ -11,6 +11,7 @@ timezonesNamespace = Namespace('timezones', description='Namespace to manipulate
 #
 parser_timezones_infos = reqparse.RequestParser()
 parser_timezones_infos.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
+parser_timezones_infos.add_argument('all_cdn', type=bool, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
 @timezonesNamespace.route('')
@@ -31,7 +32,7 @@ class TimezonesInfos(Resource):
         now_utc = datetime.now(timezone('UTC'))
 
         #
-        country = getCountry(args["timezone"], False)
+        country = getCountry(args["timezone"], bool(args["all_cdn"]))
 
         #
         return {
