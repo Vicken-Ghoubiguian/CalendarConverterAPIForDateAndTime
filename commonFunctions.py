@@ -30,7 +30,7 @@ def getAllTimezonesByCountry(wished_country):
     """
 
     #
-    return country_timezones('Ru')
+    return country_timezones(countries.get(name=wished_country).alpha_2)
 
 #
 def getAllCountries():
