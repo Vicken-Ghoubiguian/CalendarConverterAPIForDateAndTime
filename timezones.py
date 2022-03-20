@@ -28,13 +28,10 @@ class TimezonesInfos(Resource):
         args = parser_timezones_infos.parse_args()
 
         #
-        country = getCountry(args["timezone"])
-
-        #
         now_utc = datetime.now(timezone('UTC'))
 
         #
-        country = getCountry(args["timezone"])
+        country = getCountry(args["timezone"], False)
 
         #
         return {
@@ -68,7 +65,7 @@ class TimezonesByCountries(Resource):
         all_timezones_by_country = getAllTimezonesByCountry()
 
         #
-        country = getCountry(all_timezones_by_country[0])
+        country = getCountry(all_timezones_by_country[0], False)
 
         #
         return {

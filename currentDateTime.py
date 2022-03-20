@@ -61,7 +61,7 @@ class CurrentDateTimeByTimezone(Resource):
         date_time_template = args["datetime_format"]
 
         #
-        country = getCountry(args["timezone"])
+        country = getCountry(args["timezone"], False)
 
         #
         return {
