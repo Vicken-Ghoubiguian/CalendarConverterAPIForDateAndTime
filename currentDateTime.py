@@ -100,7 +100,7 @@ parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime_f
                                                                                                            %% (a literal \'%\' character) \
                                                                                                            ...')
 
-parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now(timezone('UTC')).strftime("%d-%m-%Y %H:%M:%S"), required=True, help='Wished date and time according to the UTC time zone')
+parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=str, default=datetime.now(timezone('UTC')).strftime("%d-%m-%Y %H:%M:%S"), required=True, help='Wished date and time according to the UTC time zone')
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
@@ -120,7 +120,12 @@ class CurrentDateTimeConversion(Resource):
         args = parser_current_date_and_time_by_timezone_for_conversion.parse_args()
 
         #
-        return {"TODO": "TODO"}, 200
+        country = getCountry(args["timezone"], args["all_cdn"])
+
+        #
+        return {
+                    "country": country
+               }, 200
 
 #
 parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
