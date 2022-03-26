@@ -36,8 +36,10 @@ class TimezonesInfos(Resource):
 
         #
         return {
-                    "timezone": args["timezone"],
-                    "UTC offset": now_utc.astimezone(timezone(args["timezone"])).strftime("%z"),
+                    "timezone": {
+                        "name": args["timezone"],
+                        "UTC offset": now_utc.astimezone(timezone(args["timezone"])).strftime("%z")
+                    },
                     "country": country,
                 }, 200
 
