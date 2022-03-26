@@ -35,7 +35,7 @@ parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=st
                                                                                                            %X (locale’s appropriate time representation), \
                                                                                                            %% (a literal \'%\' character) \
                                                                                                            ...')
-                                                                                                           
+
 parser_current_date_and_time_by_timezone.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
@@ -99,6 +99,8 @@ parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime_f
                                                                                                            %X (locale’s appropriate time representation), \
                                                                                                            %% (a literal \'%\' character) \
                                                                                                            ...')
+
+#parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime, required=False, default=datetime.now(), help='')
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
