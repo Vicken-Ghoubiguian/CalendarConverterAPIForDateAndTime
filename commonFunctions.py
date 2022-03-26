@@ -9,6 +9,7 @@ import pycountry
 def getAllTimezones():
 
     """
+    Return all available timezones in an array...
     """
 
     #
@@ -27,6 +28,7 @@ def getAllTimezones():
 def getAllTimezonesByCountry(wished_country):
 
     """
+    Return all available timezones in an array for a specified country...
     """
 
     #
@@ -36,6 +38,7 @@ def getAllTimezonesByCountry(wished_country):
 def getAllCountries():
 
     """
+    Return all exxisting countries in an array...
     """
 
     #
@@ -57,6 +60,7 @@ def getAllCountries():
 def getCountry(timezone, country_flag_cdn = False):
 
     """
+    Return the countries with all datas...
     """
 
     #
