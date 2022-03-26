@@ -68,6 +68,7 @@ class CurrentDateTimeByTimezone(Resource):
         return {
                     "date_and_time": now_from_timezone.strftime(date_time_template) if date_time_template is not None else now_from_timezone.timestamp(), 
                     "timezone": args["timezone"],
+                    "UTC offset": now_from_timezone.astimezone(timezone(args["timezone"])).strftime("%z"),
                     "country": country,
                     "format": date_time_template if date_time_template is not None else "UTC timestamp"
                 }, 200
