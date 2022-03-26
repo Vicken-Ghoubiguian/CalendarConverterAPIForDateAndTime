@@ -100,7 +100,7 @@ parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime_f
                                                                                                            %% (a literal \'%\' character) \
                                                                                                            ...')
 
-#parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime, required=False, default=datetime.now(), help='')
+parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, required=False, help='')
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
