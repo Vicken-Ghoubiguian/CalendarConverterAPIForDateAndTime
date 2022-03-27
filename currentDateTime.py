@@ -124,6 +124,9 @@ class CurrentDateTimeConversion(Resource):
 
         #
         return {
+                    "timezone": {
+                        "name": args["timezone"]
+                    },
                     "country": country
                }, 200
 
