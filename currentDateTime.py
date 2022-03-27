@@ -120,12 +120,20 @@ class CurrentDateTimeConversion(Resource):
         args = parser_current_date_and_time_by_timezone_for_conversion.parse_args()
 
         #
+        now_utc = datetime.now(timezone('UTC'))
+
+        #
+        now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
+
+        #
         country = getCountry(args["timezone"], args["all_cdn"])
 
         #
         return {
+                    "date_and_time": "TODO",
                     "timezone": {
-                        "name": args["timezone"]
+                        "name": args["timezone"],
+                        "UTC offset": now_from_timezone.astimezone(timezone(args["timezone"])).strftime("%z")
                     },
                     "country": country
                }, 200
