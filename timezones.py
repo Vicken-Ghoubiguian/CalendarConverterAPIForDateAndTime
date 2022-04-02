@@ -73,7 +73,7 @@ class TimezonesByCountries(Resource):
         if args["all_infos"]:
 
             #
-            return {"TODO": "TODO"}, 200
+            country = getCountry(list(all_timezones_by_country.keys())[0], args["all_cdn"])
 
         #
         else:
@@ -81,8 +81,8 @@ class TimezonesByCountries(Resource):
             #
             country = getCountry(all_timezones_by_country[0], args["all_cdn"])
 
-            #
-            return {
-                    "country": country,
-                    "timezones": all_timezones_by_country
-                }, 200
+        #
+        return {
+                "country": country,
+                "timezones": all_timezones_by_country
+        }, 200
