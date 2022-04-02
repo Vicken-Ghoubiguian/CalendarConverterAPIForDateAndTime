@@ -4,3 +4,6 @@ from pytz import timezone, common_timezones, country_timezones
 
 #
 from commonFunctions import *
+
+#
+calendarConverterNamespace = Namespace('calendarConverter', description='')
