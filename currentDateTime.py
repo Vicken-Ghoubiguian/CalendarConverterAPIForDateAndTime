@@ -99,6 +99,9 @@ class CurrentDateTimeConversion(Resource):
         args = parser_current_date_and_time_by_timezone_for_conversion.parse_args()
 
         #
+
+
+        #
         now_from_timezone = args["datetime"].astimezone(timezone(args["timezone"]))
 
         #
@@ -116,6 +119,7 @@ class CurrentDateTimeConversion(Resource):
 
 #
 parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
+parser_current_date_and_time_by_timezone_in_particular_calendar.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"), required=True, help='Wished date and time in the iso8601 format according to the UTC time zone')
 
 #
 @currentDateTimeNamespace.route('/particularCalendar')
