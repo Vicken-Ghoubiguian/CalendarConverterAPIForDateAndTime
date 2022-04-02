@@ -130,7 +130,7 @@ class CurrentDateTimeConversion(Resource):
 
         #
         return {
-                    "date_and_time": "TODO",
+                    "date_and_time": str(args["datetime"]),
                     "timezone": {
                         "name": args["timezone"],
                         "UTC offset": now_from_timezone.astimezone(timezone(args["timezone"])).strftime("%z")
