@@ -1,7 +1,7 @@
 #
 from datetime import datetime
 from itertools import count
-from pytz import common_timezones, country_timezones
+from pytz import common_timezones, country_timezones, timezone
 from pycountry import countries
 import pycountry
 
@@ -32,13 +32,36 @@ def getAllTimezonesByCountry(wished_country, all_infos):
     """
 
     #
-    return country_timezones(countries.get(name=wished_country).alpha_2)
+    timezones_array = country_timezones(countries.get(name=wished_country).alpha_2)
+
+    #
+    if all_infos:
+
+        timezones_dict = {}
+
+        for tz in timezones_array:
+            current_tz = {}
+
+            #
+            now_utc = datetime.now(timezone('UTC'))
+            now_from_timezone = now_utc.astimezone(timezone(tz))
+
+            current_tz["UTC offset"] = now_from_timezone.astimezone(timezone(tz)).strftime("%z")
+            #current_tz["date_and_time"] = now_from_timezone.strftime(date_time_template)
+
+            timezones_dict[tz] = current_tz
+
+        #
+        return timezones_dict
+    #
+    else:
+        return timezones_array
 
 #
 def getAllCountries():
 
     """
-    Return all exxisting countries in an array...
+    Return all existing countries in an array...
     """
 
     #

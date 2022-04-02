@@ -70,10 +70,19 @@ class TimezonesByCountries(Resource):
         all_timezones_by_country = getAllTimezonesByCountry(args["country"], args["all_infos"])
 
         #
-        country = getCountry(all_timezones_by_country[0], args["all_cdn"])
+        if args["all_infos"]:
+
+            #
+            return {"TODO": "TODO"}, 200
 
         #
-        return {
+        else:
+
+            #
+            country = getCountry(all_timezones_by_country[0], args["all_cdn"])
+
+            #
+            return {
                     "country": country,
                     "timezones": all_timezones_by_country
                 }, 200
