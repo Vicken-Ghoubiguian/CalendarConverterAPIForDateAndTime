@@ -49,7 +49,7 @@ parser_timezones_by_country = reqparse.RequestParser()
 #
 parser_timezones_by_country.add_argument('country', type=str, required=True, choices=getAllCountries(), help='Select here the country...')
 parser_timezones_by_country.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
-parser_timezones_by_country.add_argument('all_infos', type=inputs.boolean, required=False, default=False, help='Do you want all informations about timezones\'s ?')
+parser_timezones_by_country.add_argument('all_infos', type=inputs.boolean, required=False, default=False, help='Do you want all informations about timezones ?')
 
 #
 @timezonesNamespace.route('/byCountry')
