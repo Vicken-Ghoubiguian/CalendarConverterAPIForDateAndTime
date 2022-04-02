@@ -81,7 +81,6 @@ class CurrentDateTimeByTimezone(Resource):
 parser_current_date_and_time_by_timezone_for_conversion = parser_current_date_and_time_name_space.copy()
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
-
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, default="", required=True, help='Wished date and time according to the UTC time zone')
 
 #
