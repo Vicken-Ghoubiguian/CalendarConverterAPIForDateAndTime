@@ -47,7 +47,7 @@ def getAllTimezonesByCountry(wished_country, all_infos):
             now_from_timezone = now_utc.astimezone(timezone(tz))
 
             current_tz["UTC offset"] = now_from_timezone.astimezone(timezone(tz)).strftime("%z")
-            #current_tz["date_and_time"] = now_from_timezone.strftime(date_time_template)
+            current_tz["date_and_time"] = now_from_timezone.strftime("%Y-%m-%d %H:%M:%S")
 
             timezones_dict[tz] = current_tz
 
