@@ -81,7 +81,7 @@ class CurrentDateTimeByTimezone(Resource):
 parser_current_date_and_time_by_timezone_for_conversion = parser_current_date_and_time_name_space.copy()
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
-parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, default="", required=True, help='Wished date and time according to the UTC time zone')
+parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"), required=True, help='Wished date and time in the iso8601 format according to the UTC time zone')
 
 #
 @currentDateTimeNamespace.route('/conversion')
@@ -99,17 +99,14 @@ class CurrentDateTimeConversion(Resource):
         args = parser_current_date_and_time_by_timezone_for_conversion.parse_args()
 
         #
-        now_utc = datetime.now(timezone('UTC'))
-
-        #
-        now_from_timezone = now_utc.astimezone(timezone(args["timezone"]))
+        now_from_timezone = args["datetime"].astimezone(timezone(args["timezone"]))
 
         #
         country = getCountry(args["timezone"], args["all_cdn"])
 
         #
         return {
-                    "date_and_time": str(args["datetime"]),
+                    "date_and_time": str(now_from_timezone),
                     "timezone": {
                         "name": args["timezone"],
                         "UTC offset": now_from_timezone.astimezone(timezone(args["timezone"])).strftime("%z")
