@@ -25,7 +25,7 @@ def getAllTimezones():
     return all_timezones
 
 #
-def getAllTimezonesByCountry(wished_country):
+def getAllTimezonesByCountry(wished_country, all_infos):
 
     """
     Return all available timezones in an array for a specified country...
