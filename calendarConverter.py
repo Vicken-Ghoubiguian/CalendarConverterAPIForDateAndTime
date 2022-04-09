@@ -7,3 +7,13 @@ from commonFunctions import *
 
 #
 calendarConverterNamespace = Namespace('calendarConverter', description='Namespace to date and time in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...)...')
+
+#
+@calendarConverterNamespace.route('/list')
+class CalendarList(Resource):
+
+    #
+    def get(self):
+
+        #
+        return {"TODO": "TODO"}, 200
