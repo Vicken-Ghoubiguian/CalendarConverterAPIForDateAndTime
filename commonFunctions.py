@@ -3,7 +3,20 @@ from datetime import datetime
 from itertools import count
 from pytz import common_timezones, country_timezones, timezone
 from pycountry import countries
+
 import pycountry
+import convertdate, os.path, pkgutil
+
+#
+def getAllCalendars():
+
+    """
+    Return all available calendars in an array...
+    """
+    
+    pkgpath = os.path.dirname(convertdate.__file__)
+
+    return [calendar for _, calendar, _ in pkgutil.iter_modules([pkgpath])]
 
 #
 def getAllTimezones():
