@@ -14,5 +14,9 @@ class CalendarList(Resource):
     #
     def get(self):
 
+        """
+        Get all available calendars to convert dates and times...
+        """
+
         #
         return {"available_calendars": getAllCalendars()}, 200
