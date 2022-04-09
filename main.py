@@ -17,6 +17,7 @@ api = Api(
 #
 api.add_namespace(nsdt)
 api.add_namespace(nstz)
+api.add_namespace(cc)
 
 #
 api.init_app(app)
