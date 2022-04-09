@@ -9,9 +9,9 @@ from calendarConverter import calendarConverterNamespace as cc
 app = Flask(__name__)
 
 api = Api(
-    title='CalendarConverterAPIForDateAndTime',
+    title='MathematicalDateTimeAPI',
     version='1.0',
-    description='A converter API for date and time in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...)...'
+    description='...'
 )
 
 #
