@@ -16,7 +16,19 @@ def getAllCalendars():
     
     pkgpath = os.path.dirname(convertdate.__file__)
 
-    return [calendar for _, calendar, _ in pkgutil.iter_modules([pkgpath])]
+    allCalendars = [calendar for _, calendar, _ in pkgutil.iter_modules([pkgpath])]
+
+    _allCalendars = []
+
+    for calendar in allCalendars:
+
+        if calendar not in {"data", "holidays", "utils"}:
+
+            _allCalendars.append(calendar)
+
+    allCalendars = _allCalendars
+
+    return allCalendars
 
 #
 def getAllTimezones():

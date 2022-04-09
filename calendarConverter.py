@@ -16,4 +16,4 @@ class CalendarList(Resource):
     def get(self):
 
         #
-        return {"TODO": "TODO"}, 200
+        return {"available_calendars": getAllCalendars()}, 200
