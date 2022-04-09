@@ -3,7 +3,7 @@ from flask import Flask, url_for
 from flask_restx import Api
 from currentDateTime import currentDateTimeNamespace as nsdt
 from timezones import timezonesNamespace as nstz
-from calendar import CalendarNamespace as cc
+#from calendar import CalendarNamespace as cc
 
 #
 app = Flask(__name__)
@@ -17,7 +17,7 @@ api = Api(
 #
 api.add_namespace(nsdt)
 api.add_namespace(nstz)
-api.add_namespace(cc)
+#api.add_namespace(cc)
 
 #
 api.init_app(app)
