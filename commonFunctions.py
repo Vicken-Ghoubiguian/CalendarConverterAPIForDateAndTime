@@ -8,7 +8,7 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getAllCalendars():
+def getAllCalendars(all_infos=False):
 
     """
     Return all available calendars in an array...
