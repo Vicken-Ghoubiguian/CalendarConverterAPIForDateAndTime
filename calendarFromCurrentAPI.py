@@ -5,10 +5,10 @@ from pytz import timezone, common_timezones, country_timezones
 #
 from commonFunctions import *
 
-truc = Namespace('calendar', description='Namespace to date and time in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...)...')
+CalendarNamespace = Namespace('calendar', description='Namespace to date and time in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...)...')
 
 #
-@truc.route('/list')
+@CalendarNamespace.route('/list')
 class CalendarList(Resource):
 
     #
