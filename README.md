@@ -7,6 +7,10 @@ Datetime conversion and manipulation Rest API with this features:
 
 ## Introduction
 
+## Presentation
+
+## Deploiment
+
 ## Useful links
 
 * [Welcome to Flask-RESTX’s documentation! - Official documentation](https://flask-restx.readthedocs.io/en/latest/),
