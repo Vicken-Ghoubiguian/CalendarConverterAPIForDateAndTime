@@ -2,8 +2,6 @@
 
 Datetime conversion and manipulation Rest API with this features:
 
-test
-
 * timezones,
 * datetime conversion in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...),
 
