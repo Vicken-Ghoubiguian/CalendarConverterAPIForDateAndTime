@@ -1,4 +1,4 @@
-# DateTimeAPI tet
+# DateTimeAPI
 
 Datetime conversion and manipulation Rest API with this features:
 
