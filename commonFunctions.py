@@ -80,7 +80,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
         return "TODO"
 
     #
-    return "TODO"
+    return "Calendar system not available"
 
 #
 def getAllCalendars(all_infos=False):
