@@ -21,7 +21,12 @@ class CalendarList(Resource):
         #
         return {"available_calendars": getAllCalendars()}, 200
 
+#
+parser_particular_calendar_current_datetime = reqparse.RequestParser()
+parser_particular_calendar_current_datetime.add_argument('calendar', type=str, required=True, choices=getAllCalendars(), help='Select here the calendar system you want for conversion...')
+
 @CalendarNamespace.route('/currentDatetime')
+@CalendarNamespace.expect(parser_particular_calendar_current_datetime)
 class CalendarConversionParticularCalendarCurrentDatetime(Resource):
 
     #
@@ -30,6 +35,9 @@ class CalendarConversionParticularCalendarCurrentDatetime(Resource):
         """
         Get the current datetime in the wished calendar system...
         """
+
+        #
+        args = parser_particular_calendar_current_datetime.parse_args()
 
         #
         return {"TODO": "TODO"}, 200
