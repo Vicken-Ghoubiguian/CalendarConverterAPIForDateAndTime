@@ -13,71 +13,71 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     if wishedCalendarSystem == "armenian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "bahai":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "daycount":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "dublin":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "french_republican":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "gregorian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "hebrew":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "indian_civil":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "islamic":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "iso":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "julian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "julianday":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "mayan":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "ordinal":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "persian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     #
     elif wishedCalendarSystem == "positivist":
-        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
 
     return {"calendar": wishedCalendarSystem, "date_and_time": "calendar system not available"}, 503
 
