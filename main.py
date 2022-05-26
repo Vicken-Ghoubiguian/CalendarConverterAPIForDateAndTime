@@ -9,7 +9,7 @@ from calendarFromCurrentAPI import CalendarNamespace as cc
 app = Flask(__name__)
 
 api = Api(
-    title='MathematicalDateTimeAPI',
+    title='DateTimeAPI',
     version='1.0',
     description='...'
 )
