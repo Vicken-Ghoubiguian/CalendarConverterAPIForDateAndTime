@@ -3,6 +3,7 @@ from datetime import datetime
 from itertools import count
 from pytz import common_timezones, country_timezones, timezone
 from pycountry import countries
+from flask_restx import reqparse
 
 import pycountry
 import convertdate, os.path, pkgutil
@@ -201,3 +202,27 @@ def getCountry(timezone, country_flag_cdn = False):
                         "country_flag_unicode": countryFlag
                     }
                 }
+
+#
+parser_current_date_and_time_by_timezone_template = reqparse.RequestParser()
+parser_current_date_and_time_by_timezone_template.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
+parser_current_date_and_time_by_timezone_template.add_argument('datetime_format', type=str, required=False, help='Available format code: \
+                                                                                                           %a (abreviated weekday name), \
+                                                                                                           %A (full weekday name), \
+                                                                                                           %w (weekday as a decimal number), \
+                                                                                                           %d (day of the month as a zero-padded decimal), \
+                                                                                                           %-d (day of the month as a decimal number), \
+                                                                                                           %b (abbreviated month name), %B (full month name), \
+                                                                                                           %B (Full month name), \
+                                                                                                           %m (Month as a zero-padded decimal number), \
+                                                                                                           %-m (Month as a decimal number), \
+                                                                                                           %y (Year without century as a zero-padded decimal number), \
+                                                                                                           %-y (Year without century as a decimal number), \
+                                                                                                           %Y (Year with century as a decimal number), \
+                                                                                                           %z (UTC offset in the form +HHMM or -HHMM), \
+                                                                                                           %Z (Time zone name), \
+                                                                                                           %c (Locale’s appropriate date and time representation), \
+                                                                                                           %x (locale’s appropriate date representation), \
+                                                                                                           %X (locale’s appropriate time representation), \
+                                                                                                           %% (a literal \'%\' character) \
+                                                                                                           ...')

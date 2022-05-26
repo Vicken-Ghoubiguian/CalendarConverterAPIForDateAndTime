@@ -1,5 +1,5 @@
 #
-from flask_restx import Namespace, Resource, reqparse, inputs
+from flask_restx import Namespace, Resource, inputs
 from datetime import datetime
 from pytz import timezone
 
@@ -10,32 +10,7 @@ from commonFunctions import *
 currentDateTimeNamespace = Namespace('currentDateTime', description='Namespace to manipulate and get some informations about dates and times...')
 
 #
-parser_current_date_and_time_name_space = reqparse.RequestParser()
-parser_current_date_and_time_name_space.add_argument('timezone', type=str, required=True, choices=getAllTimezones(), help='Select here the IANA (Internet Assigned Numbers Authority) timezone...')
-
-#
-parser_current_date_and_time_by_timezone = parser_current_date_and_time_name_space.copy()
-parser_current_date_and_time_by_timezone.add_argument('datetime_format', type=str, required=False, help='Available format code: \
-                                                                                                           %a (abreviated weekday name), \
-                                                                                                           %A (full weekday name), \
-                                                                                                           %w (weekday as a decimal number), \
-                                                                                                           %d (day of the month as a zero-padded decimal), \
-                                                                                                           %-d (day of the month as a decimal number), \
-                                                                                                           %b (abbreviated month name), %B (full month name), \
-                                                                                                           %B (Full month name), \
-                                                                                                           %m (Month as a zero-padded decimal number), \
-                                                                                                           %-m (Month as a decimal number), \
-                                                                                                           %y (Year without century as a zero-padded decimal number), \
-                                                                                                           %-y (Year without century as a decimal number), \
-                                                                                                           %Y (Year with century as a decimal number), \
-                                                                                                           %z (UTC offset in the form +HHMM or -HHMM), \
-                                                                                                           %Z (Time zone name), \
-                                                                                                           %c (Locale’s appropriate date and time representation), \
-                                                                                                           %x (locale’s appropriate date representation), \
-                                                                                                           %X (locale’s appropriate time representation), \
-                                                                                                           %% (a literal \'%\' character) \
-                                                                                                           ...')
-
+parser_current_date_and_time_by_timezone = parser_current_date_and_time_by_timezone_template.copy()
 parser_current_date_and_time_by_timezone.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 
 #
@@ -78,7 +53,7 @@ class CurrentDateTimeByTimezone(Resource):
 
 
 #
-parser_current_date_and_time_by_timezone_for_conversion = parser_current_date_and_time_name_space.copy()
+parser_current_date_and_time_by_timezone_for_conversion = parser_current_date_and_time_by_timezone_template.copy()
 
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('all_cdn', type=inputs.boolean, required=False, default=False, help='Do you want to include all country flags cdn\'s ?')
 parser_current_date_and_time_by_timezone_for_conversion.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"), required=True, help='Wished date and time in the iso8601 format according to the UTC time zone')
@@ -118,7 +93,7 @@ class CurrentDateTimeConversion(Resource):
                }, 200
 
 #
-parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_name_space.copy()
+parser_current_date_and_time_by_timezone_in_particular_calendar = parser_current_date_and_time_by_timezone_template.copy()
 parser_current_date_and_time_by_timezone_in_particular_calendar.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"), required=True, help='Wished date and time in the iso8601 format according to the UTC time zone')
 
 #
