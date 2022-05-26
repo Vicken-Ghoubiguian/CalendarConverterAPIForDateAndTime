@@ -10,6 +10,7 @@ Datetime conversion and manipulation Rest API with this features:
 * [Introduction](#introduction),
 * [Presentation](#presentation),
 * [Project's structure](#project_s_structure),
+* [Project's development](#project_s_development),
 * [Deployment](#deployment),
 * [Conclusion](#conclusion)
 
@@ -21,6 +22,9 @@ Datetime conversion and manipulation Rest API with this features:
 
 <a name="project_s_structure"></a>
 ## Project's structure
+
+<a name="project_s_development"></a>
+## Project's development
 
 <a name="deployment"></a>
 ## Deployment
