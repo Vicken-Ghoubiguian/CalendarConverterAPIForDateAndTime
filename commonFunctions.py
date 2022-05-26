@@ -12,6 +12,50 @@ import convertdate, os.path, pkgutil
 def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datetime.now()):
 
     #
+    if wishedCalendarSystem == "armenian":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "bahai":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "coptic":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "daycount":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "dublin":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "french_republican":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "gregorian":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "hebrew":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "indian_civil":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "islamic":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "iso":
+        return "TODO"
+
+    #
     return "TODO"
 
 #
