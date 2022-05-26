@@ -20,3 +20,16 @@ class CalendarList(Resource):
 
         #
         return {"available_calendars": getAllCalendars()}, 200
+
+@CalendarNamespace.route('/conversion/particularCalendar')
+class CalendarConversionParticularCalendar(Resource):
+
+    #
+    def get(self):
+
+        """
+        Get 
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
