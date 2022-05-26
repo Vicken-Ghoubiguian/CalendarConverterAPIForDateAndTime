@@ -1,5 +1,5 @@
 #
-from datetime import datetime, date
+from datetime import datetime
 from itertools import count
 from pytz import common_timezones, country_timezones, timezone
 from pycountry import countries
@@ -9,7 +9,7 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = date.today()):
+def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datetime.now()):
 
     #
     return "TODO"
