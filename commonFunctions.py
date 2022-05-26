@@ -56,6 +56,30 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
         return "TODO"
 
     #
+    elif wishedCalendarSystem == "julian":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "julianday":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "mayan":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "ordinal":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "persian":
+        return "TODO"
+
+    #
+    elif wishedCalendarSystem == "positivist":
+        return "TODO"
+
+    #
     return "TODO"
 
 #
