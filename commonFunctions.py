@@ -13,74 +13,73 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     if wishedCalendarSystem == "armenian":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "bahai":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "daycount":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "dublin":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "french_republican":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "gregorian":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "hebrew":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "indian_civil":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "islamic":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "iso":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "julian":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "julianday":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "mayan":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "ordinal":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "persian":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
     #
     elif wishedCalendarSystem == "positivist":
-        return "TODO"
+        return {"calendar": wishedCalendarSystem, "date_and_time": wishedDateTime}, 200
 
-    #
-    return "Calendar system not available"
+    return {"calendar": wishedCalendarSystem, "date_and_time": "calendar system not available"}, 503
 
 #
 def getAllCalendars(all_infos=False):
