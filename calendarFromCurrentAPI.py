@@ -21,7 +21,7 @@ class CalendarList(Resource):
         #
         return {"available_calendars": getAllCalendars()}, 200
 
-@CalendarNamespace.route('/conversion/particularCalendar/currentDatetime')
+@CalendarNamespace.route('/currentDatetime')
 class CalendarConversionParticularCalendar(Resource):
 
     #
@@ -29,6 +29,19 @@ class CalendarConversionParticularCalendar(Resource):
 
         """
         Get the current datetime in the wished calendar system...
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
+
+@CalendarNamespace.route('/wishedDatetime')
+class CalendarConversionParticularCalendar(Resource):
+
+    #
+    def get(self):
+
+        """
+        Get the wished datetime in the wished calendar system...
         """
 
         #
