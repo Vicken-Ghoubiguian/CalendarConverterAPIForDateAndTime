@@ -21,7 +21,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "coptic":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.coptic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "daycount":
@@ -41,7 +41,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "hebrew":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.hebrew.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "indian_civil":
@@ -49,7 +49,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "islamic":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.islamic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "iso":
