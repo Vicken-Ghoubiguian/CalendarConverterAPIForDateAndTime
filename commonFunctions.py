@@ -45,7 +45,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "indian_civil":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.indian_civil.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "islamic":
