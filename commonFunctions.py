@@ -73,11 +73,11 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "persian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.persian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "positivist":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.positivist.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     return {"calendar": wishedCalendarSystem, "date_and_time": "calendar system not available"}, 503
 
