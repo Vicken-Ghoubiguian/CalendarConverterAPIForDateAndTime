@@ -42,9 +42,6 @@ class CalendarConversionParticularCalendarCurrentDatetime(Resource):
         #
         return getDateTimeInParticularCalendar(args["calendar"])
 
-        #
-        #return {"calendar": args["calendar"], "date_and_time": getDateTimeInParticularCalendar(args["calendar"])}, 200
-
 @CalendarNamespace.route('/wishedDatetime')
 class CalendarConversionParticularCalendarWishedDatetime(Resource):
 
