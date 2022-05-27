@@ -13,11 +13,11 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     if wishedCalendarSystem == "armenian":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.armenian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "bahai":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
