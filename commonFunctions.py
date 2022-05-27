@@ -25,11 +25,11 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "daycount":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.daycount.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "dublin":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(wishedDateTime)}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.dublin.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "french_republican":
