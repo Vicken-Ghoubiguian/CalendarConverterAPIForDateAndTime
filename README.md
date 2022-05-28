@@ -14,6 +14,7 @@ Datetime conversion and manipulation Rest API with this features:
 * [Deployment](#deployment),
     * [Source code](#source_code),
     * [Docker](#docker)
+* [Useful links](#useful_links),
 * [Conclusion](#conclusion)
 
 <a name="introduction"></a>
