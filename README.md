@@ -12,6 +12,8 @@ Datetime conversion and manipulation Rest API with this features:
 * [Project's structure](#project_s_structure),
 * [Project's development](#project_s_development),
 * [Deployment](#deployment),
+    * [Source code](#source_code),
+    * [Docker](#docker)
 * [Conclusion](#conclusion)
 
 <a name="introduction"></a>
