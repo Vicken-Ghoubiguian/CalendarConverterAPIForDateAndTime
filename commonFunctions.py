@@ -21,11 +21,14 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "coptic":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.coptic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+
+        dateInCopticCalendar = convertdate.coptic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.coptic.format(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "daycount":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.daycount.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.daycount.from_gregorian(dateInCopticCalendar[0], dateInCopticCalendar[1], dateInCopticCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "dublin":
