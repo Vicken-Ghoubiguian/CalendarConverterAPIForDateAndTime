@@ -75,9 +75,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
     #
     elif wishedCalendarSystem == "mayan":
 
-        dateInPersianCalendar = convertdate.mayan.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
-
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.mayan.format(dateInPersianCalendar[0], dateInPersianCalendar[1], dateInPersianCalendar[2]))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.mayan.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "ordinal":
