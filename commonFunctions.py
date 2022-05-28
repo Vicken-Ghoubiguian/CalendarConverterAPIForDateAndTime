@@ -59,9 +59,9 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
     #
     elif wishedCalendarSystem == "islamic":
 
-        
+        dateInIslamicCalendar = convertdate.islamic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.islamic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.islamic.format(dateInIslamicCalendar[0], dateInIslamicCalendar[1], dateInIslamicCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "iso":
