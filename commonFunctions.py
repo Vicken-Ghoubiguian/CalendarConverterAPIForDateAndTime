@@ -62,7 +62,10 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "iso":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.iso.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+
+        dateInISOCalendar = convertdate.iso.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.iso.format(dateInISOCalendar[0], dateInISOCalendar[1], dateInISOCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "julian":
