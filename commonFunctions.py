@@ -33,7 +33,10 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "french_republican":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.french_republican.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+
+        dateFrenchRepublicanCalendar = convertdate.french_republican.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.french_republican.format(dateFrenchRepublicanCalendar[0], dateFrenchRepublicanCalendar[1], dateFrenchRepublicanCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "gregorian":
