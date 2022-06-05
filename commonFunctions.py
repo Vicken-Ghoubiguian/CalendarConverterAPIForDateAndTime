@@ -105,7 +105,9 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInOrdinalCalendar = convertdate.ordinal.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.ordinal.format(dateInOrdinalCalendar[0], dateInOrdinalCalendar[1], dateInOrdinalCalendar[2]))}, 200
+        print("\n\n\n\n" + str(dateInOrdinalCalendar) + "\n\n\n\n")
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": dateInOrdinalCalendar[0] + " - " + dateInOrdinalCalendar[1]}, 200
 
     #
     elif wishedCalendarSystem == "persian":
