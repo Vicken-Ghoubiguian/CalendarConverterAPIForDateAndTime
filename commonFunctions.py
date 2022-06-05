@@ -17,7 +17,12 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "bahai":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+
+        dateInBahaiCalendar = convertdate.bahai.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
+        print("\n\n\n\n\n" + str(dateInBahaiCalendar) + "\n\n\n\n")
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(dateInBahaiCalendar.year, dateInBahaiCalendar.month, dateInBahaiCalendar.day))}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
