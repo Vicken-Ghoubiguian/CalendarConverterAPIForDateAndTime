@@ -107,7 +107,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         print("\n\n\n\n" + str(dateInOrdinalCalendar) + "\n\n\n\n")
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": dateInOrdinalCalendar[0] + " - " + dateInOrdinalCalendar[1]}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(dateInOrdinalCalendar[0]) + " - " + str(dateInOrdinalCalendar[1])}, 200
 
     #
     elif wishedCalendarSystem == "persian":
