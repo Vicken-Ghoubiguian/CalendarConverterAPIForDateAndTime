@@ -22,14 +22,14 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         print("\n\n\n\n\n" + str(dateInBahaiCalendar) + "\n\n\n\n")
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(dateInBahaiCalendar.year, dateInBahaiCalendar.month, dateInBahaiCalendar.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(dateInBahaiCalendar[0], dateInBahaiCalendar[1], dateInBahaiCalendar[0]))}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
 
         dateInCopticCalendar = convertdate.coptic.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.coptic.format(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.coptic.format(dateInCopticCalendar[0], dateInCopticCalendar[1], dateInCopticCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "daycount":
