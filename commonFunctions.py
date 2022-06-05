@@ -105,8 +105,6 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInOrdinalCalendar = convertdate.ordinal.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        print("\n\n\n\n" + str(dateInOrdinalCalendar) + "\n\n\n\n")
-
         return {"calendar": wishedCalendarSystem, "date_and_time": str(dateInOrdinalCalendar[0]) + " - " + str(dateInOrdinalCalendar[1])}, 200
 
     #
