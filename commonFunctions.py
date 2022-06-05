@@ -41,7 +41,10 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "dublin":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.dublin.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+
+        dateDublinCalendar = convertdate.dublin.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.dublin.format(dateDublinCalendar[0], dateDublinCalendar[1], dateDublinCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "french_republican":
