@@ -23,8 +23,6 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInBahaiCalendar = convertdate.bahai.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        print("\n\n\n\n\n" + str(dateInBahaiCalendar) + "\n\n\n\n")
-
         return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.format(dateInBahaiCalendar[0], dateInBahaiCalendar[1], dateInBahaiCalendar[2]))}, 200
 
     #
