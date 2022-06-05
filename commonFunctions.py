@@ -13,6 +13,9 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     if wishedCalendarSystem == "armenian":
+
+        dateInArmenianCalendar = convertdate.armenian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
+
         return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.armenian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
@@ -22,7 +25,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         print("\n\n\n\n\n" + str(dateInBahaiCalendar) + "\n\n\n\n")
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.from_gregorian(dateInBahaiCalendar[0], dateInBahaiCalendar[1], dateInBahaiCalendar[0]))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.bahai.format(dateInBahaiCalendar[0], dateInBahaiCalendar[1], dateInBahaiCalendar[0]))}, 200
 
     #
     elif wishedCalendarSystem == "coptic":
