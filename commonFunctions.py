@@ -16,7 +16,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInArmenianCalendar = convertdate.armenian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.armenian.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.armenian.format(dateInArmenianCalendar[0], dateInArmenianCalendar[1], dateInArmenianCalendar[2]))}, 200
 
     #
     elif wishedCalendarSystem == "bahai":
