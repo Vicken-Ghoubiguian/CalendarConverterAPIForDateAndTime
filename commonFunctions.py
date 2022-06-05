@@ -33,7 +33,10 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
     #
     elif wishedCalendarSystem == "daycount":
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.daycount.from_gregorian(dateInCopticCalendar[0], dateInCopticCalendar[1], dateInCopticCalendar[2]))}, 200
+
+        dayCount = convertdate.daycount.DayCount()
+
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(dayCount.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
 
     #
     elif wishedCalendarSystem == "dublin":
