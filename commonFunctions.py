@@ -97,7 +97,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInJulianDayCalendar = convertdate.julianday.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.julianday.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(dateInJulianDayCalendar)}, 200
 
     #
     elif wishedCalendarSystem == "mayan":
