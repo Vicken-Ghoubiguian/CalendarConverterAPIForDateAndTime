@@ -123,7 +123,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInPositivistCalendar = convertdate.positivist.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
-        return {"calendar": wishedCalendarSystem, "date_and_time": str(convertdate.positivist.format(dateInPositivistCalendar[0], dateInPositivistCalendar[1], dateInPositivistCalendar[2]))}, 200
+        return {"calendar": wishedCalendarSystem, "date_and_time": str(dateInPositivistCalendar[0]) + " " + convertdate.positivist.dayname(dateInPositivistCalendar[0], dateInPositivistCalendar[1], dateInPositivistCalendar[2])}, 200
 
     return {"calendar": wishedCalendarSystem, "date_and_time": "calendar system not available"}, 503
 
