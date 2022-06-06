@@ -42,7 +42,10 @@ class CalendarConversionParticularCalendarCurrentDatetime(Resource):
         #
         return getDateTimeInParticularCalendar(args["calendar"])
 
+parser_particular_calendar_wished_datetime = parser_particular_calendar_current_datetime.copy()
+
 @CalendarNamespace.route('/wishedDatetime')
+@CalendarNamespace.expect(parser_particular_calendar_wished_datetime)
 class CalendarConversionParticularCalendarWishedDatetime(Resource):
 
     #
@@ -53,4 +56,7 @@ class CalendarConversionParticularCalendarWishedDatetime(Resource):
         """
 
         #
-        return {"TODO": "TODO"}, 200
+        args = parser_particular_calendar_wished_datetime.parse_args()
+
+        #
+        return getDateTimeInParticularCalendar(args["calendar"])
