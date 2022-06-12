@@ -112,7 +112,7 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
         return {"calendar": wishedCalendarSystem, "date_and_time": {
             "haab": str(dateInMayanCalendarHaab[0]) + " " + dateInMayanCalendarHaab[1],
             "tzolkin": str(dateInMayanCalendarTzolkin[0]) + " " + dateInMayanCalendarTzolkin[1],
-            "haab_and_tzolkin": ""
+            "haab_and_tzolkin": str(dateInMayanCalendarHaabAndTzolkin)
         }}, 200
 
     #
