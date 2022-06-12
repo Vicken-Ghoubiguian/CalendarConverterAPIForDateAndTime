@@ -107,7 +107,6 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInMayanCalendarHaab = convertdate.mayan.lc_to_haab(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
         dateInMayanCalendarTzolkin = convertdate.mayan.lc_to_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
-        dateInMayanCalendarHaabAndTzolkin = convertdate.mayan.lc_to_haab_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
 
         return {"calendar": wishedCalendarSystem, "date_and_time": {
             "haab": str(dateInMayanCalendarHaab[0]) + " " + dateInMayanCalendarHaab[1],
