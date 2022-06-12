@@ -59,5 +59,7 @@ class CalendarConversionParticularCalendarWishedDatetime(Resource):
         #
         args = parser_particular_calendar_wished_datetime.parse_args()
 
+        print("\n\n\n\n\n" + str(type(args["datetime"])) + "\n\n\n\n\n")
+
         #
         return getDateTimeInParticularCalendar(args["calendar"])
