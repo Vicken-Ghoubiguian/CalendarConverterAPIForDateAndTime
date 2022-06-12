@@ -105,10 +105,14 @@ def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datet
 
         dateInMayanCalendar = convertdate.mayan.from_gregorian(wishedDateTime.year, wishedDateTime.month, wishedDateTime.day)
 
+        dateInMayanCalendarHaab = convertdate.mayan.lc_to_haab(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
+        dateInMayanCalendarTzolkin = convertdate.mayan.lc_to_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
+        dateInMayanCalendarHaabAndTzolkin = convertdate.mayan.lc_to_haab_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
+
         return {"calendar": wishedCalendarSystem, "date_and_time": {
-            "haab": convertdate.mayan.lc_to_haab(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4]),
-            "tzolkin": convertdate.mayan.lc_to_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4]),
-            "haab_and_tzolkin": convertdate.mayan.lc_to_haab_tzolkin(dateInMayanCalendar[0], dateInMayanCalendar[1], dateInMayanCalendar[2], dateInMayanCalendar[3], dateInMayanCalendar[4])
+            "haab": "",
+            "tzolkin": "",
+            "haab_and_tzolkin": ""
         }}, 200
 
     #
