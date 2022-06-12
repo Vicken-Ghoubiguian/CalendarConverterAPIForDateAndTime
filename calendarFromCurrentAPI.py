@@ -43,7 +43,7 @@ class CalendarConversionParticularCalendarCurrentDatetime(Resource):
         return getDateTimeInParticularCalendar(args["calendar"])
 
 parser_particular_calendar_wished_datetime = parser_particular_calendar_current_datetime.copy()
-
+parser_particular_calendar_wished_datetime.add_argument('datetime', type=inputs.datetime_from_iso8601, default=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"), required=True, help='Wished date and time in the iso8601 format according to the UTC time zone')
 
 @CalendarNamespace.route('/wishedDatetime')
 @CalendarNamespace.expect(parser_particular_calendar_wished_datetime)
