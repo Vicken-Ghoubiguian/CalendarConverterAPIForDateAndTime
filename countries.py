@@ -20,7 +20,4 @@ class CountriesList(Resource):
         """
 
         #
-        print("\n\n\n\n\n" + str(pycountry.countries) + "\n\n\n\n\n")
-
-        #
         return getJSONOfCountries(list(pycountry.countries)), 200
