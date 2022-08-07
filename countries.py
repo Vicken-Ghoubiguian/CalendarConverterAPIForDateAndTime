@@ -33,4 +33,4 @@ class HistoricalCountriesList(Resource):
         """
 
         #
-        return {}, 200
+        return getJSONOfHistoricalCountries(list(pycountry.historic_countries)), 200

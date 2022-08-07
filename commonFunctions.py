@@ -9,6 +9,11 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
+def getJSONOfHistoricalCountries(countriesList):
+
+    return {}
+
+#
 def getJSONOfCountries(countriesList):
 
     #
