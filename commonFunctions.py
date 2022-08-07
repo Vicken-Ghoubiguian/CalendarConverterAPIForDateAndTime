@@ -11,7 +11,20 @@ import convertdate, os.path, pkgutil
 #
 def getJSONOfCountries(countriesList):
 
-    return {}
+    #
+    countryDict = {}
+
+    #
+    for country in countriesList:
+
+        countryDict[country.name] = {
+                                        "name": country.name,
+                                        "alpha_2": country.alpha_2,
+                                        "alpha_3": country.alpha_3,
+                                        "numeric": country.numeric
+                                    }
+
+    return countryDict
 
 #
 def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datetime.now()):
