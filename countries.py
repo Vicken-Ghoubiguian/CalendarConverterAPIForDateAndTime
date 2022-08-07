@@ -16,7 +16,7 @@ class CountriesList(Resource):
     def get(self):
 
         """
-        
+        Get the list of all existing countries in the world...
         """
 
         #
