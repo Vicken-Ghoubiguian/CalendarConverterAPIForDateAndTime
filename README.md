@@ -23,6 +23,9 @@ Datetime conversion and manipulation Rest API with this features:
 <a name="presentation"></a>
 ## Presentation
 
+<a name="functionalities"></a>
+## Functionalities
+
 <a name="project_s_structure"></a>
 ## Project's structure
 
