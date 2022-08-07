@@ -42,11 +42,11 @@ Datetime conversion and manipulation Rest API with this features:
 <a name="docker"></a>
 ### Docker
 
-<a name="useful_links"></a>
-## Useful links
-
 <a name="conclusion"></a>
 ## Conclusion
+
+<a name="useful_links"></a>
+## Useful links
 
 * [Welcome to Flask-RESTX’s documentation! - Official documentation](https://flask-restx.readthedocs.io/en/latest/),
      * [API Docs: inputs - Official documentation](https://flask-restful.readthedocs.io/en/latest/api.html#inputs),
