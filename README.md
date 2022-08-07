@@ -9,6 +9,7 @@ Datetime conversion and manipulation Rest API with this features:
 
 * [Introduction](#introduction),
 * [Presentation](#presentation),
+* [Functionalities](#functionalities),
 * [Project's structure](#project_s_structure),
 * [Project's development](#project_s_development),
 * [Deployment](#deployment),
