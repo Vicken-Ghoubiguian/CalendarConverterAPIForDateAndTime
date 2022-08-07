@@ -21,7 +21,8 @@ def getJSONOfCountries(countriesList):
                                         "name": country.name,
                                         "alpha_2": country.alpha_2,
                                         "alpha_3": country.alpha_3,
-                                        "numeric": country.numeric
+                                        "numeric": country.numeric,
+                                        "flag": country.flag
                                     }
 
     return countryDict
