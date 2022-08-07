@@ -9,6 +9,11 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
+def getJSONOfCountries(countriesList):
+
+    return {}
+
+#
 def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datetime.now()):
 
     #
