@@ -22,7 +22,6 @@ def getJSONOfCountries(countriesList):
     #
     for country in countriesList:
 
-        #countryDict[country.name] 
         currentCountry = {
                             "name": country.name,
                             "alpha_2": country.alpha_2,
@@ -30,6 +29,8 @@ def getJSONOfCountries(countriesList):
                             "numeric": country.numeric,
                             "flag": country.flag
                         }
+
+        
         #try:
         #    currentCountry["official_name"] = country.official_name
         #
