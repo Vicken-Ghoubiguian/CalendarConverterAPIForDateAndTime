@@ -2,7 +2,6 @@
 from datetime import datetime
 from itertools import count
 from pytz import common_timezones, country_timezones, timezone
-from pycountry import countries
 from flask_restx import reqparse
 
 import pycountry
@@ -248,7 +247,7 @@ def getAllTimezonesByCountry(wished_country, all_infos):
     """
 
     #
-    timezones_array = country_timezones(countries.get(name=wished_country).alpha_2)
+    timezones_array = country_timezones(pycountry.countries.get(name=wished_country).alpha_2)
 
     #
     if all_infos:
@@ -325,18 +324,18 @@ def getCountry(timezone, country_flag_cdn = False):
     countryCode = keys_from_timezones_list[timezone_index]
 
     #
-    countryName = countries.get(alpha_2=countryCode).name
-    countryFlag = countries.get(alpha_2=countryCode).flag
+    countryName = pycountry.countries.get(alpha_2=countryCode).name
+    countryFlag = pycountry.countries.get(alpha_2=countryCode).flag
 
     #
     try:
-        countryOfficialName = countries.get(alpha_2=countryCode).official_name
+        countryOfficialName = pycountry.countries.get(alpha_2=countryCode).official_name
 
     #
     except AttributeError:
 
         #
-        countryOfficialName = countries.get(alpha_2=countryCode).name
+        countryOfficialName = pycountry.countries.get(alpha_2=countryCode).name
 
     #
     finally:
