@@ -30,7 +30,7 @@ class HistoricalCountriesList(Resource):
     def get(self):
 
         """
-        Get the list of all existing countries in the world...
+        Get the list of all ancient countries in the world...
         """
 
         #
