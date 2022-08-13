@@ -11,6 +11,9 @@ import convertdate, os.path, pkgutil
 #
 def getJSONOfHistoricalCountries(countriesList):
 
+    #
+    histCountryDict = {}
+
     return {}
 
 #
@@ -22,6 +25,7 @@ def getJSONOfCountries(countriesList):
     #
     for country in countriesList:
 
+        #
         currentCountry = {
                             "name": country.name,
                             "alpha_2": country.alpha_2,
