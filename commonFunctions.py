@@ -9,12 +9,26 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getJSONOfHistoricalCountries(countriesList):
+def getJSONOfHistoricalCountries(historicalCountriesList):
 
     #
     histCountryDict = {}
 
-    return {}
+    #
+    for country in historicalCountriesList:
+
+        #
+        currentCountry = {
+                            "name": country.name,
+                            "alpha_2": country.alpha_2,
+                            "alpha_3": country.alpha_3,
+                            "numeric": country.numeric,
+                            "withdrawal_date": country.withdrawal_date
+                        }
+
+        histCountryDict[country.name] = currentCountry
+
+    return histCountryDict
 
 #
 def getJSONOfCountries(countriesList):
