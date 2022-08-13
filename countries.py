@@ -23,7 +23,7 @@ class CountriesList(Resource):
         return getJSONOfCountries(list(pycountry.countries)), 200
 
 #
-@currentCountriesNamespace.route('/list/historical_countries')
+@currentCountriesNamespace.route('/list/historical')
 class HistoricalCountriesList(Resource):
 
     #
