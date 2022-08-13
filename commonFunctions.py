@@ -31,11 +31,14 @@ def getJSONOfCountries(countriesList):
                         }
 
         
-        #try:
-        #    currentCountry["official_name"] = country.official_name
-        #
-        #finally:
-        countryDict[country.name] = currentCountry
+        try:
+            currentCountry["official_name"] = country.official_name
+
+        except AttributeError:
+            currentCountry["official_name"] = None
+
+        finally:
+            countryDict[country.name] = currentCountry
 
     #
     return countryDict
