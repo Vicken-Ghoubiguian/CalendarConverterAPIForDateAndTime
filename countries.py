@@ -48,3 +48,16 @@ class CountriesSOrtAlpha2(Resource):
 
         #
         return {"TODO": "TODO"}, 200
+
+#
+@currentCountriesNamespace.route('/sort/alpha_3')
+class CountriesSOrtAlpha3(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
