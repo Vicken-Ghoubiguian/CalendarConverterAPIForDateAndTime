@@ -35,3 +35,17 @@ class HistoricalCountriesList(Resource):
 
         #
         return getJSONOfHistoricalCountries(list(pycountry.historic_countries)), 200
+
+#
+@currentCountriesNamespace.route('/sort/alpha_2')
+class CountriesSOrtAlpha2(Resource):
+
+    #
+    def get(self):
+
+        """
+        Get the list of all ancient countries in the world...
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
