@@ -37,6 +37,19 @@ class HistoricalCountriesList(Resource):
         return getJSONOfHistoricalCountries(list(pycountry.historic_countries)), 200
 
 #
+@currentCountriesNamespace.route('/sort/name')
+class CountriesSOrtName(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
+
+#
 @currentCountriesNamespace.route('/sort/alpha_2')
 class CountriesSOrtAlpha2(Resource):
 
