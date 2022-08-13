@@ -38,7 +38,7 @@ class HistoricalCountriesList(Resource):
 
 #
 @currentCountriesNamespace.route('/sort/name')
-class CountriesSOrtName(Resource):
+class CountriesSortName(Resource):
 
     #
     def get(self):
@@ -51,7 +51,7 @@ class CountriesSOrtName(Resource):
 
 #
 @currentCountriesNamespace.route('/sort/alpha_2')
-class CountriesSOrtAlpha2(Resource):
+class CountriesSortAlpha2(Resource):
 
     #
     def get(self):
@@ -64,7 +64,7 @@ class CountriesSOrtAlpha2(Resource):
 
 #
 @currentCountriesNamespace.route('/sort/alpha_3')
-class CountriesSOrtAlpha3(Resource):
+class CountriesSortAlpha3(Resource):
 
     #
     def get(self):
