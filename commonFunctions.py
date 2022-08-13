@@ -37,6 +37,7 @@ def getJSONOfCountries(countriesList):
         #finally:
         countryDict[country.name] = currentCountry
 
+    #
     return countryDict
 
 #
