@@ -22,13 +22,19 @@ def getJSONOfCountries(countriesList):
     #
     for country in countriesList:
 
-        countryDict[country.name] = {
-                                        "name": country.name,
-                                        "alpha_2": country.alpha_2,
-                                        "alpha_3": country.alpha_3,
-                                        "numeric": country.numeric,
-                                        "flag": country.flag
-                                    }
+        #countryDict[country.name] 
+        currentCountry = {
+                            "name": country.name,
+                            "alpha_2": country.alpha_2,
+                            "alpha_3": country.alpha_3,
+                            "numeric": country.numeric,
+                            "flag": country.flag
+                        }
+        #try:
+        #    currentCountry["official_name"] = country.official_name
+        #
+        #finally:
+        countryDict[country.name] = currentCountry
 
     return countryDict
 
