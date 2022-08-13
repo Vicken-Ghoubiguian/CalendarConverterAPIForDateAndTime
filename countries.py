@@ -44,7 +44,6 @@ class CountriesSOrtAlpha2(Resource):
     def get(self):
 
         """
-        Get the list of all ancient countries in the world...
         """
 
         #
