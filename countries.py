@@ -74,3 +74,42 @@ class CountriesSortAlpha3(Resource):
 
         #
         return {"TODO": "TODO"}, 200
+
+#
+@currentCountriesNamespace.route('/historical/sort/name')
+class CountriesSortName(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
+
+#
+@currentCountriesNamespace.route('/historical/sort/alpha_2')
+class CountriesSortAlpha2(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
+
+#
+@currentCountriesNamespace.route('/historical/sort/alpha_3')
+class CountriesSortAlpha3(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        return {"TODO": "TODO"}, 200
