@@ -37,6 +37,12 @@ class HistoricalCountriesList(Resource):
         return getJSONOfHistoricalCountries(list(pycountry.historic_countries)), 200
 
 #
+parser_sort_name = reqparse.RequestParser()
+
+#
+parser_sort_name.add_argument('pattern', type=str, required=True, help='Fill in the pattern you want...')
+
+#
 @currentCountriesNamespace.route('/sort/name')
 class CountriesSortName(Resource):
 
@@ -45,6 +51,9 @@ class CountriesSortName(Resource):
 
         """
         """
+
+        #
+        args = parser_sort_name.parse_args()
 
         #
         return {"TODO": "TODO"}, 200
