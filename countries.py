@@ -45,6 +45,7 @@ parser_sort_name.add_argument('order', type=str, required=True, choices=["desc",
 
 #
 @currentCountriesNamespace.route('/sort/name')
+@currentCountriesNamespace.expect(parser_sort_name)
 class CountriesSortName(Resource):
 
     #
