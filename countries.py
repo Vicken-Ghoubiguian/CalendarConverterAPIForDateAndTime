@@ -58,7 +58,7 @@ class CountriesSortName(Resource):
         args = parser_sort_name.parse_args()
 
         #
-        return getJSONofCountriesFromSort(list(pycountry.countries), field = args["pattern"]), 200
+        return getJSONofCountriesFromSort(list(pycountry.countries), field = "name", pattern = args["pattern"]), 200
 
 #
 @currentCountriesNamespace.route('/sort/alpha_2')

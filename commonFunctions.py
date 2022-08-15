@@ -8,13 +8,34 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getJSONofCountriesFromSort(countriesList, field='name'):
+def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
 
     #
-
+    countryDict = {}
 
     #
-    return ""
+    for country in countriesList:
+        if country.name[:len(pattern)] == pattern:
+            #
+            currentCountry = {
+                                "name": country.name,
+                                "alpha_2": country.alpha_2,
+                                "alpha_3": country.alpha_3,
+                                "numeric": country.numeric,
+                                "flag": country.flag
+                            }
+    
+            try:
+                currentCountry["official_name"] = country.official_name
+
+            except AttributeError:
+                currentCountry["official_name"] = None
+
+            finally:
+                countryDict[country.name] = currentCountry
+
+    #
+    return countryDict
 
 #
 def getJSONOfHistoricalCountries(historicalCountriesList):
