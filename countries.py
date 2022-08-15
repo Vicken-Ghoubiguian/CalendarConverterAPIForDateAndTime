@@ -41,7 +41,7 @@ parser_sort_name = reqparse.RequestParser()
 
 #
 parser_sort_name.add_argument('pattern', type=str, required=True, help='Fill in the pattern you want...')
-#parser_sort_name.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
+parser_sort_name.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
 
 #
 @currentCountriesNamespace.route('/sort/name')
