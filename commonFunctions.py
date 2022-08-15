@@ -8,10 +8,10 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getJSONofCountriesFromSort(countriesList, field='name', order='desc'):
+def getJSONofCountriesFromSort(countriesList, field='name'):
 
     #
-    
+
 
     #
     return ""
