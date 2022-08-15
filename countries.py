@@ -52,6 +52,7 @@ class CountriesSortName(Resource):
     def get(self):
 
         """
+        Get the list of all ancient countries selected according a pattern...
         """
 
         #
