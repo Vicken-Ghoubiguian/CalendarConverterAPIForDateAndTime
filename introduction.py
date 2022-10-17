@@ -1,6 +1,6 @@
 #
 from flask_restx import Namespace, Resource, inputs
-from flask import make_response, render_template
+from flask import make_response, render_template, redirect
 
 #
 from commonFunctions import *
@@ -23,7 +23,7 @@ class Presentation(Resource):
 
 #
 @introductionNamespace.route('/history')
-class Presentation(Resource):
+class History(Resource):
 
     #
     def get(self):
