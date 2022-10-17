@@ -57,7 +57,7 @@ Thirdly and lastly, you must launch the `main.py` file using the following comma
 python3 main.py
 ```
 
-
+This command is equivalent to this one below :
 
 ```bash
 python main.py
