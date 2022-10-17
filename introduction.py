@@ -1,5 +1,6 @@
 #
-from flask_restx import Namespace, Resource, inputs, make_response
+from flask_restx import Namespace, Resource, inputs
+from flask import make_response, render_template
 
 #
 from commonFunctions import *
@@ -19,10 +20,6 @@ class Presentation(Resource):
         """
 
         #
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "text/html"}
 
-        return make_response(
-            'Test worked!',
-            200,
-            headers=headers
-        )
+        return make_response('<b>Test</b>',200,headers)
