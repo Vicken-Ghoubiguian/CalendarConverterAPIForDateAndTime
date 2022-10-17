@@ -5,6 +5,7 @@ from currentDateTime import currentDateTimeNamespace as nsdt
 from timezones import timezonesNamespace as nstz
 from calendarFromCurrentAPI import CalendarNamespace as cc
 from countries import currentCountriesNamespace as ct
+from introduction import introductionNamespace as nsi
 
 #
 app = Flask(__name__)
@@ -16,6 +17,7 @@ api = Api(
 )
 
 #
+api.add_namespace(nsi)
 api.add_namespace(nsdt)
 api.add_namespace(nstz)
 api.add_namespace(cc)
