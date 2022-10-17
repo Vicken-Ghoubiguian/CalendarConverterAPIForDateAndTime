@@ -33,3 +33,13 @@ class History(Resource):
 
         #
         return make_response(render_template('history.html'), 200, headers)
+
+#
+@introductionNamespace.route('/github')
+class GitHub(Resource):
+
+    #
+    def get(self):
+
+        #
+        return redirect("https://github.com/Vicken-Ghoubiguian/DateTimeAPI", code=302)
