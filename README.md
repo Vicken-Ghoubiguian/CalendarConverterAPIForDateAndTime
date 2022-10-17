@@ -51,10 +51,14 @@ Second, you must position yourself in the `DateTimeAPI` directory thus generated
 cd DateTimeAPI
 ```
 
-
+Third and last, you must launch the `main.py` file using the following command :
 
 ```bash
 python3 main.py
+```
+
+```bash
+python main.py
 ```
 
 <a name="docker"></a>
