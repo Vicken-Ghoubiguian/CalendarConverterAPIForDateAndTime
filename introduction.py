@@ -23,7 +23,7 @@ class Presentation(Resource):
         headers = {"Content-Type": "text/html"}
 
         #
-        return make_response(render_template('index.html'), 200, headers)
+        return make_response(render_template('presentation.html'), 200, headers)
 
 #
 @introductionNamespace.route('/history')
@@ -33,6 +33,7 @@ class Presentation(Resource):
     def get(self):
 
         """
+
         """
 
         #
