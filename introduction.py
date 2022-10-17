@@ -24,3 +24,19 @@ class Presentation(Resource):
 
         #
         return make_response(render_template('index.html'), 200, headers)
+
+#
+@introductionNamespace.route('/history')
+class Presentation(Resource):
+
+    #
+    def get(self):
+
+        """
+        """
+
+        #
+        headers = {"Content-Type": "text/html"}
+
+        #
+        return make_response(render_template('index.html'), 200, headers)
