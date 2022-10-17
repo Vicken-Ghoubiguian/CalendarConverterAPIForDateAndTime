@@ -1,5 +1,5 @@
 #
-from flask_restx import Namespace, Resource, inputs
+from flask_restx import Namespace, Resource, inputs, make_response
 
 #
 from commonFunctions import *
@@ -19,4 +19,10 @@ class Presentation(Resource):
         """
 
         #
-        return "", 200
+        headers = {"Content-Type": "application/json"}
+
+        return make_response(
+            'Test worked!',
+            200,
+            headers=headers
+        )
