@@ -15,10 +15,6 @@ class Presentation(Resource):
     #
     def get(self):
 
-        """
-        Get a presentation of the DateTime API...
-        """
-
         #
         headers = {"Content-Type": "text/html"}
 
@@ -31,10 +27,6 @@ class Presentation(Resource):
 
     #
     def get(self):
-
-        """
-
-        """
 
         #
         headers = {"Content-Type": "text/html"}
