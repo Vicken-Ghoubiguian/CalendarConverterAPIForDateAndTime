@@ -39,6 +39,18 @@ Datetime conversion and manipulation Rest API with this features:
 <a name="source_code"></a>
 ### Source code
 
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/DateTimeAPI
+```
+
+```bash
+cd DateTimeAPI
+```
+
+```bash
+python3 main.py
+```
+
 <a name="docker"></a>
 ### Docker
 
