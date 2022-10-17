@@ -39,13 +39,19 @@ Datetime conversion and manipulation Rest API with this features:
 <a name="source_code"></a>
 ### Source code
 
+Firstly, you need to clone the corresponding repository from GitHub, using the following command :
+
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/DateTimeAPI
 ```
 
+Second, you must position yourself in the `DateTimeAPI` directory thus generated, again using the following command :
+
 ```bash
 cd DateTimeAPI
 ```
+
+
 
 ```bash
 python3 main.py
