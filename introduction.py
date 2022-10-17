@@ -9,6 +9,19 @@ from commonFunctions import *
 introductionNamespace = Namespace('introduction', description='Namespace to introduce, present, explain all functionalities of the DateTime API and how it works...')
 
 #
+@introductionNamespace.route('')
+class Presentation(Resource):
+
+    #
+    def get(self):
+
+        #
+        headers = {"Content-Type": "text/html"}
+
+        #
+        return make_response(render_template('introduction.html'), 200, headers)
+
+#
 @introductionNamespace.route('/presentation')
 class Presentation(Resource):
 
