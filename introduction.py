@@ -5,7 +5,7 @@ from flask_restx import Namespace, Resource, inputs
 from commonFunctions import *
 
 #
-introductionNamespace = Namespace('introduction', description='')
+introductionNamespace = Namespace('introduction', description='Namespace to introduce, present and explain all functionalities of the DateTime API...')
 
 #
 @introductionNamespace.route('/presentation')
