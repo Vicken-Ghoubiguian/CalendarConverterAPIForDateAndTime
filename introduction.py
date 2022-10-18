@@ -54,6 +54,9 @@ class GitHub(Resource):
     #
     def get(self):
 
+        """
+        """
+
         #
         return redirect("https://github.com/Vicken-Ghoubiguian/DateTimeAPI", code=302)
 
@@ -63,6 +66,9 @@ class DockerHub(Resource):
 
     #
     def get(self):
+
+        """
+        """
 
         #
         return redirect("https://www.google.com", code=302)
