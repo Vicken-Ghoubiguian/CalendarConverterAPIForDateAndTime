@@ -134,6 +134,12 @@ def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
                     countryDict[country.numeric] = currentCountry
 
     #
+    else:
+
+        #
+        print("")
+
+    #
     return countryDict
 
 #
