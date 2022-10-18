@@ -15,7 +15,10 @@ def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
 
     #
     for country in countriesList:
+
+        #
         if country.name[:len(pattern)] == pattern:
+
             #
             currentCountry = {
                                 "name": country.name,
@@ -25,12 +28,15 @@ def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
                                 "flag": country.flag
                             }
     
+            #
             try:
                 currentCountry["official_name"] = country.official_name
 
+            #
             except AttributeError:
                 currentCountry["official_name"] = None
 
+            #
             finally:
                 countryDict[country.name] = currentCountry
 
