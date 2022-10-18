@@ -37,15 +37,15 @@ class HistoricalCountriesList(Resource):
         return getJSONOfHistoricalCountries(list(pycountry.historic_countries)), 200
 
 #
-parser_sort_name = reqparse.RequestParser()
+parser_sort = reqparse.RequestParser()
 
 #
-parser_sort_name.add_argument('pattern', type=str, required=True, help='Fill in the pattern you want...')
-parser_sort_name.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
+parser_sort.add_argument('pattern', type=str, required=True, help='Fill in the pattern you want...')
+parser_sort.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
 
 #
 @currentCountriesNamespace.route('/sort/name')
-@currentCountriesNamespace.expect(parser_sort_name)
+@currentCountriesNamespace.expect(parser_sort)
 class CountriesSortName(Resource):
 
     #
@@ -56,14 +56,14 @@ class CountriesSortName(Resource):
         """
 
         #
-        args = parser_sort_name.parse_args()
+        args = parser_sort.parse_args()
 
         #
         return getJSONofCountriesFromSort(list(pycountry.countries), field = "name", pattern = args["pattern"]), 200
 
 #
 @currentCountriesNamespace.route('/sort/alpha_2')
-@currentCountriesNamespace.expect(parser_sort_name)
+@currentCountriesNamespace.expect(parser_sort)
 class CountriesSortAlpha2(Resource):
 
     #
@@ -73,7 +73,7 @@ class CountriesSortAlpha2(Resource):
         """
 
         #
-        args = parser_sort_name.parse_args()
+        args = parser_sort.parse_args()
 
         #
         return getJSONofCountriesFromSort(list(pycountry.countries), field = "alpha_2", pattern = args["pattern"]), 200
