@@ -55,6 +55,7 @@ class GitHub(Resource):
     def get(self):
 
         """
+        Redirect to the DateTime API's GitHub repository...
         """
 
         #
@@ -68,6 +69,7 @@ class DockerHub(Resource):
     def get(self):
 
         """
+        
         """
 
         #
