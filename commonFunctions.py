@@ -114,13 +114,15 @@ def getJSONOfCountries(countriesList):
                             "flag": country.flag
                         }
 
-        
+        #
         try:
             currentCountry["official_name"] = country.official_name
 
+        #
         except AttributeError:
             currentCountry["official_name"] = None
 
+        #
         finally:
             countryDict[country.name] = currentCountry
 
