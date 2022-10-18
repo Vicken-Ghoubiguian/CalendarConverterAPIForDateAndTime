@@ -107,7 +107,31 @@ def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
     elif field == "numeric":
 
         #
-        print("")
+        for country in countriesList:
+
+            #
+            if country.numeric[:len(pattern)] == pattern:
+
+                #
+                currentCountry = {
+                                    "name": country.name,
+                                    "alpha_2": country.alpha_2,
+                                    "alpha_3": country.alpha_3,
+                                    "numeric": country.numeric,
+                                    "flag": country.flag
+                                }
+        
+                #
+                try:
+                    currentCountry["official_name"] = country.official_name
+
+                #
+                except AttributeError:
+                    currentCountry["official_name"] = None
+
+                #
+                finally:
+                    countryDict[country.numeric] = currentCountry
 
     #
     return countryDict
