@@ -44,6 +44,24 @@ def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
                     countryDict[country.name] = currentCountry
 
     #
+    elif field == "alpha_2":
+
+        #
+        print("")
+
+    #
+    elif field == "alpha_3":
+
+        #
+        print("")
+
+    #
+    elif field == "numeric":
+
+        #
+        print("")
+
+    #
     return countryDict
 
 #
