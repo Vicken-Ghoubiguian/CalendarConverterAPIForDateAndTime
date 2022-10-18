@@ -89,7 +89,7 @@ class CountriesSortAlpha3(Resource):
 
 #
 @currentCountriesNamespace.route('/historical/sort/name')
-class CountriesSortName(Resource):
+class CountriesHistoricalSortName(Resource):
 
     #
     def get(self):
