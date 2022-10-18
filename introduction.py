@@ -56,3 +56,13 @@ class GitHub(Resource):
 
         #
         return redirect("https://github.com/Vicken-Ghoubiguian/DateTimeAPI", code=302)
+
+#
+@introductionNamespace.route('/dockerhub')
+class DockerHub(Resource):
+
+    #
+    def get(self):
+
+        #
+        return redirect("https://www.google.com", code=302)
