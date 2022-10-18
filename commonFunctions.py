@@ -81,15 +81,19 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
                             "withdrawal_date": country.withdrawal_date
                         }
         
+        #
         try:
             currentCountry["numeric"] = country.numeric
 
+        #
         except AttributeError:
             currentCountry["numeric"] = None
 
+        #
         finally:
             histCountryDict[country.name] = currentCountry
 
+    #
     return histCountryDict
 
 #
