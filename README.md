@@ -66,8 +66,10 @@ python main.py
 <a name="docker"></a>
 ### Docker
 
+<a name="from_dockerhub"></a>
 #### From DockerHub
 
+<a name="from_dockerfile"></a>
 #### From Dockerfile
 
 <a name="conclusion"></a>
