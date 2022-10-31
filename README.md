@@ -2,8 +2,15 @@
 
 Swiss knife Rest API about  with this features:
 
-* timezones,
-* datetime conversion in many calendars in the world (Gregorian, Julian, Chinese, Solar Hijri, Maya, Republican...),
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+
 
 ## Contents
 
