@@ -10,7 +10,7 @@ Swiss knife Rest API about  with this features:
 * 
 * 
 
-
+Of course, other features can be added to this API. To learn how and have a manual guide, please go here...
 
 ## Contents
 
