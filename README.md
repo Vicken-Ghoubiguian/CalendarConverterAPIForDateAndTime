@@ -1,4 +1,4 @@
-# DateTimeAPI
+# SwissKnifeAPI
 
 Datetime conversion and manipulation Rest API with this features:
 
@@ -42,13 +42,13 @@ Datetime conversion and manipulation Rest API with this features:
 Firstly, you need to clone the corresponding repository from GitHub, using the following command :
 
 ```bash
-git clone https://github.com/Vicken-Ghoubiguian/DateTimeAPI
+git clone https://github.com/Vicken-Ghoubiguian/SwissKnifeAPI
 ```
 
-Second, you must position yourself in the `DateTimeAPI` directory thus generated, again using the following command :
+Second, you must position yourself in the `SwissKnifeAPI` directory thus generated, again using the following command :
 
 ```bash
-cd DateTimeAPI
+cd SwissKnifeAPI
 ```
 
 Thirdly and lastly, you must launch the `main.py` file using the following command :
