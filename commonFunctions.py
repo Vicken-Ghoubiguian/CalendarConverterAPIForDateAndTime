@@ -55,10 +55,11 @@ def getAllCountriesFromSort(countriesList, field='name', pattern=None):
 #
 def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
 
-    print(getAllCountriesFromSort(countriesList, field, pattern))
-
     #
     countryDict = {}
+
+    #
+    allCountriesFromSort = getAllCountriesFromSort(countriesList, field, pattern)
 
     #
     if field == "name":
