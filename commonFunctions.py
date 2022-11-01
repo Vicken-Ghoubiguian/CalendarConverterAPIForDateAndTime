@@ -47,19 +47,28 @@ def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=
             print("")
 
     #
-    countriesFromField.sort()
+    if order == "desc":
+
+        #
+        countriesFromField.sort(reverse=True)
+
+    #
+    else:
+
+        #
+        countriesFromField.sort()
 
     #
     return countriesFromField
 
 #
-def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
+def getJSONofCountriesFromSort(countriesList, field='name', order = "asc", pattern=None):
 
     #
     countryDict = {}
 
     #
-    allCountriesFromSort = getAllCountriesFromSort(countriesList, field, pattern)
+    allCountriesFromSort = getAllCountriesFromSort(countriesList, field, order, pattern)
 
     #
     if field == "name":
