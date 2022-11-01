@@ -12,8 +12,6 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
 
     #
     countriesFromField = []
-
-    #
     sortedCountriesList = []
 
     #
