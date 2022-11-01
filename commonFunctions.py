@@ -8,7 +8,7 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getAllCountriesFromSort(countriesList, field='name', pattern=None):
+def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=None):
 
     #
     countriesFromField = []
