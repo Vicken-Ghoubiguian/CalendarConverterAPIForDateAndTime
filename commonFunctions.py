@@ -71,6 +71,9 @@ def getJSONofCountriesFromSort(countriesList, field='name', order = "asc", patte
     allCountriesFromSort = getAllCountriesFromSort(countriesList, field, order, pattern)
 
     #
+    print(allCountriesFromSort)
+
+    #
     if field == "name":
 
         #
