@@ -183,8 +183,6 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
 #
 def getJSONOfCountries(countriesList):
 
-    print(getAllCountriesFromSort())
-
     #
     countriesDict = {}
 
