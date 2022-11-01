@@ -102,7 +102,7 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
     allCountriesFromSort = getAllCountriesFromSort(field, order, pattern)
 
     #
-    countryDict = {}
+    countriesDict = {}
 
     #
     for country in allCountriesFromSort:
@@ -128,25 +128,25 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
 
             #
             if field == 'name':
-                countryDict[country.name] = currentCountry
+                countriesDict[country.name] = currentCountry
 
             #
             elif field == 'alpha_2':
-                countryDict[country.alpha_2] = currentCountry
+                countriesDict[country.alpha_2] = currentCountry
 
             #
             elif field == 'alpha_3':
-                countryDict[country.alpha_3] = currentCountry
+                countriesDict[country.alpha_3] = currentCountry
 
             #
             elif field == 'numeric':
-                countryDict[country.numeric] = currentCountry
+                countriesDict[country.numeric] = currentCountry
 
             else:
                 print("")
 
     #
-    return countryDict
+    return countriesDict
 
 #
 def getJSONOfHistoricalCountries(historicalCountriesList):
