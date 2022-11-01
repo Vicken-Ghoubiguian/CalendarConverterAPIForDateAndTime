@@ -186,7 +186,7 @@ def getJSONOfCountries(countriesList):
     print(getAllCountriesFromSort())
 
     #
-    countryDict = {}
+    countriesDict = {}
 
     #
     for country in countriesList:
@@ -210,10 +210,10 @@ def getJSONOfCountries(countriesList):
 
         #
         finally:
-            countryDict[country.name] = currentCountry
+            countriesDict[country.name] = currentCountry
 
     #
-    return countryDict
+    return countriesDict
 
 #
 def getDateTimeInParticularCalendar(wishedCalendarSystem, wishedDateTime = datetime.now()):
