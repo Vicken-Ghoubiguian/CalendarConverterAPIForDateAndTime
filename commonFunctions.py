@@ -8,7 +8,7 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
-def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=None):
+def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
 
     #
     countriesFromField = []
@@ -17,7 +17,7 @@ def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=
     sortedCountriesList = []
 
     #
-    for country in countriesList:
+    for country in pycountry.countries:
 
         #
         if field == "name":
@@ -104,7 +104,7 @@ def getJSONofCountriesFromSort(countriesList, field='name', order = "asc", patte
     countryDict = {}
 
     #
-    allCountriesFromSort = getAllCountriesFromSort(countriesList, field, order, pattern)
+    allCountriesFromSort = getAllCountriesFromSort(field, order, pattern)
 
     #
     print(allCountriesFromSort)
@@ -273,7 +273,7 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
 #
 def getJSONOfCountries(countriesList):
 
-    print(getAllCountriesFromSort(countriesList))
+    print(getAllCountriesFromSort())
 
     #
     countryDict = {}
