@@ -14,58 +14,37 @@ def getAllCountriesFromSort(countriesList, field='name', pattern=None):
     countriesFromField = []
 
     #
-    if field == "name":
+    for country in countriesList:
 
         #
-        for country in countriesList:
+        if field == "name":
 
             #
-            if country.name[:len(pattern)] == pattern:
-
-                #
-                countriesFromField.append(country.name)
-
-    #
-    elif field == "alpha_2":
-
+            countriesFromField.append(country.name)
+            
         #
-        for country in countriesList:
+        elif field == "alpha_2":
 
             #
-            if country.alpha_2[:len(pattern)] == pattern:
-
-                #
-                countriesFromField.append(country.alpha_2)
-
-    #
-    elif field == "alpha_3":
+            countriesFromField.append(country.alpha_2)
 
         #
-        for country in countriesList:
+        elif field == "alpha_3":
 
             #
-            if country.alpha_3[:len(pattern)] == pattern:
-
-                #
-                countriesFromField.append(country.alpha_3)
-
-    #
-    elif field == "numeric":
+            countriesFromField.append(country.alpha_3)
 
         #
-        for country in countriesList:
+        elif field == "numeric":
 
             #
-            if country.numeric[:len(pattern)] == pattern:
-
-                #
-                countriesFromField.append(country.numeric)
-
-    #
-    else:
+            countriesFromField.append(country.numeric)
 
         #
-        print("")
+        else:
+
+            #
+            print("")
 
     #
     countriesFromField.sort()
@@ -76,7 +55,7 @@ def getAllCountriesFromSort(countriesList, field='name', pattern=None):
 #
 def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
 
-    print(countriesList)
+    print(getAllCountriesFromSort(countriesList, field, pattern))
 
     #
     countryDict = {}
@@ -245,7 +224,7 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
 #
 def getJSONOfCountries(countriesList):
 
-    print(countriesList)
+    print(getAllCountriesFromSort(countriesList))
 
     #
     countryDict = {}
