@@ -14,6 +14,9 @@ def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=
     countriesFromField = []
 
     #
+    sortedCountriesList = []
+
+    #
     for country in countriesList:
 
         #
@@ -59,7 +62,40 @@ def getAllCountriesFromSort(countriesList, field='name', order = "asc", pattern=
         countriesFromField.sort()
 
     #
-    return countriesFromField
+    for fieldValueForCurrentCountry in countriesFromField:
+
+        #
+        if field == "name":
+
+            #
+            sortedCountriesList.append(pycountry.countries.get(name=fieldValueForCurrentCountry))
+
+        #
+        elif field == "alpha_2":
+
+            #
+            sortedCountriesList.append(pycountry.countries.get(alpha_2=fieldValueForCurrentCountry))
+
+        #
+        elif field == "alpha_3":
+
+            #
+            sortedCountriesList.append(pycountry.countries.get(alpha_3=fieldValueForCurrentCountry))
+
+        #
+        elif field == "numeric":
+
+            #
+            sortedCountriesList.append(pycountry.countries.get(numeric=fieldValueForCurrentCountry))
+
+        #
+        else:
+
+            #
+            print("")
+
+    #
+    return sortedCountriesList
 
 #
 def getJSONofCountriesFromSort(countriesList, field='name', order = "asc", pattern=None):
