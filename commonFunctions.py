@@ -96,13 +96,57 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
     return sortedCountriesList
 
 #
-def getJSONofCountriesFromSort(countriesList, field='name', order = "asc", pattern=None):
+def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
 
     #
     allCountriesFromSort = getAllCountriesFromSort(field, order, pattern)
 
     #
-    return allCountriesFromSort
+    countryDict = {}
+
+    #
+    for country in allCountriesFromSort:
+
+        #
+        currentCountry = {
+                            "name": country.name,
+                            "alpha_2": country.alpha_2,
+                            "alpha_3": country.alpha_3,
+                            "numeric": country.numeric,
+                            "flag": country.flag
+                        }
+        #
+        try:
+            currentCountry["official_name"] = country.official_name
+
+        #
+        except AttributeError:
+            currentCountry["official_name"] = None
+
+        #
+        finally:
+
+            #
+            if field == 'name':
+                countryDict[country.name] = currentCountry
+
+            #
+            elif field == 'alpha_2':
+                countryDict[country.alpha_2] = currentCountry
+
+            #
+            elif field == 'alpha_3':
+                countryDict[country.alpha_3] = currentCountry
+
+            #
+            elif field == 'numeric':
+                countryDict[country.numeric] = currentCountry
+
+            else:
+                print("")
+
+    #
+    return countryDict
 
 #
 def getJSONOfHistoricalCountries(historicalCountriesList):
