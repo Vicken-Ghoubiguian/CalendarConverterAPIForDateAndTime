@@ -8,7 +8,12 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
+
+
+#
 def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
+
+    print(countriesList)
 
     #
     countryDict = {}
@@ -176,6 +181,8 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
 
 #
 def getJSONOfCountries(countriesList):
+
+    print(countriesList)
 
     #
     countryDict = {}
