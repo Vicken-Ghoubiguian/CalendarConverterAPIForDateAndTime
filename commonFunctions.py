@@ -8,7 +8,70 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
+def getAllCountriesFromSort(countriesList, field='name', pattern=None):
 
+    #
+    countriesFromField = []
+
+    #
+    if field == "name":
+
+        #
+        for country in countriesList:
+
+            #
+            if country.name[:len(pattern)] == pattern:
+
+                #
+                countriesFromField.append(country.name)
+
+    #
+    elif field == "alpha_2":
+
+        #
+        for country in countriesList:
+
+            #
+            if country.alpha_2[:len(pattern)] == pattern:
+
+                #
+                countriesFromField.append(country.alpha_2)
+
+    #
+    elif field == "alpha_3":
+
+        #
+        for country in countriesList:
+
+            #
+            if country.alpha_3[:len(pattern)] == pattern:
+
+                #
+                countriesFromField.append(country.alpha_3)
+
+    #
+    elif field == "numeric":
+
+        #
+        for country in countriesList:
+
+            #
+            if country.numeric[:len(pattern)] == pattern:
+
+                #
+                countriesFromField.append(country.numeric)
+
+    #
+    else:
+
+        #
+        print("")
+
+    #
+    countriesFromField.sort()
+
+    #
+    return countriesFromField
 
 #
 def getJSONofCountriesFromSort(countriesList, field='name', pattern=None):
