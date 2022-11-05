@@ -83,6 +83,12 @@ python main.py
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
+<a name="heroku"></a>
+### Heroku
+
+<a name="balena"></a>
+### Balena
+
 <a name="conclusion"></a>
 ## Conclusion
 
