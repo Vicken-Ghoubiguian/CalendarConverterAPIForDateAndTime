@@ -24,6 +24,8 @@ Of course, other features can be added to this API. To learn how and have a manu
     * [Docker](#docker)
       * [From DockerHub](#from_dockerhub),
       * [From Dockerfile](#from_dockerfile)
+    * [Heroku]()
+    * [Balena]()
 * [Conclusion](#conclusion)
 * [Useful links](#useful_links)
 
