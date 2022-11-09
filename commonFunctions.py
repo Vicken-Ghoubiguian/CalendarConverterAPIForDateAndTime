@@ -7,6 +7,94 @@ import pycountry
 import convertdate, os.path, pkgutil
 
 #
+def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None):
+
+    #
+    historicalCountriesFromField = []
+    historicalSortedCountriesList = []
+
+    #
+    for country in pycountry.historic_countries:
+
+        #
+        if field == "name":
+
+            #
+            historicalCountriesFromField.append(country.name)
+            
+        #
+        elif field == "alpha_2":
+
+            #
+            historicalCountriesFromField.append(country.alpha_2)
+
+        #
+        elif field == "alpha_3":
+
+            #
+            historicalCountriesFromField.append(country.alpha_3)
+
+        #
+        elif field == "numeric":
+
+            #
+            historicalCountriesFromField.append(country.numeric)
+
+        #
+        else:
+
+            #
+            print("")
+
+    #
+    if order == "desc":
+
+        #
+        historicalCountriesFromField.sort(reverse=True)
+
+    #
+    else:
+
+        #
+        historicalCountriesFromField.sort()
+
+    #
+    for fieldValueForCurrentCountry in historicalCountriesFromField:
+
+        #
+        if field == "name":
+
+            #
+            historicalSortedCountriesList.append(pycountry.countries.get(name=fieldValueForCurrentCountry))
+
+        #
+        elif field == "alpha_2":
+
+            #
+            historicalSortedCountriesList.append(pycountry.countries.get(alpha_2=fieldValueForCurrentCountry))
+
+        #
+        elif field == "alpha_3":
+
+            #
+            historicalSortedCountriesList.append(pycountry.countries.get(alpha_3=fieldValueForCurrentCountry))
+
+        #
+        elif field == "numeric":
+
+            #
+            historicalSortedCountriesList.append(pycountry.countries.get(numeric=fieldValueForCurrentCountry))
+
+        #
+        else:
+
+            #
+            print("")
+
+    #
+    return historicalSortedCountriesList
+
+#
 def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
 
     #
