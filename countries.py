@@ -106,7 +106,7 @@ class HistoricalCountriesSortName(Resource):
         args = parser_sort.parse_args()
 
         #
-        return {"TODO": "TODO"}, 200
+        return getAllHistoricalCountriesFromSort(field = "alpha_2", order = args.order, pattern = args["pattern"]), 200
 
 #
 @currentCountriesNamespace.route('/historical/sort/alpha_2')
