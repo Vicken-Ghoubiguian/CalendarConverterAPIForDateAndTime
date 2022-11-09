@@ -91,10 +91,6 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
             #
             print("")
 
-    print("\n\n\n\n\n\n")
-    print(historicalSortedCountriesList)
-    print("\n\n\n\n\n\n")
-
     #
     return historicalSortedCountriesList
 
@@ -206,6 +202,11 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
                             #"numeric": country.numeric,
                             "withdrawal_date": country.withdrawal_date
                         }
+
+        #
+        #if country.numeric is not None:
+        #    currentCountry["numeric"] = country.numeric
+
         #
         if field == 'name':
             historicalCountriesDict[country.name] = currentCountry
