@@ -11,7 +11,7 @@ from introduction import introductionNamespace as nsi
 app = Flask(__name__)
 
 api = Api(
-    title='WorldSwissKnifeAPI',
+    title='WorldSwissKnifeAPI 🇨🇭🔪',
     version='1.0',
     description='Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it\'s a REST API just for experimenting and laughing 🇨🇭🔪...'
 )
