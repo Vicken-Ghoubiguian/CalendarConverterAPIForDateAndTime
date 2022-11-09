@@ -1,14 +1,6 @@
 # WorldSwissKnifeAPI
 
-Swiss knife Rest API about  with this features:
-
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+Rest API which is also a swiss knife and to which you can add all the features you want...
 
 Of course, other features can be added to this API. To learn how and have a manual guide, please go [here]()...
 
