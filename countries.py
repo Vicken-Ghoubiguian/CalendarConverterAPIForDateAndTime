@@ -59,7 +59,7 @@ class CountriesSortName(Resource):
         args = parser_sort.parse_args()
 
         #
-        return getJSONofCountriesFromSort(field = "name", order = args.order, pattern = args["pattern"]), 200
+        return getJSONofHistoricalCountriesFromSort(field = "name", order = args.order, pattern = args["pattern"]), 200
 
 #
 @currentCountriesNamespace.route('/sort/alpha_2')
