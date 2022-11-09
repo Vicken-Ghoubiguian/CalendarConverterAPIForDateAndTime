@@ -13,7 +13,7 @@ app = Flask(__name__)
 api = Api(
     title='WorldSwissKnifeAPI',
     version='1.0',
-    description='Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it\'s a REST API just for experimenting and laughing...'
+    description='Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it\'s a REST API just for experimenting and laughing 🇨🇭🔪...'
 )
 
 #

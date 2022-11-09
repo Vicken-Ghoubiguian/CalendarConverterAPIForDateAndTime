@@ -1,6 +1,6 @@
-# WorldSwissKnifeAPI
+# WorldSwissKnifeAPI 🇨🇭🔪
 
-Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it's a REST API just for experimenting and laughing...
+Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it's a REST API just for experimenting and laughing 🇨🇭🔪...
 
 ## Contents
 
