@@ -95,6 +95,10 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
             #
             print("")
 
+    print("\n\n\n\n\n\n")
+    print(historicalSortedCountriesList)
+    print("\n\n\n\n\n\n")
+
     #
     return historicalSortedCountriesList
 
@@ -192,10 +196,6 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
     #
     allHistoricalCountriesFromSort = getAllHistoricalCountriesFromSort(field, order, pattern)
 
-    print("\n\n\n\n\n\n")
-    print(allHistoricalCountriesFromSort)
-    print("\n\n\n\n\n\n")
-
     #
     historicalCountriesDict = {}
 
@@ -207,8 +207,8 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
                             "name": country.name,
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
-                            "numeric": country.numeric
-                            #"flag": country.flag
+                            "numeric": country.numeric,
+                            "flag": country.flag
                         }
         #
         try:
