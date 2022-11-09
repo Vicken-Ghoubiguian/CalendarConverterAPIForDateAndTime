@@ -2,13 +2,11 @@
 
 Rest API which is also a swiss knife and to which you can add all the features you want, and like many others, it's a REST API just for experimenting and laughing :-)) ;-)) :-((...
 
-Of course, other features can be added to this API. To learn how and have a manual guide, please go [here]()...
-
 ## Contents
 
 * [Introduction](#introduction),
 * [Presentation](#presentation),
-* [Functionalities](#functionalities),
+* [Features](#features),
 * [Project's structure](#project_s_structure),
 * [Project's development](#project_s_development),
 * [Deployment](#deployment),
@@ -27,8 +25,10 @@ Of course, other features can be added to this API. To learn how and have a manu
 <a name="presentation"></a>
 ## Presentation
 
-<a name="functionalities"></a>
-## Functionalities
+<a name="features"></a>
+## Features
+
+Of course, other features can be added to this API. To learn how and have a manual guide, please go [here]()...
 
 <a name="project_s_structure"></a>
 ## Project's structure
