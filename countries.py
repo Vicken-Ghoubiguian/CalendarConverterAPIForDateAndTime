@@ -16,7 +16,7 @@ class CountriesList(Resource):
     def get(self):
 
         """
-        Get the list of all existing countries in the world...
+        Get the list of all existing-at-present countries in the world...
         """
 
         #
@@ -52,7 +52,7 @@ class CountriesSortName(Resource):
     def get(self):
 
         """
-        Get the list of all ancient countries selected according a to pattern and sort according to an order...
+        Get the list of all existing-at-present countries selected according a to pattern and sort according to an order...
         """
 
         #
