@@ -16,10 +16,6 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
     #
     for country in pycountry.historic_countries:
 
-        print("\n\n\n\n\n\n")
-        print(country)
-        print("\n\n\n\n\n\n")
-
         #
         if field == "name":
 
@@ -69,25 +65,25 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
         if field == "name":
 
             #
-            historicalSortedCountriesList.append(pycountry.countries.get(name=fieldValueForCurrentCountry))
+            historicalSortedCountriesList.append(pycountry.historic_countries.get(name=fieldValueForCurrentCountry))
 
         #
         elif field == "alpha_2":
 
             #
-            historicalSortedCountriesList.append(pycountry.countries.get(alpha_2=fieldValueForCurrentCountry))
+            historicalSortedCountriesList.append(pycountry.historic_countries.get(alpha_2=fieldValueForCurrentCountry))
 
         #
         elif field == "alpha_3":
 
             #
-            historicalSortedCountriesList.append(pycountry.countries.get(alpha_3=fieldValueForCurrentCountry))
+            historicalSortedCountriesList.append(pycountry.historic_countries.get(alpha_3=fieldValueForCurrentCountry))
 
         #
         elif field == "numeric":
 
             #
-            historicalSortedCountriesList.append(pycountry.countries.get(numeric=fieldValueForCurrentCountry))
+            historicalSortedCountriesList.append(pycountry.historic_countries.get(numeric=fieldValueForCurrentCountry))
 
         #
         else:
@@ -207,38 +203,27 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
                             "name": country.name,
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
-                            "numeric": country.numeric,
-                            "flag": country.flag
+                            #"numeric": country.numeric,
+                            "withdrawal_date": country.withdrawal_date
                         }
         #
-        try:
-            currentCountry["official_name"] = country.official_name
+        if field == 'name':
+            historicalCountriesDict[country.name] = currentCountry
 
         #
-        except AttributeError:
-            currentCountry["official_name"] = None
+        elif field == 'alpha_2':
+            historicalCountriesDict[country.alpha_2] = currentCountry
 
         #
-        finally:
+        elif field == 'alpha_3':
+            historicalCountriesDict[country.alpha_3] = currentCountry
 
-            #
-            if field == 'name':
-                historicalCountriesDict[country.name] = currentCountry
+        #
+        elif field == 'numeric':
+            historicalCountriesDict[country.numeric] = currentCountry
 
-            #
-            elif field == 'alpha_2':
-                historicalCountriesDict[country.alpha_2] = currentCountry
-
-            #
-            elif field == 'alpha_3':
-                historicalCountriesDict[country.alpha_3] = currentCountry
-
-            #
-            elif field == 'numeric':
-                historicalCountriesDict[country.numeric] = currentCountry
-
-            else:
-                print("")
+        else:
+            print("")
 
     #
     return historicalCountriesDict
