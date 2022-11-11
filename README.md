@@ -54,7 +54,9 @@ Second, you must position yourself in the `WorldSwissKnifeAPI` directory thus ge
 cd WorldSwissKnifeAPI
 ```
 
-Thirdly and lastly, you must launch the `main.py` file using the following command :
+Thirdly,
+
+Fourthly and lastly, you must launch the `main.py` file using the following command :
 
 ```bash
 python3 main.py
