@@ -133,7 +133,7 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
 
             #
             print("")
-            countriesFromField.append("Not existing field")
+            raise Exception('spam', 'eggs')
 
     #
     if order == "desc":
@@ -179,7 +179,7 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
 
             #
             print("")
-            countriesFromField.append("Not existing field")
+            raise Exception('spam', 'eggs')
 
     #
     return sortedCountriesList
