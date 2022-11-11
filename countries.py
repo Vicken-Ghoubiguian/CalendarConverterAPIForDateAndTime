@@ -70,6 +70,7 @@ class CountriesSortAlpha2(Resource):
     def get(self):
 
         """
+        Get the list of all existing-at-present countries selected according a to pattern and sort according to an order...
         """
 
         #
