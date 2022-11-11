@@ -54,7 +54,7 @@ Second, you must position yourself in the `WorldSwissKnifeAPI` directory thus ge
 cd WorldSwissKnifeAPI
 ```
 
-Thirdly, :
+Thirdly, you must install all of the required Python packages listed in the `requirements.txt` file :
 
 ```bash
 pip3 install -r requirements.txt
