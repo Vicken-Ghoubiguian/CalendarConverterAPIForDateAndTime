@@ -200,7 +200,6 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
                             "name": country.name,
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
-                            #"numeric": country.numeric,
                             "withdrawal_date": country.withdrawal_date
                         }
 
