@@ -54,7 +54,11 @@ Second, you must position yourself in the `WorldSwissKnifeAPI` directory thus ge
 cd WorldSwissKnifeAPI
 ```
 
-Thirdly,
+Thirdly, :
+
+```bash
+pip3 install -r requirements.txt
+```
 
 Fourthly and lastly, you must launch the `main.py` file using the following command :
 
