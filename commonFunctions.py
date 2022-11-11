@@ -132,8 +132,7 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
         else:
 
             #
-            print("")
-            raise Exception('spam', 'eggs')
+            raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     if order == "desc":
@@ -178,8 +177,7 @@ def getAllCountriesFromSort(field='name', order = "asc", pattern=None):
         else:
 
             #
-            print("")
-            raise Exception('spam', 'eggs')
+            raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     return sortedCountriesList
