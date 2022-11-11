@@ -224,7 +224,9 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
             historicalCountriesDict[country.numeric] = currentCountry
 
         else:
-            print("")
+
+            #
+            raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     return historicalCountriesDict
@@ -277,7 +279,9 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
                 countriesDict[country.numeric] = currentCountry
 
             else:
-                print("")
+
+                #
+                raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     return countriesDict
