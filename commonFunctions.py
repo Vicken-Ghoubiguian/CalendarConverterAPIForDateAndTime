@@ -4,6 +4,7 @@ from itertools import count
 from pytz import common_timezones, country_timezones, timezone
 from flask_restx import reqparse
 import pycountry
+import json
 import convertdate, os.path, pkgutil
 
 #
@@ -204,8 +205,8 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
                         }
 
         #
-        #if country.numeric is not None:
-        #    currentCountry["numeric"] = country.numeric
+        if "numeric" in json.dumps(country.__dict__):
+            currentCountry["numeric"] = country.numeric
 
         #
         if field == 'name':
