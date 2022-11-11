@@ -45,7 +45,7 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
         else:
 
             #
-            print("")
+            raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     if order == "desc":
@@ -90,7 +90,7 @@ def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None)
         else:
 
             #
-            print("")
+            raise Exception('NotExistingFieldError', 'The wished field does not exist...')
 
     #
     return historicalSortedCountriesList
