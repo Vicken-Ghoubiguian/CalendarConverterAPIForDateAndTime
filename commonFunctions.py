@@ -249,40 +249,85 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
     #
     for country in allCountriesFromSort:
 
-        #
-        currentCountry = {
-                            "name": country.name,
-                            "alpha_2": country.alpha_2,
-                            "alpha_3": country.alpha_3,
-                            "numeric": country.numeric,
-                            "flag": country.flag
-                        }
-        #
-        try:
-            currentCountry["official_name"] = country.official_name
-
-        #
-        except AttributeError:
-            currentCountry["official_name"] = None
-
-        #
-        finally:
-
             #
             if field == 'name':
-                countriesDict[country.name] = currentCountry
+
+                #
+                countriesDict[country.name] = {
+                                                "name": country.name,
+                                                "alpha_2": country.alpha_2,
+                                                "alpha_3": country.alpha_3,
+                                                "numeric": country.numeric,
+                                                "flag": country.flag
+                                            }
+
+                #
+                try:
+                    countriesDict[country.name]["official_name"] = country.official_name
+
+                #
+                except AttributeError:
+                    countriesDict[country.name]["official_name"] = None
 
             #
             elif field == 'alpha_2':
-                countriesDict[country.alpha_2] = currentCountry
+
+                #
+                countriesDict[country.alpha_2] = {
+                                                "name": country.name,
+                                                "alpha_2": country.alpha_2,
+                                                "alpha_3": country.alpha_3,
+                                                "numeric": country.numeric,
+                                                "flag": country.flag
+                                            }
+
+                #
+                try:
+                    countriesDict[country.alpha_2]["official_name"] = country.official_name
+
+                #
+                except AttributeError:
+                    countriesDict[country.alpha_2]["official_name"] = None
 
             #
             elif field == 'alpha_3':
-                countriesDict[country.alpha_3] = currentCountry
+
+                #
+                countriesDict[country.alpha_3] = {
+                                                "name": country.name,
+                                                "alpha_2": country.alpha_2,
+                                                "alpha_3": country.alpha_3,
+                                                "numeric": country.numeric,
+                                                "flag": country.flag
+                                            }
+
+                #
+                try:
+                    countriesDict[country.alpha_3]["official_name"] = country.official_name
+
+                #
+                except AttributeError:
+                    countriesDict[country.alpha_3]["official_name"] = None
 
             #
             elif field == 'numeric':
-                countriesDict[country.numeric] = currentCountry
+
+                #
+                countriesDict[country.numeric] = {
+                                                "name": country.name,
+                                                "alpha_2": country.alpha_2,
+                                                "alpha_3": country.alpha_3,
+                                                "numeric": country.numeric,
+                                                "flag": country.flag
+                                            }
+
+                #
+                try:
+                    countriesDict[country.numeric]["official_name"] = country.official_name
+
+                #
+                except AttributeError:
+                    countriesDict[country.numeric]["official_name"] = None
 
             else:
 
