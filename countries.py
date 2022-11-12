@@ -9,6 +9,12 @@ from commonFunctions import *
 currentCountriesNamespace = Namespace('countries', description='Namespace to manipulate and get informations about all countries in the world...')
 
 #
+parser_gen = reqparse.RequestParser()
+
+#
+parser_gen.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
+
+#
 @currentCountriesNamespace.route('')
 class CountriesList(Resource):
 
@@ -18,6 +24,9 @@ class CountriesList(Resource):
         """
         Get the list of all existing-at-present countries in the world...
         """
+
+        #
+        args = parser_gen.parse_args()
 
         #
         return getJSONOfCountries(list(pycountry.countries)), 200
