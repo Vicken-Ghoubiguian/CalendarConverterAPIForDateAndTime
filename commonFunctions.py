@@ -8,6 +8,12 @@ import json
 import convertdate, os.path, pkgutil
 
 #
+def getCountriesListFromPattern(countriesList, pattern=None):
+
+    #
+    print("Soon")
+
+#
 def getAllHistoricalCountriesFromSort(field='name', order = "asc", pattern=None):
 
     #
