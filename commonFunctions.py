@@ -202,32 +202,72 @@ def getJSONofHistoricalCountriesFromSort(field='name', order = "asc", pattern=No
     for country in allHistoricalCountriesFromSort:
 
         #
-        currentCountry = {
-                            "name": country.name,
-                            "alpha_2": country.alpha_2,
-                            "alpha_3": country.alpha_3,
-                            "withdrawal_date": country.withdrawal_date
-                        }
-
-        #
-        if "numeric" in json.dumps(country.__dict__):
-            currentCountry["numeric"] = country.numeric
-
-        #
         if field == 'name':
-            historicalCountriesDict[country.name] = currentCountry
+
+            #
+            historicalCountriesDict[country.name] = {
+                                                        "name": country.name,
+                                                        "alpha_2": country.alpha_2,
+                                                        "alpha_3": country.alpha_3,
+                                                        "withdrawal_date": country.withdrawal_date
+                                                    }
+
+            #
+            if "numeric" in json.dumps(country.__dict__):
+
+                #
+                historicalCountriesDict[country.name]["numeric"] = country.numeric
 
         #
         elif field == 'alpha_2':
-            historicalCountriesDict[country.alpha_2] = currentCountry
+
+            #
+            historicalCountriesDict[country.alpha_2] = {
+                                                            "name": country.name,
+                                                            "alpha_2": country.alpha_2,
+                                                            "alpha_3": country.alpha_3,
+                                                            "withdrawal_date": country.withdrawal_date
+                                                        }
+
+            #
+            if "numeric" in json.dumps(country.__dict__):
+
+                #
+                historicalCountriesDict[country.alpha_2]["numeric"] = country.numeric
 
         #
         elif field == 'alpha_3':
-            historicalCountriesDict[country.alpha_3] = currentCountry
+
+            #
+            historicalCountriesDict[country.alpha_3] = {
+                                                            "name": country.name,
+                                                            "alpha_2": country.alpha_2,
+                                                            "alpha_3": country.alpha_3,
+                                                            "withdrawal_date": country.withdrawal_date
+                                                        }
+
+            #
+            if "numeric" in json.dumps(country.__dict__):
+
+                #
+                historicalCountriesDict[country.alpha_3]["numeric"] = country.numeric
 
         #
         elif field == 'numeric':
-            historicalCountriesDict[country.numeric] = currentCountry
+
+            #
+            historicalCountriesDict[country.numeric] = {
+                                                            "name": country.name,
+                                                            "alpha_2": country.alpha_2,
+                                                            "alpha_3": country.alpha_3,
+                                                            "withdrawal_date": country.withdrawal_date
+                                                        }
+
+            #
+            if "numeric" in json.dumps(country.__dict__):
+
+                #
+                historicalCountriesDict[country.numeric]["numeric"] = country.numeric
 
         else:
 
