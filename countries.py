@@ -120,6 +120,7 @@ class HistoricalCountriesSortName(Resource):
 
 #
 @currentCountriesNamespace.route('/historical/sort/alpha_2')
+@currentCountriesNamespace.expect(parser_sort)
 class HistoricalCountriesSortAlpha2(Resource):
 
     #
@@ -129,7 +130,10 @@ class HistoricalCountriesSortAlpha2(Resource):
         """
 
         #
-        return {"TODO": "TODO"}, 200
+        args = parser_sort.parse_args()
+
+        #
+        return getJSONofHistoricalCountriesFromSort(field = "alpha_2", order = args.order, pattern = args["pattern"]), 200
 
 #
 @currentCountriesNamespace.route('/historical/sort/alpha_3')
