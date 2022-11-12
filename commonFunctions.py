@@ -370,7 +370,7 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
     return histCountryDict
 
 #
-def getJSONOfCountries(countriesList):
+def getJSONOfCountries(countriesList, order="asc"):
 
     #
     countriesDict = {}
