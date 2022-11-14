@@ -8,6 +8,21 @@ import json
 import convertdate, os.path, pkgutil
 
 #
+def getAllAlphaCode2Countries():
+
+    #
+    returningListOfAlphaCode2Countries = []
+
+    #
+    for country in pycountry.countries:
+
+        #
+        returningListOfAlphaCode2Countries.append(country.alpha_2)
+
+    #
+    return returningListOfAlphaCode2Countries
+
+#
 def getCountriesListFromPattern(countriesList, pattern=None):
 
     #
