@@ -110,4 +110,6 @@ python main.py
 * [Python strftime() - Programiz](https://www.programiz.com/python-programming/datetime/strftime),
 * [convertdate - GitHub](https://github.com/fitnr/convertdate),
 * [convertdate - PyPi](https://pypi.org/project/convertdate/),
-* [convertdate - Official documentation](https://convertdate.readthedocs.io/en/latest/index.html)
+* [convertdate - Official documentation](https://convertdate.readthedocs.io/en/latest/index.html),
+* [Flagpedia.net](https://flagpedia.net),
+* [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api)
