@@ -8,6 +8,24 @@ import json
 import convertdate, os.path, pkgutil
 
 #
+def getCountryAlpha2FromCountryName(countryName):
+
+    #
+    countryAlpha2 = None
+
+    #
+    for country in pycountry.countries:
+
+        #
+        if country.name == countryName:
+
+            #
+            countryAlpha2 = country.alpha_2
+
+    #
+    return countryAlpha2
+
+#
 def getAllCountriesForFlags():
 
     #

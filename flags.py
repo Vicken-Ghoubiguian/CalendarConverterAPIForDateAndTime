@@ -26,6 +26,12 @@ class flagByCountry(Resource):
         """
 
         #
+        args = parser_flags.parse_args()
+
+        #
+        print("\n\n\n\n" + getCountryAlpha2FromCountryName(args["country"]) + "\n\n\n\n")
+
+        #
         headers = {"Content-Type": "text/html"}
 
         #
