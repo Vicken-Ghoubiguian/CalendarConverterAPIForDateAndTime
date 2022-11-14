@@ -13,7 +13,7 @@ flagsNamespace = Namespace('flags', description='Namespace to ...')
 class flagByCountry(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         """
         """

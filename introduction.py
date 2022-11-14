@@ -13,7 +13,7 @@ introductionNamespace = Namespace('introduction', description='Namespace to intr
 class Presentation(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         #
         headers = {"Content-Type": "text/html"}
@@ -26,7 +26,7 @@ class Presentation(Resource):
 class Presentation(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         #
         headers = {"Content-Type": "text/html"}
@@ -39,7 +39,7 @@ class Presentation(Resource):
 class History(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         #
         headers = {"Content-Type": "text/html"}
@@ -52,7 +52,7 @@ class History(Resource):
 class GitHub(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         """
         Redirect to the DateTime API's GitHub repository...
@@ -66,7 +66,7 @@ class GitHub(Resource):
 class DockerHub(Resource):
 
     #
-    def post(self):
+    def get(self):
 
         """
         
