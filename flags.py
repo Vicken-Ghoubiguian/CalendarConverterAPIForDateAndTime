@@ -12,7 +12,7 @@ flagsNamespace = Namespace('flags', description='Namespace to ...')
 parser_flags = reqparse.RequestParser()
 
 #
-parser_flags.add_argument('country_by_alpha_code_2', type=str, required=True, choices=getAllAlphaCode2Countries(), help='')
+parser_flags.add_argument('country', type=str, required=True, choices=getAllCountriesForFlags(), help='')
 
 #
 @flagsNamespace.route('')

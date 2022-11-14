@@ -8,19 +8,19 @@ import json
 import convertdate, os.path, pkgutil
 
 #
-def getAllAlphaCode2Countries():
+def getAllCountriesForFlags():
 
     #
-    returningListOfAlphaCode2Countries = []
+    returningListOfCountries = []
 
     #
     for country in pycountry.countries:
 
         #
-        returningListOfAlphaCode2Countries.append(country.alpha_2)
+        returningListOfCountries.append(country.name)
 
     #
-    return returningListOfAlphaCode2Countries
+    return returningListOfCountries
 
 #
 def getCountriesListFromPattern(countriesList, pattern=None):
