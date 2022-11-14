@@ -20,7 +20,7 @@ def getCountryAlpha2FromCountryName(countryName):
         if country.name == countryName:
 
             #
-            countryAlpha2 = country.alpha_2
+            countryAlpha2 = country.alpha_2.lower()
 
     #
     return countryAlpha2
