@@ -9,6 +9,12 @@ from commonFunctions import *
 flagsNamespace = Namespace('flags', description='Namespace to ...')
 
 #
+parser_flags = reqparse.RequestParser()
+
+#
+#parser_flags.add_argument('order', type=str, required=True, choices=["desc", "asc"], help='')
+
+#
 @flagsNamespace.route('')
 class flagByCountry(Resource):
 

@@ -16,6 +16,7 @@ parser_gen.add_argument('order', type=str, required=True, choices=["desc", "asc"
 
 #
 @currentCountriesNamespace.route('')
+@currentCountriesNamespace.expect(parser_gen)
 class CountriesList(Resource):
 
     #
