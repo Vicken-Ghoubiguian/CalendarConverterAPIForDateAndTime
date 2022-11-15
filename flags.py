@@ -12,7 +12,7 @@ flagsNamespace = Namespace('flags', description='Namespace to ...')
 parser_flags = reqparse.RequestParser()
 
 #
-parser_flags.add_argument('country', type=str, required=True, choices=getAllCountriesForFlags(), help='')
+parser_flags.add_argument('country', type=str, required=True, choices=getAllCountriesForFlags(), help='Select the country whose flag and data you want...')
 
 #
 @flagsNamespace.route('')
