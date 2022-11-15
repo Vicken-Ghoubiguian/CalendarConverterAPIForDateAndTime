@@ -29,7 +29,7 @@ class flagByCountry(Resource):
         args = parser_flags.parse_args()
 
         #
-        wavingFlagURL = "https://flagcdn.com/120x90/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+        wavingFlagURL = "https://flagcdn.com/160x120/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
 
         #
         #flagURL2 = "<img src='https://flagcdn.com/h20/" + getCountryAlpha2FromCountryName(args["country"]) + ".png' width='16' height='12' alt='" + args["country"] + "'>"
