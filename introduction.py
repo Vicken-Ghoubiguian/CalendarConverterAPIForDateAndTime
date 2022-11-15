@@ -9,14 +9,14 @@ from commonFunctions import *
 introductionNamespace = Namespace('introduction', description='Namespace to introduce, present, explain all functionalities of the DateTime API and how it works...')
 
 #
+headers = {"Content-Type": "text/html"}
+
+#
 @introductionNamespace.route('')
 class Presentation(Resource):
 
     #
     def get(self):
-
-        #
-        headers = {"Content-Type": "text/html"}
 
         #
         return make_response(render_template('introduction.html'), 200, headers)
@@ -29,9 +29,6 @@ class Presentation(Resource):
     def get(self):
 
         #
-        headers = {"Content-Type": "text/html"}
-
-        #
         return make_response(render_template('presentation.html'), 200, headers)
 
 #
@@ -40,9 +37,6 @@ class History(Resource):
 
     #
     def get(self):
-
-        #
-        headers = {"Content-Type": "text/html"}
 
         #
         return make_response(render_template('history.html'), 200, headers)
