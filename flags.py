@@ -44,4 +44,4 @@ class flagByCountry(Resource):
         headers = {"Content-Type": "text/html"}
 
         #
-        return make_response(render_template('flagByCountry.html', hw=args["country"], wavingFlagURL=wavingFlagURL, countryName=countryName), 200, headers)
+        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, countryName=countryName), 200, headers)
