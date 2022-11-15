@@ -32,7 +32,7 @@ class flagByCountry(Resource):
         print("\n\n\n\n" + getCountryAlpha2FromCountryName(args["country"]) + "\n\n\n\n")
 
         #
-        url = "https://flagcdn.com/16x12/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+        url = "https://flagcdn.com/120x90/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
         countryName = args["country"]
 
         #
