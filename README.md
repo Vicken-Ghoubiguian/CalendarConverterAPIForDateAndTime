@@ -33,11 +33,17 @@ Of course, other features can be added to this API. To learn how and have a manu
 <a name="project_s_structure"></a>
 ## Project's structure
 
+
+
 <a name="project_s_development"></a>
 ## Project's development
 
+
+
 <a name="deployment"></a>
 ## Deployment
+
+
 
 <a name="source_code"></a>
 ### Source code
