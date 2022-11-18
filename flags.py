@@ -32,10 +32,7 @@ class flagByCountry(Resource):
         wavingFlagURL = "https://flagcdn.com/160x120/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
 
         #
-        #flagURL2 = "<img src='https://flagcdn.com/h20/" + getCountryAlpha2FromCountryName(args["country"]) + ".png' width='16' height='12' alt='" + args["country"] + "'>"
-
-        #
-        #flagURL2 = "<img src='https://flagcdn.com/h20/" + getCountryAlpha2FromCountryName(args["country"]) + ".png' width='16' height='12' alt='" + args["country"] + "'>"
+        motionlessFlagURL = "https://flagcdn.com/h20/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
 
         #
         countryName = args["country"]
@@ -44,4 +41,4 @@ class flagByCountry(Resource):
         headers = {"Content-Type": "text/html"}
 
         #
-        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, countryName=countryName), 200, headers)
+        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, motionlessFlagURL=motionlessFlagURL, countryName=countryName), 200, headers)
