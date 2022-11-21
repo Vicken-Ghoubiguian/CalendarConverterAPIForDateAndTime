@@ -14,6 +14,8 @@ def getCurrencyFromCountry(countryAlpha2):
     print("")
 
 #
+
+#
 def getCountryAlpha2FromCountryName(countryName):
 
     #
