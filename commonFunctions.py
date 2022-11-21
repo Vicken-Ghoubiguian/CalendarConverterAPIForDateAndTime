@@ -8,6 +8,12 @@ import json
 import convertdate, os.path, pkgutil
 
 #
+def getCurrencyFromCountry(countryAlpha2):
+
+    #
+    print("")
+
+#
 def getCountryAlpha2FromCountryName(countryName):
 
     #
