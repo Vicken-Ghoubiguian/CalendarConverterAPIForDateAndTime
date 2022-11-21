@@ -30,7 +30,7 @@ class CountriesList(Resource):
         args = parser_gen.parse_args()
 
         #
-        return getJSONOfCountries(list(pycountry.countries), order=args["order"]), 200
+        return getJSONOfCountries(order=args["order"]), 200
 
 #
 @currentCountriesNamespace.route('/historical')

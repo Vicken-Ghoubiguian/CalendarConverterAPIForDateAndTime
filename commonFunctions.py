@@ -469,13 +469,13 @@ def getJSONOfHistoricalCountries(historicalCountriesList):
     return histCountryDict
 
 #
-def getJSONOfCountries(countriesList, order="asc"):
+def getJSONOfCountries(order="asc"):
 
     #
     countriesDict = {}
 
     #
-    for country in countriesList:
+    for country in list(pycountry.countries):
 
         #
         currentCountry = {
