@@ -19,4 +19,4 @@ class CurrenciesList(Resource):
         
         """
 
-        return "", 200
+        return getJSONOfCurrencies(), 200

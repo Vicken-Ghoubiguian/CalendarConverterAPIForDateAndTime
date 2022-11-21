@@ -14,6 +14,24 @@ def getCurrencyFromCountry(countryAlpha2):
     print("")
 
 #
+def getJSONOfCurrencies():
+
+    #
+    currenciesDict = {}
+
+    #
+    for currency in list(pycountry.currencies):
+
+        #
+        currenciesDict[currency.name] = {
+
+                "name": currency.name,
+                "alpha_3": currency.alpha_3,
+                "numeric": currency.numeric
+        }
+
+    #
+    return currenciesDict
 
 #
 def getCountryAlpha2FromCountryName(countryName):
