@@ -54,7 +54,7 @@ parser_flags_to_download_flag.add_argument('format', type=str, required=True, ch
 class DownloadFlagByCountry(Resource):
 
     #
-    def get(self):
+    def post(self):
 
         """
         
