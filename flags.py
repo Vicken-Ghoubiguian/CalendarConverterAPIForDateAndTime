@@ -46,3 +46,17 @@ class flagByCountry(Resource):
 
         #
         return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName), 200, headers)
+
+#
+@flagsNamespace.route('/download')
+class DownloadFlagByCountry(Resource):
+
+    #
+    def get(self):
+
+        """
+        
+        """
+
+        #
+        return ""
