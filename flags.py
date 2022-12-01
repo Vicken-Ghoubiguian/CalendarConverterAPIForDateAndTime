@@ -20,7 +20,7 @@ parser_flags.add_argument('country', type=str, required=True, choices=getAllCoun
 #
 @flagsNamespace.route('')
 @flagsNamespace.expect(parser_flags)
-class flagByCountry(Resource):
+class FlagByCountry(Resource):
 
     #
     def get(self):
