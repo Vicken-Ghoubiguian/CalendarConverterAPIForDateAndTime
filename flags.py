@@ -6,7 +6,7 @@ from flask import make_response, render_template
 from commonFunctions import *
 
 #
-flagsNamespace = Namespace('flags', description='Namespace to ...')
+flagsNamespace = Namespace('flags', description='Namespace to manipulate and get informations about all flags in the world...')
 
 #
 parser_flags = reqparse.RequestParser()
