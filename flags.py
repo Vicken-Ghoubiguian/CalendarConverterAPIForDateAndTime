@@ -49,6 +49,7 @@ class FlagByCountry(Resource):
 
 #
 @flagsNamespace.route('/download')
+@flagsNamespace.expect(parser_flags)
 class DownloadFlagByCountry(Resource):
 
     #
@@ -57,6 +58,9 @@ class DownloadFlagByCountry(Resource):
         """
         
         """
+
+        #
+        args = parser_flags.parse_args()
 
         #
         return {"TODO": "TODO"}, 200
