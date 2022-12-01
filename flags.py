@@ -15,7 +15,7 @@ parser_flags = reqparse.RequestParser()
 parser_flags.add_argument('country', type=str, required=True, choices=getAllCountriesForFlags(), help='Select the country whose flag and data you want...')
 
 #
-#parser_flags.add_argument('format', type=str, required=True, choices=['.png', '.webp', '.svg', '.jpeg'], help='')
+parser_flags.add_argument('format', type=str, required=True, choices=['.png', '.webp', '.svg', '.jpeg'], help='')
 
 #
 @flagsNamespace.route('')
