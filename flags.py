@@ -23,7 +23,7 @@ class flagByCountry(Resource):
     def get(self):
 
         """
-        Get 
+        Get the flag and all related datas from a country or a chosen territory... 
         """
 
         #
