@@ -72,6 +72,8 @@ class DownloadFlagByCountry(Resource):
         #
         response = requests.get(URL)
 
+        print("\n\n\n\n\n" + getCountryAlpha2FromCountryName(args["country"]) + args["format"] + "\n\n\n\n\n")
+
         #
         open(getCountryAlpha2FromCountryName(args["country"]) + args["format"], "wb").write(response.content)
 
