@@ -50,6 +50,7 @@ class FlagByCountry(Resource):
 #
 parser_flags_to_download_flag = parser_flags.copy()
 parser_flags_to_download_flag.add_argument('format', type=str, required=True, choices=['.png', '.webp', '.svg', '.jpeg'], help='Select the format you want...')
+#parser_flags_to_download_flag.add_argument('size', type=str, required=True, choices=['', '', '', ''], help='Select the size you want...')
 
 #
 @flagsNamespace.route('/download')
