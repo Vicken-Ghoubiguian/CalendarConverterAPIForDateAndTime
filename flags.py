@@ -73,7 +73,7 @@ class DownloadFlagByCountry(Resource):
         response = requests.get(URL)
 
         #
-        open(args["flags"] + args["format"], "wb").write(response.content)
+        open(getCountryAlpha2FromCountryName(args["country"]) + args["format"], "wb").write(response.content)
 
         #
         return {"TODO": "TODO"}, 200
