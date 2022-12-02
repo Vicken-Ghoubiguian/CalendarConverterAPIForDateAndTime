@@ -6,6 +6,9 @@ from flask import make_response, render_template
 from commonFunctions import *
 
 #
+import requests
+
+#
 flagsNamespace = Namespace('flags', description='Namespace to manipulate and get informations about all flags in the world...')
 
 #
@@ -62,6 +65,15 @@ class DownloadFlagByCountry(Resource):
 
         #
         args = parser_flags.parse_args()
+
+        #
+        URL = ""
+
+        #
+        response = requests.get(URL)
+
+        #
+        open("", "").write(response.content)
 
         #
         return {"TODO": "TODO"}, 200
