@@ -64,7 +64,7 @@ class DownloadFlagByCountry(Resource):
         """
 
         #
-        args = parser_flags.parse_args()
+        args = parser_flags_to_download_flag.parse_args()
 
         #
         URL = "https://flagcdn.com/192x144/cc.png"
