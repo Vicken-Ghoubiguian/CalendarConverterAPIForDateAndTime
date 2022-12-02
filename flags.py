@@ -67,13 +67,13 @@ class DownloadFlagByCountry(Resource):
         args = parser_flags.parse_args()
 
         #
-        URL = ""
+        URL = "https://flagcdn.com/192x144/cc.png"
 
         #
         response = requests.get(URL)
 
         #
-        open("", "").write(response.content)
+        open("cc.png", "wb").write(response.content)
 
         #
         return {"TODO": "TODO"}, 200
