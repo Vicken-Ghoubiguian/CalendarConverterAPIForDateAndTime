@@ -80,7 +80,7 @@ class DownloadFlagByCountry(Resource):
             open(getCountryAlpha2FromCountryName(args["country"]) + args["format"], "wb").write(response.content)
 
             #
-            return {"TODO": "TODO"}, 200
+            return {"code": 200, "TODO": "TODO"}, 200
 
         #
         except ConnectionError:
