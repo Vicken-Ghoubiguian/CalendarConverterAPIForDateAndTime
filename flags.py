@@ -71,6 +71,9 @@ class DownloadFlagByCountry(Resource):
         flagURL = "https://flagcdn.com/192x144/" + getCountryAlpha2FromCountryName(args["country"]) + args["format"]
 
         #
+        #try:
+
+        #
         response = requests.get(flagURL)
 
         #
@@ -78,3 +81,9 @@ class DownloadFlagByCountry(Resource):
 
         #
         return {"TODO": "TODO"}, 200
+
+        #
+        #raise ConnectionError:
+
+            #
+            #print("")
