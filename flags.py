@@ -86,4 +86,4 @@ class DownloadFlagByCountry(Resource):
         except ConnectionError:
 
             #
-            print("")
+            return {"code": "400", "Error": ""}, 400
