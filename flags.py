@@ -71,19 +71,19 @@ class DownloadFlagByCountry(Resource):
         flagURL = "https://flagcdn.com/192x144/" + getCountryAlpha2FromCountryName(args["country"]) + args["format"]
 
         #
-        #try:
-
-        #
-        response = requests.get(flagURL)
-
-        #
-        open(getCountryAlpha2FromCountryName(args["country"]) + args["format"], "wb").write(response.content)
-
-        #
-        return {"TODO": "TODO"}, 200
-
-        #
-        #raise ConnectionError:
+        try:
 
             #
-            #print("")
+            response = requests.get(flagURL)
+
+            #
+            open(getCountryAlpha2FromCountryName(args["country"]) + args["format"], "wb").write(response.content)
+
+            #
+            return {"TODO": "TODO"}, 200
+
+        #
+        except ConnectionError:
+
+            #
+            print("")
