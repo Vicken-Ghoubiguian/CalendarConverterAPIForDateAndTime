@@ -33,6 +33,11 @@
                 background-color: #FFFFFF;
             }
 
+            .flag_container {
+
+                margin-left: 20em;
+            }
+
             .flag {
 
                 border-radius: 10% 10%;
@@ -42,8 +47,8 @@
     <body style="background-color: #FFFFFF;">
         <div>
             <h1 id="cn_as_title">{{ countryName }}</h1>
-            <p style="margin-left: 20em;"><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
-            <p style="margin-left: 20em;"><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
+            <p class="flag_container"><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
+            <p class="flag_container"><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
             <p id="download_button">download</p>
         </div>
     </body>
