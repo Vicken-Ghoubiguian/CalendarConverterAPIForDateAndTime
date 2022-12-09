@@ -5,6 +5,11 @@
         <meta charset="utf-8">
         <link rel="icon" type="image/x-icon" href={{ wavingFlagURL }}>
         <style>
+            #download_button_container {
+
+                position: relative;
+            }
+
             #cn_as_title {
 
                 text-align: center;
@@ -49,7 +54,9 @@
             <h1 id="cn_as_title">{{ countryName }}</h1>
             <p class="flag_container"><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
             <p class="flag_container"><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
-            <p id="download_button">download</p>
+            <div id="download_button_container">
+                <p id="download_button">download</p>
+            </div>
         </div>
     </body>
 </html>
