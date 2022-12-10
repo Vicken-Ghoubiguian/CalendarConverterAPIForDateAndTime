@@ -3,6 +3,7 @@
     <head>
         <title>{{ countryName }}</title>
         <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/3d96bbc4fa.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href={{ wavingFlagURL }}>
         <style>
             #download_button_container {
@@ -60,7 +61,7 @@
             <p class="flag_container"><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
             <p class="flag_container"><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
             <div id="download_button_container">
-                <p id="download_button">download</p>
+                <p id="download_button"><i class="fa-solid fa-download"></i>download</p>
             </div>
         </div>
     </body>
