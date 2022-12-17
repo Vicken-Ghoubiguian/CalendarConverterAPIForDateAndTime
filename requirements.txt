@@ -3,3 +3,4 @@ flask-restx
 pytz
 pycountry
 convertdate
+requests
