@@ -123,4 +123,5 @@ python main.py
 * [convertdate - Official documentation](https://convertdate.readthedocs.io/en/latest/index.html),
 * [Flagpedia.net](https://flagpedia.net),
 * [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api),
-* [Python How to Download a File from a URL - codingem.com](https://www.codingem.com/python-download-file-from-url/)
+* [Python How to Download a File from a URL - codingem.com](https://www.codingem.com/python-download-file-from-url/),
+* [Pushing and Pulling to and from Docker Hub - R Docker tutorial](https://jsta.github.io/r-docker-tutorial/04-Dockerhub.html)
