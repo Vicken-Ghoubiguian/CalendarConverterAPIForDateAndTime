@@ -20,7 +20,7 @@ RUN apt install python3-pip -y
 RUN pip3 install -r requirements.txt
 
 #
-EXPOSE 80
+EXPOSE 5000
 
 #
 ENTRYPOINT ["python3", "main.py"]
