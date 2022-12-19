@@ -85,6 +85,13 @@ python main.py
 #### From DockerHub
 
 ```bash
+docker push wicken/worldswissknifeapi:latest
+```
+
+<a name="from_dockerfile"></a>
+#### From Dockerfile
+
+```bash
 git clone https://github.com/Vicken-Ghoubiguian/WorldSwissKnifeAPI
 ```
 
@@ -98,13 +105,6 @@ docker image build -t worldswissknifeapi:latest .
 
 ```bash
 docker container run -d --name worldswissknifeapi -p 80:80 worldswissknifeapi:latest
-```
-
-<a name="from_dockerfile"></a>
-#### From Dockerfile
-
-```bash
-docker pull wicken/worldswissknifeapi:latest
 ```
 
 <a name="heroku"></a>
