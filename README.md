@@ -104,7 +104,7 @@ docker container run -d --name worldswissknifeapi -p 80:80 worldswissknifeapi:la
 #### From Dockerfile
 
 ```bash
-docker push wicken/worldswissknifeapi:latest
+docker pull wicken/worldswissknifeapi:latest
 ```
 
 <a name="heroku"></a>
