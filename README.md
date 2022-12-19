@@ -85,7 +85,7 @@ python main.py
 #### From DockerHub
 
 ```bash
-docker push wicken/worldswissknifeapi:latest
+docker pull wicken/worldswissknifeapi:latest
 ```
 
 <a name="from_dockerfile"></a>
