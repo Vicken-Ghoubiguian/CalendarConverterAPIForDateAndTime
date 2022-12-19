@@ -89,7 +89,9 @@ python main.py
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
-
+```bash
+docker push wicken/worldswissknifeapi:latest
+```
 
 <a name="heroku"></a>
 ### Heroku
