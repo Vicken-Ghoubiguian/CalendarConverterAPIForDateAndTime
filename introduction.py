@@ -13,7 +13,7 @@ headers = {"Content-Type": "text/html"}
 
 #
 @introductionNamespace.route('')
-class Presentation(Resource):
+class Introduction(Resource):
 
     #
     def get(self):
