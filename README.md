@@ -92,6 +92,10 @@ python main.py
 docker pull wicken/worldswissknifeapi:latest
 ```
 
+```bash
+docker container run -d --name worldswissknifeapi -p 80:80 wicken/worldswissknifeapi:latest
+```
+
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
