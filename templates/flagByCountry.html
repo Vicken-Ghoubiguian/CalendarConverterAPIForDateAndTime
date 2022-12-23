@@ -53,14 +53,16 @@
 
                 border-radius: 10% 10%;
             }
-            
+
         </style>
     </head>
     <body style="background-color: #FFFFFF;">
         <div>
             <h1 id="cn_as_title">{{ countryName }}</h1>
-            <p class="flag_container"><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
-            <p class="flag_container"><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
+            <div class="flag_container">
+                <p><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
+                <p><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
+            </div>
             <div id="download_button_container">
                 <p id="download_button"><i class="fa-solid fa-download"></i> download</p>
             </div>
