@@ -62,19 +62,25 @@
     <body style="background-color: #FFFFFF;">
         <div>
             <h1 id="cn_as_title">{{ countryName }}</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="flag_container">
-                                <p><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
-                                <p><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
-                            </div>
-                        </td>
-                        <td>with two columns</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div style="text-align: center;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="flag_container">
+                                    <p><img class="flag" src={{ wavingFlagURL }} alt={{ countryName }}></p>
+                                    <p><img class="flag" src={{ originalFlagURL }} alt={{ countryName }}></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="margin-left: 4em;">
+                                    with two columns
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div id="download_button_container">
                 <p id="download_button"><i class="fa-solid fa-download"></i> download</p>
             </div>
