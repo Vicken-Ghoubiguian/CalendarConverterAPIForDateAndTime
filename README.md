@@ -79,7 +79,7 @@ This command is equivalent to this one below :
 python main.py
 ```
 
-
+It's now the time to enjoy yourself 😸...
 
 <a name="docker"></a>
 ### Docker
