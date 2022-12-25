@@ -133,6 +133,8 @@ docker image build -t worldswissknifeapi:latest .
 docker container run -d --name worldswissknifeapi -p 80:80 worldswissknifeapi:latest
 ```
 
+NOW... enjoy yourself 😸...
+
 <a name="heroku"></a>
 ### Heroku
 
