@@ -98,7 +98,7 @@ First, to get started, you need to pull this Docker image through this command b
 docker pull wicken/worldswissknifeapi:latest
 ```
 
-
+Secondly and finally, you have to run a new Docker container from this Docker image using the command bellow :
 
 ```bash
 docker container run -d --name worldswissknifeapi -p 80:80 wicken/worldswissknifeapi:latest
