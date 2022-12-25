@@ -90,7 +90,9 @@ python main.py
 <a name="from_dockerhub"></a>
 #### From DockerHub
 
-[just here](https://hub.docker.com/repository/docker/wicken/worldswissknifeapi)
+The Docker image on Docker Hub is available [just here](https://hub.docker.com/repository/docker/wicken/worldswissknifeapi)...
+
+First, to get started, you need to pull this Docker image through this command bellow :
 
 ```bash
 docker pull wicken/worldswissknifeapi:latest
