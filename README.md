@@ -104,6 +104,8 @@ docker pull wicken/worldswissknifeapi:latest
 docker container run -d --name worldswissknifeapi -p 80:80 wicken/worldswissknifeapi:latest
 ```
 
+It's done now... So enjoy yourself 😸...
+
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
