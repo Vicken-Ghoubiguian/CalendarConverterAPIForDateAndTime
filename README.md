@@ -170,3 +170,4 @@ NOW... enjoy yourself 😸...
 * [Python How to Download a File from a URL - codingem.com](https://www.codingem.com/python-download-file-from-url/),
 * [Pushing and Pulling to and from Docker Hub - R Docker tutorial](https://jsta.github.io/r-docker-tutorial/04-Dockerhub.html),
 * [Font Awesome](https://fontawesome.com)
+     * [Font Awesome - Documentation](https://fontawesome.com/docs),
