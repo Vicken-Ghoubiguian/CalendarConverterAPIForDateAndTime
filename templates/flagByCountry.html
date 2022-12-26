@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href={{ wavingFlagURL }}>
         <style>
 
-            #download_button_container {
+            .app_button_container {
 
                 position: relative;
                 text-align: center;
@@ -21,7 +21,7 @@
                 font-family: Stencil Std, fantasy;
             }
 
-            #download_button {
+            .app_button {
 
                 margin-top: 2em;
                 font-weight: bold; 
@@ -36,7 +36,7 @@
                 cursor: pointer;
             }
 
-            #download_button:hover {
+            .app_button:hover {
 
                 background-color: #FFFFFF;
                 border-style: solid;
@@ -95,8 +95,13 @@
                     </tbody>
                 </table>
             </div>
-            <div id="download_button_container">
-                <p id="download_button"><i class="fa-solid fa-download"></i> download</p>
+
+            <div class="app_button_container">
+                <p id="app_button"><i class="fa-solid fa-download"></i> download</p>
+            </div>
+
+            <div class="app_button_container">
+                <p class="app_button"><i class="fa-solid fa-download"></i> download</p>
             </div>
         </div>
     </body>
