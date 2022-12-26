@@ -1,0 +1,62 @@
+.app_button_container {
+
+    position: relative;
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+#container_general {
+
+    margin-top: 17em;
+}
+
+#cn_as_title {
+
+    text-align: center;
+    font-weight: bold;
+    font-family: Stencil Std, fantasy;
+}
+
+.app_button {
+
+    font-weight: bold; 
+    font-family: Stencil Std, fantasy; 
+    background-color: #008CBA; 
+    padding: 15px 32px;
+    border-radius: 50%;
+    text-decoration: none; 
+    display: inline-block;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.app_button:hover {
+
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0.001em;
+    border-color: #000000;
+    color: #000000;
+    cursor: pointer;
+}
+
+.flag_container {
+
+    margin-left: 20em;
+    width: 50%; height: 100px;
+    float: left;
+}
+
+.flag {
+
+    border-radius: 10% 10%;
+    transition: transform 1s ease 0s;
+    box-shadow: 12px 12px 7px 7px rgb(113 108 108 / 53%);
+    margin-bottom: 4em;
+}
+
+.flag:hover {
+
+    transform: rotate(360deg);
+}
