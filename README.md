@@ -171,5 +171,8 @@ NOW... Enjoy yourself 😸...
 * [Pushing and Pulling to and from Docker Hub - R Docker tutorial](https://jsta.github.io/r-docker-tutorial/04-Dockerhub.html),
 * [Adding CSS styling to your website - PythonHow](https://pythonhow.com/python-tutorial/flask/Adding-CSS-styling-to-your-website/),
 * [How To Make a Web Application Using Flask in Python 3 - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3),
+* [Using Emojis in HTML - w3schools](https://www.w3schools.com/html/html_emojis.asp),
+* [Using Emojis in HTML, CSS, and JavaScript - Kirupa](https://www.kirupa.com/html5/emoji.htm),
+* [How to add Emoji's in your website, using HTML, CSS or JavaScript - DEV](https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g),
 * [Font Awesome](https://fontawesome.com)
      * [Font Awesome - Documentation](https://fontawesome.com/docs),
