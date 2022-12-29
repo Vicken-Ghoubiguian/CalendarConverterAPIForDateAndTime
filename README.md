@@ -115,7 +115,7 @@ First of all, you must clone the project's repo on GitHub thanks to the command 
 git clone https://github.com/Vicken-Ghoubiguian/WorldSwissKnifeAPI
 ```
 
-Then, you have to 
+Then, you have to position yourself in the `WorldSwissKnifeAPI` directory generated :
 
 ```bash
 cd WorldSwissKnifeAPI
