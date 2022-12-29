@@ -169,5 +169,6 @@ NOW... Enjoy yourself 😸...
 * [Embed country flag images over CDN (HTTP API) - Flagpedia.net](https://flagpedia.net/download/api),
 * [Python How to Download a File from a URL - codingem.com](https://www.codingem.com/python-download-file-from-url/),
 * [Pushing and Pulling to and from Docker Hub - R Docker tutorial](https://jsta.github.io/r-docker-tutorial/04-Dockerhub.html),
+* [Adding CSS styling to your website - PythonHow](https://pythonhow.com/python-tutorial/flask/Adding-CSS-styling-to-your-website/),
 * [Font Awesome](https://fontawesome.com)
      * [Font Awesome - Documentation](https://fontawesome.com/docs),
