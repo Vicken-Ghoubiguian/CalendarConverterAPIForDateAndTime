@@ -3,9 +3,10 @@
     <head>
         <title>{{ countryName }}</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/flagByCountry.css') }}">
         <script src="https://kit.fontawesome.com/3d96bbc4fa.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href={{ wavingFlagURL }}>
-        <style>
+        <!-- <style>
 
             .app_button_container {
 
@@ -70,7 +71,7 @@
                 transform: rotate(360deg);
             }
 
-        </style>
+        </style> -->
     </head>
     <body style="background-color: #FFFFFF;">
         <div>
