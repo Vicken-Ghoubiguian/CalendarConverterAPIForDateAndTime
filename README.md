@@ -109,13 +109,13 @@ It's done now... So enjoy yourself 😸...
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
-
+First of all, you must clone the project's repo on GitHub thanks to the command bellow :
 
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/WorldSwissKnifeAPI
 ```
 
-
+Then, you have to 
 
 ```bash
 cd WorldSwissKnifeAPI
