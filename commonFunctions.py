@@ -8,6 +8,12 @@ import json
 import convertdate, os.path, pkgutil
 
 #
+def getFlagEmojiFromCountryName(countryName):
+
+    #
+    print("Soon")
+
+#
 def getCurrencyFromCountry(countryAlpha2):
 
     #
