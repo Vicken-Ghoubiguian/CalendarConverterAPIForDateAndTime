@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/flagByCountry.css') }}">
         <script src="https://kit.fontawesome.com/3d96bbc4fa.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href={{ wavingFlagURL }}>
+        <script type="text/javascript">
+
+            //
+            function test(event) {
+
+                //
+                navigator.clipboard.writeText("Tyty and Grominet Sylvester...");
+
+            };
+
+        </script>
     </head>
     <body>
         <div>
@@ -35,7 +46,7 @@
                 </table>
             </div>
             <div id="container_general">
-                <div class="app_button_container">
+                <div onclick="test(event)" class="app_button_container">
                     <p class="app_button"><i class="fa-solid fa-copy"></i> copy</p>
                 </div>
                 <div class="app_button_container">
