@@ -45,7 +45,7 @@ class FlagByCountry(Resource):
         headers = {"Content-Type": "text/html"}
 
         #
-        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName), 200, headers)
+        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji="🇦🇶"), 200, headers)
 
 #
 parser_flags_to_download_flag = parser_flags.copy()
