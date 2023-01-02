@@ -11,7 +11,7 @@ import convertdate, os.path, pkgutil
 def getFlagEmojiFromCountryName(countryName):
 
     #
-    print("Soon")
+    return "🇦🇶"
 
 #
 def getCurrencyFromCountry(countryAlpha2):
