@@ -2,9 +2,6 @@
 function copyFlagFunction(event) {
 
     //
-    let test = '{{ countryFlagEmoji }}';
-
-    //
-    navigator.clipboard.writeText(test);
+    navigator.clipboard.writeText(countryFlagEmoji);
 
 };
