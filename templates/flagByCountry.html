@@ -10,20 +10,6 @@
             var countryFlagEmoji = '{{ countryFlagEmoji }}';
         </script>
         <script src="{{ url_for('static', filename='js/flagByCountry.js') }}"></script>
-        <!--<script type="text/javascript">
-
-            //
-            function copyFlagFunction(event) {
-
-                //
-                let test = '{{ countryFlagEmoji }}';
-
-                //
-                navigator.clipboard.writeText(test);
-
-            };
-
-        </script>-->
     </head>
     <body>
         <div>
@@ -53,7 +39,7 @@
                 </table>
             </div>
             <div id="container_general">
-                <div onclick="copyFlagFunction(event);" class="app_button_container">
+                <div onclick="navigator.clipboard.writeText(countryFlagEmoji);" class="app_button_container">
                     <p class="app_button"><i class="fa-solid fa-copy"></i> copy</p>
                 </div>
                 <div class="app_button_container">
