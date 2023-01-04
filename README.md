@@ -174,5 +174,6 @@ NOW... Enjoy yourself 😸...
 * [Using Emojis in HTML - w3schools](https://www.w3schools.com/html/html_emojis.asp),
 * [Using Emojis in HTML, CSS, and JavaScript - Kirupa](https://www.kirupa.com/html5/emoji.htm),
 * [How to add Emoji's in your website, using HTML, CSS or JavaScript - DEV](https://dev.to/beumsk/how-to-add-emoji-s-in-your-website-using-html-css-or-javascript-4g6g),
+* [Passing variables from Flask to JavaScript - Stack Overflow](https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript),
 * [Font Awesome](https://fontawesome.com)
      * [Font Awesome - Documentation](https://fontawesome.com/docs),
