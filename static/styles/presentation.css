@@ -1,0 +1,38 @@
+#presentation_as_title {
+
+    text-align: center;
+    font-weight: bold;
+    font-family: Stencil Std, fantasy;
+}
+
+#github_logo {
+
+    color: #000000;
+}
+
+#dockerhub_logo {
+
+    color: #0db7ed;
+}
+
+#codepen_logo {
+
+    color: #000000;
+}
+
+#div_of_logos {
+
+    text-align: center;
+}
+
+.transform-fa {
+
+    cursor: pointer;
+    transition: transform 1s ease 0s;
+    margin-left: 1em;
+}
+
+.transform-fa:hover {
+
+    transform: rotate(360deg);
+}
