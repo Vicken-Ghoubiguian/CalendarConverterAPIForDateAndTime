@@ -83,3 +83,9 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
   }
+
+  .app_button_container:hover .tooltiptext_copy_button {
+    
+    visibility: visible;
+    opacity: 1;
+  }
