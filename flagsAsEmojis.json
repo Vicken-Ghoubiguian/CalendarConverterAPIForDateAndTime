@@ -25,6 +25,15 @@
     {"country": "Syrian Arab Republic", "flag": "🇸🇾"},
     {"country": "Turks and Caicos Islands", "flag": "🇹🇨"},
 
+    {"country": "Uganda", "flag": "🇺🇬"},
+    {"country": "Ukraine", "flag": "🇺🇦"},
+    {"country": "United States Minor Outlying Islands", "flag": "🇺🇲"},
+    {"country": "Uruguay", "flag": "🇺🇾"},
+    {"country": "United States", "flag": "🇺🇸"},
+    {"country": "Uzbekistan", "flag": "🇺🇿"},
+    {"country": "Holy See (Vatican City State)", "flag": "🇻🇦"},
+    {"country": "Saint Vincent and the Grenadines", "flag": "🇻🇨"},
+    {"country": "Venezuela, Bolivarian Republic of", "flag": "🇻🇪"},
     {"country": "Virgin Islands, British", "flag": "🇻🇬"},
     {"country": "Virgin Islands, U.S.", "flag": "🇻🇮"},
     {"country": "Viet Nam", "flag": "🇻🇳"},
@@ -50,14 +59,5 @@
     "Turkey": "🇹🇷",
     "Tuvalu": "🇹🇻",
     "Taiwan, Province of China": "🇹🇼",
-    "Tanzania, United Republic of": "🇹🇿",
-    "Uganda": "🇺🇬",
-    "Ukraine": "🇺🇦",
-    "United States Minor Outlying Islands": "🇺🇲",
-    "Uruguay": "🇺🇾",
-    "United States": "🇺🇸",
-    "Uzbekistan": "🇺🇿",
-    "Holy See (Vatican City State)": "🇻🇦",
-    "Saint Vincent and the Grenadines": "🇻🇨",
-    "Venezuela, Bolivarian Republic of": "🇻🇪"
+    "Tanzania, United Republic of": "🇹🇿"
 }
