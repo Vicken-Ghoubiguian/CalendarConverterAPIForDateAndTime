@@ -11,6 +11,14 @@ import convertdate, os.path, pkgutil
 def getFlagEmojiFromCountryName(countryName):
 
     #
+    flagsAsEmojisJSON = open('flagsAsEmojis.json')
+
+    #
+    flagsAsEmojisDictionary = json.load(flagsAsEmojisJSON)
+
+    print(flagsAsEmojisDictionary)
+
+    #
     return "🇦🇶"
 
 #
