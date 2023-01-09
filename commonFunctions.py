@@ -17,7 +17,7 @@ def getFlagEmojiFromCountryName(countryName):
     flagsAsEmojisDictionary = json.load(flagsAsEmojisJSON)
 
     #
-    for flag in flagsAsEmojisDictionary:
+    for flag in flagsAsEmojisDictionary['flagsAsEmojis']:
 
         #
         print(flag)
