@@ -24,6 +24,17 @@
     {"country": "Seychelles", "flag": "🇸🇨"},
     {"country": "Syrian Arab Republic", "flag": "🇸🇾"},
     {"country": "Turks and Caicos Islands", "flag": "🇹🇨"},
+    {"country": "Chad", "flag": "🇹🇩"},
+    {"country": "Togo", "flag": "🇹🇬"},
+    {"country": "Thailand", "flag": "🇹🇭"},
+    {"country": "Tokelau", "flag": "🇹🇰"},
+    {"country": "Turkmenistan", "flag": "🇹🇲"},
+    {"country": "Timor-Leste", "flag": "🇹🇱"},
+    {"country": "Tonga", "flag": "🇹🇴"},
+    {"country": "Trinidad and Tobago", "flag": "🇹🇹"},
+    {"country": "Tunisia", "flag": "🇹🇳"},
+    {"country": "Turkey", "flag": "🇹🇷"},
+    {"country": "Tuvalu", "flag": "🇹🇻"},
 
     {"country": "Uganda", "flag": "🇺🇬"},
     {"country": "Ukraine", "flag": "🇺🇦"},
@@ -46,18 +57,6 @@
     {"country": "Zimbabwe", "flag": "🇿🇼"}
     ],
 
-    "Chad": "🇹🇩",
-    "Togo": "🇹🇬",
-    "Thailand": "🇹🇭",
-    "Tajikistan": "🇹🇯",
-    "Tokelau": "🇹🇰",
-    "Turkmenistan": "🇹🇲",
-    "Timor-Leste": "🇹🇱",
-    "Tonga": "🇹🇴",
-    "Trinidad and Tobago": "🇹🇹",
-    "Tunisia": "🇹🇳",
-    "Turkey": "🇹🇷",
-    "Tuvalu": "🇹🇻",
     "Taiwan, Province of China": "🇹🇼",
     "Tanzania, United Republic of": "🇹🇿"
 }
