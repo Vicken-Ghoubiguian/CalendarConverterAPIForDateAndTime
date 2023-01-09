@@ -22,7 +22,12 @@
     {"country": "Réunion", "flag": "🇷🇪"},
 
     {"country": "Seychelles", "flag": "🇸🇨"},
+    {"country": "Syrian Arab Republic", "flag": "🇸🇾"},
+    {"country": "Turks and Caicos Islands", "flag": "🇹🇨"},
 
+    {"country": "Virgin Islands, British", "flag": "🇻🇬"},
+    {"country": "Virgin Islands, U.S.", "flag": "🇻🇮"},
+    {"country": "Viet Nam", "flag": "🇻🇳"},
     {"country": "Vanuatu", "flag": "🇻🇺"},
     {"country": "Wallis and Futuna", "flag": "🇼🇫"},
     {"country": "Samoa", "flag": "🇼🇸"},
@@ -32,8 +37,6 @@
     {"country": "Zimbabwe", "flag": "🇿🇼"}
     ],
 
-    "Syrian Arab Republic": "🇸🇾",
-    "Turks and Caicos Islands": "🇹🇨",
     "Chad": "🇹🇩",
     "Togo": "🇹🇬",
     "Thailand": "🇹🇭",
@@ -56,8 +59,5 @@
     "Uzbekistan": "🇺🇿",
     "Holy See (Vatican City State)": "🇻🇦",
     "Saint Vincent and the Grenadines": "🇻🇨",
-    "Venezuela, Bolivarian Republic of": "🇻🇪",
-    "Virgin Islands, British": "🇻🇬",
-    "Virgin Islands, U.S.": "🇻🇮",
-    "Viet Nam": "🇻🇳"
+    "Venezuela, Bolivarian Republic of": "🇻🇪"
 }
