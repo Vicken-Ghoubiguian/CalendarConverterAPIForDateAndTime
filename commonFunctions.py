@@ -19,6 +19,12 @@ def getFlagEmojiFromCountryName(countryName):
     print(flagsAsEmojisDictionary)
 
     #
+    for flag in flagsAsEmojisDictionary:
+
+        #
+        print(flag)
+
+    #
     return "🇦🇶"
 
 #
