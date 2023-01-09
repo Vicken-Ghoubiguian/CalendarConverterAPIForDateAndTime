@@ -21,7 +21,15 @@
     {"country": "Qatar", "flag": "🇶🇦"},
     {"country": "Réunion", "flag": "🇷🇪"},
 
-    {"country": "Seychelles", "flag": "🇸🇨"}
+    {"country": "Seychelles", "flag": "🇸🇨"},
+
+    {"country": "Vanuatu", "flag": "🇻🇺"},
+    {"country": "Wallis and Futuna", "flag": "🇼🇫"},
+    {"country": "Samoa", "flag": "🇼🇸"},
+    {"country": "Yemen", "flag": "🇾🇪"},
+    {"country": "South Africa", "flag": "🇿🇦"},
+    {"country": "Zambia", "flag": "🇿🇲"},
+    {"country": "Zimbabwe", "flag": "🇿🇼"}
     ],
 
     "Syrian Arab Republic": "🇸🇾",
@@ -51,12 +59,5 @@
     "Venezuela, Bolivarian Republic of": "🇻🇪",
     "Virgin Islands, British": "🇻🇬",
     "Virgin Islands, U.S.": "🇻🇮",
-    "Viet Nam": "🇻🇳",
-    "Vanuatu": "🇻🇺",
-    "Wallis and Futuna": "🇼🇫",
-    "Samoa": "🇼🇸",
-    "Yemen": "🇾🇪",
-    "South Africa": "🇿🇦",
-    "Zambia": "🇿🇲",
-    "Zimbabwe": "🇿🇼"
+    "Viet Nam": "🇻🇳"
 }
