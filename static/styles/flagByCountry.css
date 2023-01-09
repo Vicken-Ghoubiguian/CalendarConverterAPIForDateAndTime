@@ -88,4 +88,6 @@ body {
     
     visibility: visible;
     opacity: 1;
+    transition-duration: 5s;
+    transition-delay: 2s;
   }
