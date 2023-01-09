@@ -35,6 +35,8 @@
     {"country": "Tunisia", "flag": "🇹🇳"},
     {"country": "Turkey", "flag": "🇹🇷"},
     {"country": "Tuvalu", "flag": "🇹🇻"},
+    {"country": "Taiwan, Province of China", "flag": "🇹🇼"},
+    {"country": "Tanzania, United Republic of", "flag": "🇹🇿"},
 
     {"country": "Uganda", "flag": "🇺🇬"},
     {"country": "Ukraine", "flag": "🇺🇦"},
@@ -55,8 +57,5 @@
     {"country": "South Africa", "flag": "🇿🇦"},
     {"country": "Zambia", "flag": "🇿🇲"},
     {"country": "Zimbabwe", "flag": "🇿🇼"}
-    ],
-
-    "Taiwan, Province of China": "🇹🇼",
-    "Tanzania, United Republic of": "🇹🇿"
+    ]
 }
