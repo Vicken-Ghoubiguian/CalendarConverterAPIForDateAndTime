@@ -19,10 +19,11 @@
     {"country": "Nepal", "flag": "🇳🇵"},
 
     {"country": "Qatar", "flag": "🇶🇦"},
-    {"country": "Réunion", "flag": "🇷🇪"}
+    {"country": "Réunion", "flag": "🇷🇪"},
+
+    {"country": "Seychelles", "flag": "🇸🇨"}
     ],
 
-    "Seychelles": "🇸🇨",
     "Syrian Arab Republic": "🇸🇾",
     "Turks and Caicos Islands": "🇹🇨",
     "Chad": "🇹🇩",
