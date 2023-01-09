@@ -14,13 +14,13 @@
     {"country": "French Southern Territories", "flag": "🇹🇫"},
     {"country": "Antigua and Barbuda", "flag": "🇦🇬"},
     {"country": "Australia", "flag": "🇦🇹"},
-    {"country": "Azerbaijan", "flag": "🇦🇿"}
+    {"country": "Azerbaijan", "flag": "🇦🇿"},
+
+    {"country": "Nepal", "flag": "🇳🇵"},
+
+    {"country": "Qatar", "flag": "🇶🇦"},
+    {"country": "Réunion", "flag": "🇷🇪"}
     ],
-
-    "Nepal": "🇳🇵",
-
-    "Qatar": "🇶🇦",
-    "Réunion": "🇷🇪",
 
     "Seychelles": "🇸🇨",
     "Syrian Arab Republic": "🇸🇾",
