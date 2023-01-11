@@ -26,7 +26,7 @@ def getFlagEmojiFromCountryName(countryName):
             return flag['flag']
 
     #
-    return "🇦🇶"
+    return "NaN"
 
 #
 def getCurrencyFromCountry(countryAlpha2):
