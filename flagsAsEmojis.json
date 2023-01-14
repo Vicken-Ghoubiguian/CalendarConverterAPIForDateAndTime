@@ -79,7 +79,25 @@
     {"country": "Hong Kong", "flag": "🇭🇰"},
 
     {"country": "Macao", "flag": "🇲🇴"},
+    {"country": "Saint Martin (French part)", "flag": "🇲🇫"},
 
+    {"country": "Monaco", "flag": "🇲🇨"},
+
+    {"country": "Marshall Island", "flag": "🇲🇭"},
+    {"country": "North Macedonia", "flag": "🇲🇰"},
+    {"country": "Mali", "flag": "🇲🇱"},
+    {"country": "Malta", "flag": "🇲🇹"},
+    {"country": "Myanmar", "flag": "🇲🇲"},
+    {"country": "Montenegro", "flag": "🇲🇪"},
+    {"country": "Mongolia", "flag": "🇲🇳"},
+    {"country": "Northern Mariana Islands", "flag": "🇲🇵"},
+    {"country": "Mozambique", "flag": "🇲🇿"},
+    {"country": "Mauritania", "flag": "🇲🇷"},
+    {"country": "Montserrat", "flag": "🇲🇸"},
+
+    {"country": "Niue", "flag": "🇳🇺"},
+    {"country": "Netherlands", "flag": "🇳🇱"},
+    {"country": "Norway", "flag": "🇳🇴"},
     {"country": "Nepal", "flag": "🇳🇵"},
     {"country": "Nauru", "flag": "🇳🇷"},
     {"country": "New Zealand", "flag": "🇳🇿"},
