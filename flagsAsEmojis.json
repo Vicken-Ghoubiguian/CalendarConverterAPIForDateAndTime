@@ -75,12 +75,23 @@
     {"country": "Falkland Islands (Malvinas)", "flag": "🇫🇰"},
     {"country": "France", "flag": "🇫🇷"},
     {"country": "Faroe Islands", "flag": "🇫🇴"},
+    {"country": "Micronesia, Federated States of", "flag": "🇫🇲"},
+    {"country": "Gabon", "flag": "🇬🇦"},
+    {"country": "United Kingdom", "flag": "🇬🇧"},
+    {"country": "Georgia", "flag": "🇬🇪"},
+    {"country": "Guernsey", "flag": "🇬🇬"},
+    {"country": "Ghana", "flag": "🇬🇭"},
+    {"country": "Gibraltar", "flag": "🇬🇮"},
+    {"country": "Guinea", "flag": "🇬🇳"},
+    {"country": "Guadeloupe", "flag": "🇬🇵"},
 
     {"country": "Hong Kong", "flag": "🇭🇰"},
 
+    {"country": "Haiti", "flag": "🇭🇹"},
+
     {"country": "Macao", "flag": "🇲🇴"},
     {"country": "Saint Martin (French part)", "flag": "🇲🇫"},
-
+    {"country": "Morocco", "flag": "🇲🇦"},
     {"country": "Monaco", "flag": "🇲🇨"},
 
     {"country": "Marshall Island", "flag": "🇲🇭"},
