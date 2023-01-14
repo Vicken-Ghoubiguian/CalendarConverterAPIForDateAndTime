@@ -71,6 +71,14 @@
     {"country": "Estonia", "flag": "🇪🇪"},
     {"country": "Ethiopia", "flag": "🇪🇹"},
     {"country": "Finland", "flag": "🇫🇮"},
+    {"country": "Fiji", "flag": "🇫🇯"},
+    {"country": "Falkland Islands (Malvinas)", "flag": "🇫🇰"},
+    {"country": "France", "flag": "🇫🇷"},
+    {"country": "Faroe Islands", "flag": "🇫🇴"},
+
+    {"country": "Hong Kong", "flag": "🇭🇰"},
+
+    {"country": "Macao", "flag": "🇲🇴"},
 
     {"country": "Nepal", "flag": "🇳🇵"},
     {"country": "Nauru", "flag": "🇳🇷"},
