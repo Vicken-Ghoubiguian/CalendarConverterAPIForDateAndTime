@@ -84,7 +84,17 @@
     {"country": "Gibraltar", "flag": "🇬🇮"},
     {"country": "Guinea", "flag": "🇬🇳"},
     {"country": "Guadeloupe", "flag": "🇬🇵"},
-
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
+    {"country": "", "flag": ""},
     {"country": "Hong Kong", "flag": "🇭🇰"},
 
     {"country": "Haiti", "flag": "🇭🇹"},
