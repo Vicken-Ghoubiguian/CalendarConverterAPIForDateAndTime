@@ -99,7 +99,12 @@
     {"country": "Honduras", "flag": "🇭🇳"},
     {"country": "Croatia", "flag": "🇭🇷"},
     {"country": "Haiti", "flag": "🇭🇹"},
-
+    {"country": "Hungary", "flag": "🇭🇺"},
+    {"country": "Indonesia", "flag": "🇮🇩"},
+    {"country": "Isle of Man", "flag": "🇮🇲"},
+    {"country": "India", "flag": "🇮🇳"},
+    {"country": "British Indian Ocean Territory", "flag": "🇮🇴"},
+    
     {"country": "Macao", "flag": "🇲🇴"},
     {"country": "Saint Martin (French part)", "flag": "🇲🇫"},
     {"country": "Morocco", "flag": "🇲🇦"},
