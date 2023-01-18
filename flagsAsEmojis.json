@@ -138,8 +138,9 @@
     {"country": "Morocco", "flag": "🇲🇦"},
     {"country": "Monaco", "flag": "🇲🇨"},
     {"country": "Moldova, Republic of", "flag": "🇲🇩"},
-    {"country": "", "flag": ""},
-
+    {"country": "Madagascar", "flag": "🇲🇬"},
+    {"country": "Maldives", "flag": "🇲🇻"},
+    {"country": "Mexico", "flag": "🇲🇽"},
     {"country": "Marshall Island", "flag": "🇲🇭"},
     {"country": "North Macedonia", "flag": "🇲🇰"},
     {"country": "Mali", "flag": "🇲🇱"},
