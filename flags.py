@@ -87,3 +87,21 @@ class DownloadFlagByCountry(Resource):
 
             #
             return {"code": 400, "message": "You are not connected to the Internet"}, 400
+
+#
+@flagsNamespace.route('/emoji')
+@flagsNamespace.expect(parser_flags)
+class EmojiFlagByCountry(Resource):
+
+    #
+    def get(self):
+
+        """
+        
+        """
+
+        #
+        args = parser_flags.parse_args()
+
+        #
+        return {"country": args["country"], "flag": getFlagEmojiFromCountryName(args["country"])}, 200
