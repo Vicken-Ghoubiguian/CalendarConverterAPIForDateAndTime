@@ -159,7 +159,11 @@
     {"country": "Malaysia", "flag": "🇲🇾"},
     {"country": "Mayotte", "flag": "🇾🇹"},
     {"country": "Namibia", "flag": "🇳🇦"},
-
+    {"country": "New Caledonia", "flag": "🇳🇨"},
+    {"country": "Niger", "flag": "🇳🇪"},
+    {"country": "Norfolk Island", "flag": "🇳🇫"},
+    {"country": "Nigeria", "flag": "🇳🇬"},
+    {"country": "Nicaragua", "flag": "🇳🇮"},
     {"country": "Niue", "flag": "🇳🇺"},
     {"country": "Netherlands", "flag": "🇳🇱"},
     {"country": "Norway", "flag": "🇳🇴"},
