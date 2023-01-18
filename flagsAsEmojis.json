@@ -137,6 +137,8 @@
     {"country": "Saint Martin (French part)", "flag": "🇲🇫"},
     {"country": "Morocco", "flag": "🇲🇦"},
     {"country": "Monaco", "flag": "🇲🇨"},
+    {"country": "Moldova, Republic of", "flag": "🇲🇩"},
+    {"country": "", "flag": ""},
 
     {"country": "Marshall Island", "flag": "🇲🇭"},
     {"country": "North Macedonia", "flag": "🇲🇰"},
