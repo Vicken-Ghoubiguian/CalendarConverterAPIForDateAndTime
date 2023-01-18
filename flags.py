@@ -97,7 +97,7 @@ class EmojiFlagByCountry(Resource):
     def get(self):
 
         """
-        
+        Get the flag as emoji from a country or a chosen territory...
         """
 
         #
