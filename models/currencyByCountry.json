@@ -1,5 +1,6 @@
 {"currencyByCountry" : [
-    {"country": "Aruba", "currency": ""},
-    {"country": "Afghanistan", "currency": ""}
+    {"country": "Aruba", "currency": "", "symbol": ""},
+    {"country": "Afghanistan", "currency": "", "symbol": ""},
+    {"country": "Angola", "currency" : "", "symbol": ""}
     ]
 }
