@@ -504,7 +504,8 @@ def getJSONOfCountries(order="asc"):
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
-                            "flag": country.flag
+                            "flag": country.flag,
+                            "currency": "dddd"
                         }
 
         #
