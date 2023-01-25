@@ -32,7 +32,7 @@ def getFlagEmojiFromCountryName(countryName):
 def getCurrencyFromCountry(countryAlpha2):
 
     #
-    print("")
+    return "dddddd"
 
 #
 def getJSONOfCurrencies():
@@ -505,7 +505,7 @@ def getJSONOfCountries(order="asc"):
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
                             "flag": country.flag,
-                            "currency": "dddd"
+                            "currency": getCurrencyFromCountry(country.alpha_2)
                         }
 
         #
