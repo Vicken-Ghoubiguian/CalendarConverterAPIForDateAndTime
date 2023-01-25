@@ -45,7 +45,7 @@ def getCurrencyFromCountry(numeric):
             }
 
     #
-    return "dddddd"
+    return "NaN"
 
 #
 def getJSONOfCurrencies():
