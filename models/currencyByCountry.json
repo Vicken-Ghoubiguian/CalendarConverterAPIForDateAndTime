@@ -1,4 +1,5 @@
 {"currencyByCountry" : [
-    {}
+    {"country": "Aruba", "currency": ""},
+    {"country": "Afghanistan", "currency": ""}
     ]
 }
