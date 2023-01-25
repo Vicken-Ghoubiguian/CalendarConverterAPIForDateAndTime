@@ -16,7 +16,7 @@ class CurrenciesList(Resource):
     def get(self):
 
         """
-        
+        Get all existing currencies with their corresponding countries...
         """
 
         return getJSONOfCurrencies(), 200
