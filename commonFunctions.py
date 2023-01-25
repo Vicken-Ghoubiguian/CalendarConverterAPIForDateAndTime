@@ -11,7 +11,7 @@ import convertdate, os.path, pkgutil
 def getFlagEmojiFromCountryName(countryName):
 
     #
-    flagsAsEmojisJSON = open('flagsAsEmojis.json')
+    flagsAsEmojisJSON = open('models/flagsAsEmojis.json')
 
     #
     flagsAsEmojisDictionary = json.load(flagsAsEmojisJSON)
