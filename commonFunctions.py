@@ -61,7 +61,8 @@ def getJSONOfCurrencies():
 
                 "name": currency.name,
                 "alpha_3": currency.alpha_3,
-                "numeric": currency.numeric
+                "numeric": currency.numeric,
+                "countries": []
         }
 
     #
