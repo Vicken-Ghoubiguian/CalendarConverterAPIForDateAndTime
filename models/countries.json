@@ -232,7 +232,7 @@
     {"country": "Ukraine", "flag": "🇺🇦", "currency": "", "symbol": ""},
     {"country": "United States Minor Outlying Islands", "flag": "🇺🇲", "currency": "", "symbol": ""},
     {"country": "Uruguay", "flag": "🇺🇾", "currency": "", "symbol": ""},
-    {"country": "United States", "flag": "🇺🇸", "currency": "", "symbol": ""},
+    {"country": "United States", "flag": "🇺🇸", "currency": "", "symbol": "$"},
     {"country": "Uzbekistan", "flag": "🇺🇿", "currency": "", "symbol": ""},
     {"country": "Holy See (Vatican City State)", "flag": "🇻🇦", "currency": "", "symbol": ""},
     {"country": "Saint Vincent and the Grenadines", "flag": "🇻🇨", "currency": "", "symbol": ""},
