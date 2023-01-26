@@ -11,13 +11,13 @@ import convertdate, os.path, pkgutil
 def getFlagEmojiFromCountryName(countryName):
 
     #
-    flagsAsEmojisJSON = open('models/flagsAsEmojis.json')
+    countriesJSON = open('models/countries.json')
 
     #
-    flagsAsEmojisDictionary = json.load(flagsAsEmojisJSON)
+    countriesDictionary = json.load(countriesJSON)
 
     #
-    for flag in flagsAsEmojisDictionary['flagsAsEmojis']:
+    for flag in countriesDictionary['countries']:
 
         #
         if flag['country'] == countryName:
