@@ -2,8 +2,8 @@
     {"country": "Aruba", "currency": "", "symbol": ""},
     {"country": "Afghanistan", "currency": "", "symbol": ""},
     {"country": "Angola", "currency" : "", "symbol": ""},
-    {"country": "Anguilla", "flag": "🇦🇮"},
-    {"country": "Åland Islands", "flag": "🇦🇽"},
+    {"country": "Anguilla", "currency": "", "symbol": ""},
+    {"country": "Åland Islands", "currency": "", "symbol": ""},
     {"country": "Albania", "flag": "🇦🇱"},
     {"country": "Andorra", "flag": "🇦🇩"},
     {"country": "United Arab Emirates", "flag": "🇦🇪"},
@@ -242,10 +242,10 @@
     {"country": "Viet Nam", "flag": "🇻🇳"},
     {"country": "Vanuatu", "flag": "🇻🇺"},
     {"country": "Wallis and Futuna", "flag": "🇼🇫"},
-    {"country": "Samoa", "flag": "🇼🇸"},
-    {"country": "Yemen", "flag": "🇾🇪"},
+    {"country": "Samoa", "currency": "", "symbol": ""},
+    {"country": "Yemen", "currency": "", "symbol": ""},
     {"country": "South Africa", "flag": "🇿🇦"},
-    {"country": "Zambia", "flag": "🇿🇲"},
-    {"country": "Zimbabwe", "flag": "🇿🇼"}
+    {"country": "Zambia", "currency": "", "symbol": ""},
+    {"country": "Zimbabwe", "currency": "", "symbol": ""}
     ]
 }
