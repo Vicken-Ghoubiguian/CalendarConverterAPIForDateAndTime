@@ -33,19 +33,28 @@ class FlagByCountry(Resource):
         args = parser_flags.parse_args()
 
         #
-        wavingFlagURL = "https://flagcdn.com/192x144/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+        try:
+
+            #
+            wavingFlagURL = "https://flagcdn.com/192x144/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+
+            #
+            originalFlagURL = "https://flagcdn.com/h120/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+
+            #
+            countryName = args["country"]
+
+            #
+            headers = {"Content-Type": "text/html"}
+
+            #
+            return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji=getFlagEmojiFromCountryName(countryName)), 200, headers)
 
         #
-        originalFlagURL = "https://flagcdn.com/h120/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
+        except:
 
-        #
-        countryName = args["country"]
-
-        #
-        headers = {"Content-Type": "text/html"}
-
-        #
-        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji=getFlagEmojiFromCountryName(countryName)), 200, headers)
+            #
+            return make_response(render_template('error.html'), 400, headers)
 
 #
 parser_flags_to_download_flag = parser_flags.copy()
