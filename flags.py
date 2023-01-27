@@ -33,30 +33,22 @@ class FlagByCountry(Resource):
         args = parser_flags.parse_args()
 
         #
-        try:
-
-            #
-            wavingFlagURL = "https://flagcdn.com/192x144/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
-
-            #
-            originalFlagURL = "https://flagcdn.com/h120/" + getCountryAlpha2FromCountryName(args["country"]) + ".png"
-
-            #
-            countryName = args["country"]
-
-            #
-            headers = {"Content-Type": "text/html"}
-
-            #
-            return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji=getFlagEmojiFromCountryName(countryName)), 200, headers)
+        countryAlpha2 = getCountryAlpha2FromCountryName(args["country"])
 
         #
-        except Error:
+        wavingFlagURL = "https://flagcdn.com/192x144/" + countryAlpha2 + ".png"
 
-            print("\n\n\n\nTest...\n\n\n\n")
+        #
+        originalFlagURL = "https://flagcdn.com/h120/" + countryAlpha2 + ".png"
 
-            #
-            return make_response(render_template('error.html'), 400, headers)
+        #
+        countryName = args["country"]
+
+        #
+        headers = {"Content-Type": "text/html"}
+
+        #
+        return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji=getFlagEmojiFromCountryName(countryName)), 200, headers)
 
 #
 parser_flags_to_download_flag = parser_flags.copy()
