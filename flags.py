@@ -51,7 +51,9 @@ class FlagByCountry(Resource):
             return make_response(render_template('flagByCountry.html', wavingFlagURL=wavingFlagURL, originalFlagURL=originalFlagURL, countryName=countryName, countryFlagEmoji=getFlagEmojiFromCountryName(countryName)), 200, headers)
 
         #
-        except:
+        except Error:
+
+            print("\n\n\n\nTest...\n\n\n\n")
 
             #
             return make_response(render_template('error.html'), 400, headers)
