@@ -1,5 +1,5 @@
 {"countries" : [
-    {"country": "Aruba", "flag": "🇦🇼", "currency_numeric": "", "currency_symbol": ""},
+    {"country": "Aruba", "flag": "🇦🇼", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Afghanistan", "flag": "🇦🇫", "currency_numeric": "", "currency_symbol": ""},
     {"country": "Angola", "flag" : "🇦🇴", "currency_numeric": "", "currency_symbol": ""},
     {"country": "Anguilla", "flag": "🇦🇮", "currency_numeric": "", "currency_symbol": ""},
