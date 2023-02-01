@@ -106,7 +106,7 @@
     {"country": "India", "flag": "🇮🇳", "currency": {"numeric": "", "symbol": ""}},
     {"country": "British Indian Ocean Territory", "flag": "🇮🇴", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Ireland", "flag": "🇮🇪", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Iran, Islamic Republic of", "flag": "🇮🇷", "currency_numeric": "", "symbol": "﷼"},
+    {"country": "Iran, Islamic Republic of", "flag": "🇮🇷", "currency": {"numeric": "", "symbol": "﷼"}},
     {"country": "Iraq", "flag": "🇮🇶", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Iceland", "flag": "🇮🇸", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Israel", "flag": "🇮🇱", "currency": {"numeric": "", "symbol": ""}},
