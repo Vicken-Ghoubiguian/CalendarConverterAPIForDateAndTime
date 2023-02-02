@@ -29,23 +29,26 @@ def getFlagEmojiFromCountryName(countryName):
     return "NaN"
 
 #
-def getCurrencyFromCountry(numeric):
+def getCurrencyFromCountry(country):
 
     #
-    for currency in list(pycountry.currencies):
+    print("Soon")
+
+    #
+    #for currency in list(pycountry.currencies):
 
         #
-        if currency.numeric == numeric:
+        #if currency.numeric == numeric:
 
             #
-            return {
+            #return {
 
-                "alpha_3": currency.alpha_3,
-                "name": currency.name
-            }
+                #"alpha_3": currency.alpha_3,
+                #"name": currency.name
+            #}
 
     #
-    return "NaN"
+    #return "NaN"
 
 #
 def getJSONOfCurrencies():
@@ -519,7 +522,7 @@ def getJSONOfCountries(order="asc"):
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
                             "flag": country.flag,
-                            "currency": getCurrencyFromCountry(country.numeric)
+                            "currency": country.currency
                         }
 
         #
