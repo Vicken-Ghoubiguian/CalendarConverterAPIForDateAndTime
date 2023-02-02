@@ -522,8 +522,7 @@ def getJSONOfCountries(order="asc"):
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
-                            "flag": country.flag,
-                            "currency": getCurrencyFromCountry(name)
+                            "flag": country.flag
                         }
 
         #
@@ -536,7 +535,9 @@ def getJSONOfCountries(order="asc"):
 
         #
         finally:
+            currentCountry["currency"] = getCurrencyFromCountry(name)
             countriesDict[country.name] = currentCountry
+
 
     #
     return countriesDict
