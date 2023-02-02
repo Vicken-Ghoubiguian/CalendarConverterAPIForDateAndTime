@@ -38,13 +38,13 @@ def getCurrencyFromCountry(wishedCountry):
     countriesDictionary = json.load(countriesJSON)
 
     #
-    for country in countriesDictionary:
+    for country in countriesDictionary['countries']:
 
         #
-        if country.name == wishedCountry:
+        if country["country"] == wishedCountry:
 
             #
-            return country.currency
+            return country["currency"]
 
     #
     return "NaN"
@@ -514,7 +514,7 @@ def getJSONOfCountries(order="asc"):
     #
     for country in list(pycountry.countries):
 
-        print(country)
+        name = country.name
 
         #
         currentCountry = {
@@ -522,8 +522,8 @@ def getJSONOfCountries(order="asc"):
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
-                            "flag": country.flag
-                            #"currency": country.currency
+                            "flag": country.flag,
+                            "currency": getCurrencyFromCountry(name)
                         }
 
         #
