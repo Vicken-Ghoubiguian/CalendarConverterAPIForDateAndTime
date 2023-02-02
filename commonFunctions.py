@@ -515,14 +515,16 @@ def getJSONOfCountries(order="asc"):
     #
     for country in list(pycountry.countries):
 
+        print(country)
+
         #
         currentCountry = {
                             "name": country.name,
                             "alpha_2": country.alpha_2,
                             "alpha_3": country.alpha_3,
                             "numeric": country.numeric,
-                            "flag": country.flag,
-                            "currency": country.currency
+                            "flag": country.flag
+                            #"currency": country.currency
                         }
 
         #
