@@ -47,17 +47,17 @@ def getCurrencyFromCountry(wishedCountry):
             countryCurrency = country["currency"]
 
             #
-            #for currency in list(pycountry.currencies):
+            for currency in list(pycountry.currencies):
 
                 #
-                #if currency.numeric == country["currency"]:
+                if currency.numeric == country["currency"]["numeric"]:
 
                     #
-                    #countryCurrency["name"] = currency.name
-                    #countryCurrency["alpha_3"] = currency.alpha_3
+                    countryCurrency["name"] = currency.name
+                    countryCurrency["alpha_3"] = currency.alpha_3
 
                     #
-                    #break
+                    break
 
             #
             return countryCurrency
