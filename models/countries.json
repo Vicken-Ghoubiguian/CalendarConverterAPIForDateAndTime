@@ -1,7 +1,7 @@
 {"countries" : [
-    {"country": "Aruba", "flag": "🇦🇼", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Afghanistan", "flag": "🇦🇫", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Angola", "flag" : "🇦🇴", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Aruba", "flag": "🇦🇼", "currency": {"numeric": "533", "symbol": "ƒ"}},
+    {"country": "Afghanistan", "flag": "🇦🇫", "currency": {"numeric": "971", "symbol": "؋"}},
+    {"country": "Angola", "flag" : "🇦🇴", "currency": {"numeric": "973", "symbol": "Kz"}},
     {"country": "Anguilla", "flag": "🇦🇮", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Åland Islands", "flag": "🇦🇽", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Albania", "flag": "🇦🇱", "currency": {"numeric": "", "symbol": ""}},
