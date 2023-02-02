@@ -421,6 +421,10 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
                 except AttributeError:
                     countriesDict[country.name]["official_name"] = None
 
+                #
+                finally:
+                    countriesDict[country.name]["currency"] = getCurrencyFromCountry(country.name)
+
             #
             elif field == 'alpha_2':
 
@@ -440,6 +444,10 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
                 #
                 except AttributeError:
                     countriesDict[country.alpha_2]["official_name"] = None
+
+                #
+                finally:
+                    countriesDict[country.name]["currency"] = getCurrencyFromCountry(country.name)
 
             #
             elif field == 'alpha_3':
@@ -461,6 +469,10 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
                 except AttributeError:
                     countriesDict[country.alpha_3]["official_name"] = None
 
+                #
+                finally:
+                    countriesDict[country.name]["currency"] = getCurrencyFromCountry(country.name)
+
             #
             elif field == 'numeric':
 
@@ -480,6 +492,10 @@ def getJSONofCountriesFromSort(field='name', order = "asc", pattern=None):
                 #
                 except AttributeError:
                     countriesDict[country.numeric]["official_name"] = None
+
+                #
+                finally:
+                    countriesDict[country.name]["currency"] = getCurrencyFromCountry(country.name)
 
             else:
 
