@@ -29,26 +29,25 @@ def getFlagEmojiFromCountryName(countryName):
     return "NaN"
 
 #
-def getCurrencyFromCountry(country):
+def getCurrencyFromCountry(wishedCountry):
 
     #
-    print("Soon")
+    countriesJSON = open('models/countries.json')
 
     #
-    #for currency in list(pycountry.currencies):
+    countriesDictionary = json.load(countriesJSON)
+
+    #
+    for country in countriesDictionary:
 
         #
-        #if currency.numeric == numeric:
+        if country.name == wishedCountry:
 
             #
-            #return {
-
-                #"alpha_3": currency.alpha_3,
-                #"name": currency.name
-            #}
+            return country.currency
 
     #
-    #return "NaN"
+    return "NaN"
 
 #
 def getJSONOfCurrencies():
