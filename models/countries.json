@@ -3,7 +3,7 @@
     {"country": "Afghanistan", "flag": "🇦🇫", "currency": {"numeric": "971", "symbol": "؋"}},
     {"country": "Angola", "flag" : "🇦🇴", "currency": {"numeric": "973", "symbol": "Kz"}},
     {"country": "Anguilla", "flag": "🇦🇮", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Åland Islands", "flag": "🇦🇽", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Åland Islands", "flag": "🇦🇽", "currency": {"numeric": "978", "symbol": "€"}},
     {"country": "Albania", "flag": "🇦🇱", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Andorra", "flag": "🇦🇩", "currency": {"numeric": "", "symbol": ""}},
     {"country": "United Arab Emirates", "flag": "🇦🇪", "currency": {"numeric": "", "symbol": ""}},
