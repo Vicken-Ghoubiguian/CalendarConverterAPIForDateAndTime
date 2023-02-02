@@ -44,7 +44,23 @@ def getCurrencyFromCountry(wishedCountry):
         if country["country"] == wishedCountry:
 
             #
-            return country["currency"]
+            countryCurrency = country["currency"]
+
+            #
+            #for currency in list(pycountry.currencies):
+
+                #
+                #if currency.numeric == country["currency"]:
+
+                    #
+                    #countryCurrency["name"] = currency.name
+                    #countryCurrency["alpha_3"] = currency.alpha_3
+
+                    #
+                    #break
+
+            #
+            return countryCurrency
 
     #
     return "NaN"
