@@ -11,7 +11,7 @@
     {"country": "Armenia", "flag": "🇦🇲", "currency": {"numeric": "051", "symbol": "֏"}},
     {"country": "American Samoa", "flag": "🇦🇸", "currency": {"numeric": "840", "symbol": "$"}},
     {"country": "Antarctica", "flag": "🇦🇶", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "French Southern Territories", "flag": "🇹🇫", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "French Southern Territories", "flag": "🇹🇫", "currency": {"numeric": "978", "symbol": "€"}},
     {"country": "Antigua and Barbuda", "flag": "🇦🇬", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Australia", "flag": "🇦🇺", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Austria", "flag": "🇦🇹", "currency": {"numeric": "978", "symbol": "€"}},
