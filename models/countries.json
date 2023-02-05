@@ -246,6 +246,6 @@
     {"country": "Yemen", "flag": "🇾🇪", "currency": {"numeric": "", "symbol": ""}},
     {"country": "South Africa", "flag": "🇿🇦", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Zambia", "flag": "🇿🇲", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Zimbabwe", "flag": "🇿🇼", "currency": {"numeric": "", "symbol": ""}}
+    {"country": "Zimbabwe", "flag": "🇿🇼", "currency": {"numeric": "942", "symbol": ""}}
     ]
 }
