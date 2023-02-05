@@ -114,7 +114,7 @@
     {"country": "Jamaica", "flag": "🇯🇲", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Jersey", "flag": "🇯🇪", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Jordan", "flag": "🇯🇴", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Japan", "flag": "🇯🇵", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Japan", "flag": "🇯🇵", "currency": {"numeric": "392", "symbol": "¥"}},
     {"country": "Kazakhstan", "flag": "🇰🇿", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Kenya", "flag": "🇰🇪", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Kyrgyzstan", "flag": "🇰🇬", "currency": {"numeric": "", "symbol": ""}},
