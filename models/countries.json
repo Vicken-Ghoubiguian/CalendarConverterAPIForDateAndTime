@@ -228,7 +228,7 @@
     {"country": "Tuvalu", "flag": "🇹🇻", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Taiwan, Province of China", "flag": "🇹🇼", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Tanzania, United Republic of", "flag": "🇹🇿", "currency": {"numeric": "834", "symbol": "Tsh"}},
-    {"country": "Uganda", "flag": "🇺🇬", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Uganda", "flag": "🇺🇬", "currency": {"numeric": "800", "symbol": "UGX"}},
     {"country": "Ukraine", "flag": "🇺🇦", "currency": {"numeric": "980", "symbol": "₴"}},
     {"country": "United States Minor Outlying Islands", "flag": "🇺🇲", "currency": {"numeric": "840", "symbol": "$"}},
     {"country": "Uruguay", "flag": "🇺🇾", "currency": {"numeric": "858", "symbol": "$U"}},
