@@ -153,7 +153,7 @@
     {"country": "Mozambique", "flag": "🇲🇿", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Mauritania", "flag": "🇲🇷", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Montserrat", "flag": "🇲🇸", "currency": {"numeric": "951", "symbol": "EC$"}},
-    {"country": "Martinique", "flag": "🇲🇶", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Martinique", "flag": "🇲🇶", "currency": {"numeric": "978", "symbol": "€"}},
     {"country": "Mauritius", "flag": "🇲🇺", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Malawi", "flag": "🇲🇼", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Malaysia", "flag": "🇲🇾", "currency": {"numeric": "", "symbol": ""}},
