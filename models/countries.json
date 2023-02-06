@@ -223,7 +223,7 @@
     {"country": "Timor-Leste", "flag": "🇹🇱", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Tonga", "flag": "🇹🇴", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Trinidad and Tobago", "flag": "🇹🇹", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Tunisia", "flag": "🇹🇳", "currency": {"numeric": "788", "symbol": ""}},
+    {"country": "Tunisia", "flag": "🇹🇳", "currency": {"numeric": "788", "symbol": "د.ت"}},
     {"country": "Turkey", "flag": "🇹🇷", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Tuvalu", "flag": "🇹🇻", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Taiwan, Province of China", "flag": "🇹🇼", "currency": {"numeric": "", "symbol": ""}},
