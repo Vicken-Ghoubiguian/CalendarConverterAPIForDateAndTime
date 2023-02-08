@@ -144,7 +144,7 @@
     {"country": "Mexico", "flag": "🇲🇽", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Marshall Island", "flag": "🇲🇭", "currency": {"numeric": "840", "symbol": "$"}},
     {"country": "North Macedonia", "flag": "🇲🇰", "currency": {"numeric": "807", "symbol": "ден"}},
-    {"country": "Mali", "flag": "🇲🇱", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Mali", "flag": "🇲🇱", "currency": {"numeric": "952", "symbol": "F.CFA"}},
     {"country": "Malta", "flag": "🇲🇹", "currency": {"numeric": "978", "symbol": "€"}},
     {"country": "Myanmar", "flag": "🇲🇲", "currency": {"numeric": "104", "symbol": "K"}},
     {"country": "Montenegro", "flag": "🇲🇪", "currency": {"numeric": "978", "symbol": "€"}},
