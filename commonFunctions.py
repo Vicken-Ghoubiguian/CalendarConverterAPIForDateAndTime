@@ -66,6 +66,25 @@ def getCurrencyFromCountry(wishedCountry):
     return "NaN"
 
 #
+def getJSONOfLanguages():
+
+    #
+    languagesDict = {}
+
+    #
+    for language in list(pycountry.languages):
+
+        #
+        languagesDict[language.name] = {
+
+            "name": language.name,
+            "countries": []
+        }
+
+    #
+    return languagesDict
+
+#
 def getJSONOfCurrencies():
 
     #
