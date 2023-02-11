@@ -19,4 +19,4 @@ class LanguagesList(Resource):
         
         """
 
-        return {"TODO": "TODO"}, 200
+        return getJSONOfLanguages(), 200
