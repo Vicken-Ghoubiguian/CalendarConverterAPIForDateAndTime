@@ -168,7 +168,7 @@
     {"country": "Netherlands", "flag": "🇳🇱", "currency": {"numeric": "978", "symbol": "€"}},
     {"country": "Norway", "flag": "🇳🇴", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Nepal", "flag": "🇳🇵", "currency": {"numeric": "", "symbol": ""}},
-    {"country": "Nauru", "flag": "🇳🇷", "currency": {"numeric": "", "symbol": ""}},
+    {"country": "Nauru", "flag": "🇳🇷", "currency": {"numeric": "036", "symbol": "$"}},
     {"country": "New Zealand", "flag": "🇳🇿", "currency": {"numeric": "554", "symbol": ""}},
     {"country": "Oman", "flag": "🇴🇲", "currency": {"numeric": "", "symbol": ""}},
     {"country": "Pakistan", "flag": "🇵🇰", "currency": {"numeric": "", "symbol": ""}},
