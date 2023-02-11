@@ -8,6 +8,7 @@ from countries import currentCountriesNamespace as ct
 from introduction import introductionNamespace as nsi
 from flags import flagsNamespace as nsf
 from currencies import currentCurrenciesNamespace as cs
+from languages import languagesNamespace as lg
 
 #
 app = Flask(__name__)
@@ -26,6 +27,7 @@ api.add_namespace(cc)
 api.add_namespace(ct)
 api.add_namespace(cs)
 api.add_namespace(nsf)
+api.add_namespace(lg)
 
 #
 api.init_app(app)
