@@ -16,7 +16,7 @@ class LanguagesList(Resource):
     def get(self):
 
         """
-        
+        Get all existing languages with their corresponding countries...
         """
 
         return getJSONOfLanguages(), 200
