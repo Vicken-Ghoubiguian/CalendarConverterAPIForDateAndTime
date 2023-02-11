@@ -78,6 +78,10 @@ def getJSONOfLanguages():
         languagesDict[language.name] = {
 
             "name": language.name,
+            "inverted_name": language.inverted_name,
+            "alpha_3": language.alpha_3,
+            "scope": language.scope,
+            "type": language.type,
             "countries": []
         }
 
